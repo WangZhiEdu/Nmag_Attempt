@@ -1,0 +1,14 @@
+INFO:nmesh:Reading 'cubes.msh'
+INFO:nmesh:Number of nodes      =    1504
+INFO:nmesh:Number of elements   =    5393
+INFO:nmesh:Number of tetrahedra =    5393
+INFO:nmesh:Physical Regions:
+	 reg_phys 1 -> 3067 times
+	 reg_phys 2 -> 2326 times
+INFO:root:Number of physical regions: 2
+INFO:root:Smallest physical region id: 1
+INFO:root:Largest physical region id: 2
+INFO:nmesh:Completed reading 'cubes.msh'
+INFO:nmesh:Paranoia check: Found 1504 points used 
+INFO:root:Saving nmesh object to file 'cubes.nmesh.h5'.
+INFO:nmesh:Have written mesh to 'cubes.nmesh.h5' (hdf5 format)
