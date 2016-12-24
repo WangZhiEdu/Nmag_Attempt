@@ -1,0 +1,2225 @@
+       nsim:2016-12-24 19:58:33,326   setup.py  471    INFO Nsim 0.2.1
+       nsim:2016-12-24 19:58:33,327   setup.py  472    INFO Runid is 'cubes'
+       nsim:2016-12-24 19:58:33,327   setup.py  473    INFO Using 1 CPUs
+       nmag:2016-12-24 19:58:33,436 simulation_core.py  141    INFO Simulation(name=cubes) object created
+       nmag:2016-12-24 19:58:33,436    main.py  859    INFO Versions:
+	     nsim version = 0.2.1
+	     release date = Fri Jan 13 09:38:20 2012
+	          VC info = 467:d7c316deb156
+	distribution mode = all-source
+	distribution date = Fri Jan 13 09:38:22 GMT 2012
+       nmag:2016-12-24 19:58:33,437    main.py  860    INFO Paths:
+	nsimpath = /home/nmag/nmag-0.2.1/nsim/interface/nsim
+	nmagpath = /home/nmag/nmag-0.2.1/nsim/interface/nmag
+ku_hard 2656350.000000
+H_max 8455424.661643
+       nmag:2016-12-24 19:58:33,439    main.py  472    INFO Created new Material:
+ Material 'Mat_Hard'
+                      name = Mat_Hard
+                        Ms = <SI: 500000  A / m >
+         exchange_coupling = <SI: 1.2e-11  m kg / s^2 >
+                anisotropy = <function f at 0x1c3b848>
+          anisotropy_order = 2
+               llg_gamma_G = <SI: 221017  m / s A >
+               llg_damping = 1.0
+   llg_normalisationfactor = <SI: 1e+11  / s >
+             do_precession = True
+          llg_polarisation = 0.0
+                    llg_xi = 0.0
+            thermal_factor = <SI: 1.98522e-28  m s A^2 / K >
+            extended_print = False
+ 
+       nmag:2016-12-24 19:58:33,439    main.py  472    INFO Created new Material:
+ Material 'Mat_Soft'
+                      name = Mat_Soft
+                        Ms = <SI: 1.2e+06  A / m >
+         exchange_coupling = <SI: 2.8e-11  m kg / s^2 >
+                anisotropy = <function f at 0x1c3b938>
+          anisotropy_order = 2
+               llg_gamma_G = <SI: 221017  m / s A >
+               llg_damping = 1.0
+   llg_normalisationfactor = <SI: 1e+11  / s >
+             do_precession = True
+          llg_polarisation = 0.0
+                    llg_xi = 0.0
+            thermal_factor = <SI: 8.27177e-29  m s A^2 / K >
+            extended_print = False
+ 
+       nmag:2016-12-24 19:58:33,440    main.py 1164    INFO Reading mesh from cubes.nmesh.h5, unit_length is <SI: 1e-09  m >. 
+nmesh.ocaml:2016-12-24 19:58:33,543    INFO Computing mesh connectivity data
+nmesh.ocaml:2016-12-24 19:58:33,591    INFO Mesh nodes: 2410,  simplices: 9195 
+       nmag:2016-12-24 19:58:33,628    main.py 1225    INFO Adding region 'Mat_Hard' to 'cubes' simulation object
+       nmag:2016-12-24 19:58:33,628    main.py 1225    INFO Adding region 'Mat_Soft' to 'cubes' simulation object
+       nmag:2016-12-24 19:58:33,629 nmag_lam.py   97    INFO properties_by_region: [(-1, ['outer']), (0, ['0']), (1, ['1', 'Mat_Hard', 'magnetic', 'material']), (2, ['2', 'Mat_Soft', 'magnetic', 'material'])]
+       nmag:2016-12-24 19:58:33,629 nmag_lam.py  189    INFO Processing material 'Mat_Hard'
+       nmag:2016-12-24 19:58:33,629 nmag_lam.py  189    INFO Processing material 'Mat_Soft'
+ nfem.ocaml:2016-12-24 19:58:33,629    INFO Associating elements to mesh ('m')
+ nfem.ocaml:2016-12-24 19:58:33,747    INFO Associating elements to mesh ('E')
+ nfem.ocaml:2016-12-24 19:58:33,813    INFO Associating elements to mesh ('H_demag')
+ nfem.ocaml:2016-12-24 19:58:33,948    INFO Associating elements to mesh ('scalar')
+ nfem.ocaml:2016-12-24 19:58:34,018    INFO Assembling site-wise offsets for fields [|"m"|]
+ nfem.ocaml:2016-12-24 19:58:34,061    INFO Compiling linalg_machine
+ nfem.ocaml:2016-12-24 19:58:35,137    INFO Starting to build dense matrices (BEM)
+ nfem.ocaml:2016-12-24 19:58:37,318    INFO Populating BEM took 2.181096 seconds
+ nfem.ocaml:2016-12-24 19:58:37,452    INFO Creating site-wise-executor 'local_M_from_m'
+ nfem.ocaml:2016-12-24 19:58:37,452    INFO Assembling site-wise offsets for fields [|"m"; "M"|]
+ nfem.ocaml:2016-12-24 19:58:37,461    INFO Creating site-wise-executor 'local_E_total'
+ nfem.ocaml:2016-12-24 19:58:37,461    INFO Assembling site-wise offsets for fields [|"m"; "E_anis"; "E_ext"; "E_demag"; "E_exch"; "E_total"; "H_ext"; "H_demag"; "H_exch"; "H_total"|]
+ nfem.ocaml:2016-12-24 19:58:37,481    INFO Creating site-wise-executor 'local_H_total'
+ nfem.ocaml:2016-12-24 19:58:37,481    INFO Assembling site-wise offsets for fields [|"H_total"; "H_exch"; "H_ext"; "H_anis"; "H_demag"|]
+ nfem.ocaml:2016-12-24 19:58:37,493    INFO Creating site-wise-executor 'local_correct_m_lengths'
+ nfem.ocaml:2016-12-24 19:58:37,493    INFO Assembling site-wise offsets for fields [|"m"|]
+ nfem.ocaml:2016-12-24 19:58:37,498    INFO Creating site-wise-executor 'local_E_anis'
+ nfem.ocaml:2016-12-24 19:58:37,498    INFO Assembling site-wise offsets for fields [|"E_anis"; "m"|]
+ nfem.ocaml:2016-12-24 19:58:37,504    INFO Creating site-wise-executor 'local_H_anis'
+ nfem.ocaml:2016-12-24 19:58:37,504    INFO Assembling site-wise offsets for fields [|"H_anis"; "m"|]
+ nfem.ocaml:2016-12-24 19:58:37,511    INFO Creating site-wise-executor 'local_dmdt'
+ nfem.ocaml:2016-12-24 19:58:37,511    INFO Assembling site-wise offsets for fields [|"m"; "dmdt"; "H_total"; "pin"|]
+ nfem.ocaml:2016-12-24 19:58:37,542    INFO Assembling site-wise offsets for fields [|"m"|]
+       nmag:2016-12-24 19:58:37,552 hysteresis.py  441    INFO Hysteresis loop: starting a new simulation.
+       nmag:2016-12-24 19:58:37,552 hysteresis.py  443    INFO Hysteresis loop: check file 'cubes_progress.txt' for progress data
+       nmag:2016-12-24 19:58:37,552 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 -8.45542e+06]<A/m>
+       nmag:2016-12-24 19:58:37,555 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=-1,step=0.
+===========================================================================
+ID=-1 |        Step=0     |       Time=0.00 ps |  Last step size=0.00 ps | 
+      |       Stage=1     | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 0.000000 ps----
+ nfem.ocaml:2016-12-24 19:58:37,893    INFO Making Jacobi MX: 7230 x 7230 ([|7230|] x [|7230|])
+       nmag:2016-12-24 19:58:38,124 hysteresis.py   40    INFO it 5, time <3.85587e-15s>; stage 1; H_ext=[0 0 -8.45542e+06]<A/m>
+       nmag:2016-12-24 19:58:54,965 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=-1,step=1165.
+============================================================================
+ID=-1 |        Step=1165 |       Time=27.06 ps |  Last step size=0.14 ps  | 
+      |       Stage=1    | Stage-step=1165     |      Stage-time=27.06 ps | 
+      | Convergence=True |  Stage-end=True     | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 27.059957 ps----
+       nmag:2016-12-24 19:58:54,965 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=-1,step=1165.
+============================================================================
+ID=-1 |        Step=1165 |       Time=27.06 ps |  Last step size=0.14 ps  | 
+      |       Stage=1    | Stage-step=1165     |      Stage-time=27.06 ps | 
+      | Convergence=True |  Stage-end=True     | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 19:58:54,966    main.py 2593    INFO save_data(): id->id+1=0, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 19:58:55,285    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 19:58:55,285 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 -6.76434e+06]<A/m>
+       nmag:2016-12-24 19:58:56,227 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=0,step=1230.
+==========================================================================
+ID=0 |        Step=1230 |       Time=33.01 ps |  Last step size=0.31 ps | 
+     |       Stage=2    | Stage-step=65       |      Stage-time=5.95 ps | 
+     | Convergence=True |  Stage-end=True     | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 33.011864 ps----
+       nmag:2016-12-24 19:58:56,228 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=0,step=1230.
+==========================================================================
+ID=0 |        Step=1230 |       Time=33.01 ps |  Last step size=0.31 ps | 
+     |       Stage=2    | Stage-step=65       |      Stage-time=5.95 ps | 
+     | Convergence=True |  Stage-end=True     | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-24 19:58:56,228    main.py 2593    INFO save_data(): id->id+1=1, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 19:58:56,270    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 19:58:56,271 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 -5.07325e+06]<A/m>
+       nmag:2016-12-24 19:58:57,474 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=1,step=1300.
+==========================================================================
+ID=1 |        Step=1300 |       Time=39.24 ps |  Last step size=0.11 ps | 
+     |       Stage=3    | Stage-step=70       |      Stage-time=6.23 ps | 
+     | Convergence=True |  Stage-end=True     | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 39.243499 ps----
+       nmag:2016-12-24 19:58:57,474 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=1,step=1300.
+==========================================================================
+ID=1 |        Step=1300 |       Time=39.24 ps |  Last step size=0.11 ps | 
+     |       Stage=3    | Stage-step=70       |      Stage-time=6.23 ps | 
+     | Convergence=True |  Stage-end=True     | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-24 19:58:57,475    main.py 2593    INFO save_data(): id->id+1=2, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 19:58:57,517    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 19:58:57,517 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 -3.38217e+06]<A/m>
+       nmag:2016-12-24 19:58:58,563 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=2,step=1375.
+==========================================================================
+ID=2 |        Step=1375 |       Time=46.19 ps |  Last step size=0.29 ps | 
+     |       Stage=4    | Stage-step=75       |      Stage-time=6.95 ps | 
+     | Convergence=True |  Stage-end=True     | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 46.190390 ps----
+       nmag:2016-12-24 19:58:58,564 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=2,step=1375.
+==========================================================================
+ID=2 |        Step=1375 |       Time=46.19 ps |  Last step size=0.29 ps | 
+     |       Stage=4    | Stage-step=75       |      Stage-time=6.95 ps | 
+     | Convergence=True |  Stage-end=True     | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-24 19:58:58,564    main.py 2593    INFO save_data(): id->id+1=3, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 19:58:58,605    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 19:58:58,605 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 -1.69108e+06]<A/m>
+       nmag:2016-12-24 19:58:59,523 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=3,step=1442.
+===========================================================================
+ID=3 |        Step=1442  |       Time=50.00 ps |  Last step size=0.02 ps | 
+     |       Stage=5     | Stage-step=67       |      Stage-time=3.81 ps | 
+     | Convergence=False |  Stage-end=False    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 50.000000 ps----
+       nmag:2016-12-24 19:59:00,033 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=3,step=1475.
+===========================================================================
+ID=3 |        Step=1475 |       Time=57.30 ps |  Last step size=0.24 ps  | 
+     |       Stage=5    | Stage-step=100      |      Stage-time=11.11 ps | 
+     | Convergence=True |  Stage-end=True     | Exit hysteresis=False    | 
+===========================================================================
+----SIM Time 57.302518 ps----
+       nmag:2016-12-24 19:59:00,033 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=3,step=1475.
+===========================================================================
+ID=3 |        Step=1475 |       Time=57.30 ps |  Last step size=0.24 ps  | 
+     |       Stage=5    | Stage-step=100      |      Stage-time=11.11 ps | 
+     | Convergence=True |  Stage-end=True     | Exit hysteresis=False    | 
+===========================================================================
+       nmag:2016-12-24 19:59:00,033    main.py 2593    INFO save_data(): id->id+1=4, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 19:59:00,076    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 19:59:00,076 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 0]<A/m>
+       nmag:2016-12-24 19:59:04,422 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=4,step=1690.
+===========================================================================
+ID=4 |        Step=1690  |       Time=0.10 ns |  Last step size=0.14 ps  | 
+     |       Stage=6     | Stage-step=215     |      Stage-time=42.70 ps | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False    | 
+===========================================================================
+----SIM Time 100.000000 ps----
+       nmag:2016-12-24 19:59:26,995 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=4,step=1964.
+===========================================================================
+ID=4 |        Step=1964  |       Time=0.15 ns |  Last step size=0.33 ps  | 
+     |       Stage=6     | Stage-step=489     |      Stage-time=92.70 ps | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False    | 
+===========================================================================
+----SIM Time 150.000000 ps----
+       nmag:2016-12-24 19:59:38,521 hysteresis.py   40    INFO it 2070, time <1.12207e-10s>; stage 6; H_ext=[0 0 0]<A/m>
+       nmag:2016-12-24 19:59:55,407 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=4,step=2254.
+==========================================================================
+ID=4 |        Step=2254  |       Time=0.20 ns |  Last step size=0.41 ps | 
+     |       Stage=6     | Stage-step=779     |      Stage-time=0.14 ns | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 200.000000 ps----
+       nmag:2016-12-24 20:00:16,149 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=4,step=2460.
+=========================================================================
+ID=4 |        Step=2460 |       Time=0.24 ns |  Last step size=0.15 ps | 
+     |       Stage=6    | Stage-step=985     |      Stage-time=0.18 ns | 
+     | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+=========================================================================
+----SIM Time 235.800108 ps----
+       nmag:2016-12-24 20:00:16,150 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=4,step=2460.
+=========================================================================
+ID=4 |        Step=2460 |       Time=0.24 ns |  Last step size=0.15 ps | 
+     |       Stage=6    | Stage-step=985     |      Stage-time=0.18 ns | 
+     | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+=========================================================================
+       nmag:2016-12-24 20:00:16,150    main.py 2593    INFO save_data(): id->id+1=5, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:00:16,191    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:00:16,192 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 84554.2]<A/m>
+       nmag:2016-12-24 20:00:17,547 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=5,step=2525.
+===========================================================================
+ID=5 |        Step=2525  |       Time=0.25 ns |  Last step size=0.22 ps  | 
+     |       Stage=7     | Stage-step=65      |      Stage-time=14.20 ps | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False    | 
+===========================================================================
+----SIM Time 250.000000 ps----
+       nmag:2016-12-24 20:00:21,143 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=5,step=2754.
+===========================================================================
+ID=5 |        Step=2754  |       Time=0.30 ns |  Last step size=0.02 ps  | 
+     |       Stage=7     | Stage-step=294     |      Stage-time=64.20 ps | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False    | 
+===========================================================================
+----SIM Time 300.000000 ps----
+       nmag:2016-12-24 20:00:38,932 hysteresis.py   40    INFO it 3010, time <1.11267e-10s>; stage 7; H_ext=[0 0 84554.2]<A/m>
+       nmag:2016-12-24 20:00:39,727 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=5,step=3025.
+==========================================================================
+ID=5 |        Step=3025  |       Time=0.35 ns |  Last step size=0.17 ps | 
+     |       Stage=7     | Stage-step=565     |      Stage-time=0.11 ns | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 350.000000 ps----
+       nmag:2016-12-24 20:01:04,723 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=5,step=3293.
+==========================================================================
+ID=5 |        Step=3293  |       Time=0.40 ns |  Last step size=0.20 ps | 
+     |       Stage=7     | Stage-step=833     |      Stage-time=0.16 ns | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 400.000000 ps----
+       nmag:2016-12-24 20:01:36,530 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=5,step=3542.
+==========================================================================
+ID=5 |        Step=3542  |       Time=0.45 ns |  Last step size=0.43 ps | 
+     |       Stage=7     | Stage-step=1082    |      Stage-time=0.21 ns | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 450.000000 ps----
+       nmag:2016-12-24 20:01:38,977 hysteresis.py   40    INFO it 3560, time <2.18032e-10s>; stage 7; H_ext=[0 0 84554.2]<A/m>
+       nmag:2016-12-24 20:02:04,136 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=5,step=3789.
+==========================================================================
+ID=5 |        Step=3789  |       Time=0.50 ns |  Last step size=0.19 ps | 
+     |       Stage=7     | Stage-step=1329    |      Stage-time=0.26 ns | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 500.000000 ps----
+       nmag:2016-12-24 20:02:15,715 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=5,step=4012.
+==========================================================================
+ID=5 |        Step=4012  |       Time=0.55 ns |  Last step size=0.23 ps | 
+     |       Stage=7     | Stage-step=1552    |      Stage-time=0.31 ns | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 550.000000 ps----
+       nmag:2016-12-24 20:02:39,360 hysteresis.py   40    INFO it 4250, time <3.61215e-10s>; stage 7; H_ext=[0 0 84554.2]<A/m>
+       nmag:2016-12-24 20:02:40,753 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=5,step=4266.
+==========================================================================
+ID=5 |        Step=4266  |       Time=0.60 ns |  Last step size=0.30 ps | 
+     |       Stage=7     | Stage-step=1806    |      Stage-time=0.36 ns | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 600.000000 ps----
+       nmag:2016-12-24 20:03:05,691 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=5,step=4520.
+==========================================================================
+ID=5 |        Step=4520  |       Time=0.65 ns |  Last step size=0.31 ps | 
+     |       Stage=7     | Stage-step=2060    |      Stage-time=0.41 ns | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 650.000000 ps----
+       nmag:2016-12-24 20:03:34,358 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=5,step=4812.
+==========================================================================
+ID=5 |        Step=4812  |       Time=0.70 ns |  Last step size=0.23 ps | 
+     |       Stage=7     | Stage-step=2352    |      Stage-time=0.46 ns | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 700.000000 ps----
+       nmag:2016-12-24 20:03:39,708 hysteresis.py   40    INFO it 4870, time <4.73656e-10s>; stage 7; H_ext=[0 0 84554.2]<A/m>
+       nmag:2016-12-24 20:03:43,948 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=5,step=4915.
+=========================================================================
+ID=5 |        Step=4915 |       Time=0.72 ns |  Last step size=0.15 ps | 
+     |       Stage=7    | Stage-step=2455    |      Stage-time=0.48 ns | 
+     | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+=========================================================================
+----SIM Time 717.176228 ps----
+       nmag:2016-12-24 20:03:43,949 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=5,step=4915.
+=========================================================================
+ID=5 |        Step=4915 |       Time=0.72 ns |  Last step size=0.15 ps | 
+     |       Stage=7    | Stage-step=2455    |      Stage-time=0.48 ns | 
+     | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+=========================================================================
+       nmag:2016-12-24 20:03:43,949    main.py 2593    INFO save_data(): id->id+1=6, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:03:43,989    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:03:43,989 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 169108]<A/m>
+       nmag:2016-12-24 20:03:57,189 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=6,step=5152.
+===========================================================================
+ID=6 |        Step=5152  |       Time=0.75 ns |  Last step size=0.19 ps  | 
+     |       Stage=8     | Stage-step=237     |      Stage-time=32.82 ps | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False    | 
+===========================================================================
+----SIM Time 750.000000 ps----
+       nmag:2016-12-24 20:04:15,535 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=6,step=5422.
+===========================================================================
+ID=6 |        Step=5422  |       Time=0.80 ns |  Last step size=0.03 ps  | 
+     |       Stage=8     | Stage-step=507     |      Stage-time=82.82 ps | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False    | 
+===========================================================================
+----SIM Time 800.000000 ps----
+       nmag:2016-12-24 20:04:20,204 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=6,step=5581.
+==========================================================================
+ID=6 |        Step=5581  |       Time=0.85 ns |  Last step size=0.09 ps | 
+     |       Stage=8     | Stage-step=666     |      Stage-time=0.13 ns | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 850.000000 ps----
+       nmag:2016-12-24 20:04:32,309 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=6,step=5785.
+==========================================================================
+ID=6 |        Step=5785  |       Time=0.90 ns |  Last step size=0.02 ps | 
+     |       Stage=8     | Stage-step=870     |      Stage-time=0.18 ns | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 900.000000 ps----
+       nmag:2016-12-24 20:04:36,675 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=6,step=5945.
+==========================================================================
+ID=6 |        Step=5945  |       Time=0.95 ns |  Last step size=0.26 ps | 
+     |       Stage=8     | Stage-step=1030    |      Stage-time=0.23 ns | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 950.000000 ps----
+       nmag:2016-12-24 20:04:39,744 hysteresis.py   40    INFO it 6045, time <2.64188e-10s>; stage 8; H_ext=[0 0 169108]<A/m>
+       nmag:2016-12-24 20:04:41,533 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=6,step=6102.
+==========================================================================
+ID=6 |        Step=6102  |       Time=1.00 ns |  Last step size=0.22 ps | 
+     |       Stage=8     | Stage-step=1187    |      Stage-time=0.28 ns | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 1000.000000 ps----
+       nmag:2016-12-24 20:04:46,698 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=6,step=6251.
+==========================================================================
+ID=6 |        Step=6251  |       Time=1.05 ns |  Last step size=0.11 ps | 
+     |       Stage=8     | Stage-step=1336    |      Stage-time=0.33 ns | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 1050.000000 ps----
+       nmag:2016-12-24 20:04:51,501 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=6,step=6422.
+==========================================================================
+ID=6 |        Step=6422  |       Time=1.10 ns |  Last step size=0.16 ps | 
+     |       Stage=8     | Stage-step=1507    |      Stage-time=0.38 ns | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 1100.000000 ps----
+       nmag:2016-12-24 20:04:55,994 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=6,step=6614.
+==========================================================================
+ID=6 |        Step=6614  |       Time=1.15 ns |  Last step size=0.20 ps | 
+     |       Stage=8     | Stage-step=1699    |      Stage-time=0.43 ns | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 1150.000000 ps----
+       nmag:2016-12-24 20:05:01,657 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=6,step=6782.
+==========================================================================
+ID=6 |        Step=6782  |       Time=1.20 ns |  Last step size=0.24 ps | 
+     |       Stage=8     | Stage-step=1867    |      Stage-time=0.48 ns | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 1200.000000 ps----
+       nmag:2016-12-24 20:05:07,097 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=6,step=6990.
+==========================================================================
+ID=6 |        Step=6990  |       Time=1.25 ns |  Last step size=0.14 ps | 
+     |       Stage=8     | Stage-step=2075    |      Stage-time=0.53 ns | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 1250.000000 ps----
+       nmag:2016-12-24 20:05:13,997 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=6,step=7187.
+==========================================================================
+ID=6 |        Step=7187  |       Time=1.30 ns |  Last step size=0.05 ps | 
+     |       Stage=8     | Stage-step=2272    |      Stage-time=0.58 ns | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 1300.000000 ps----
+       nmag:2016-12-24 20:05:21,361 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=6,step=7344.
+==========================================================================
+ID=6 |        Step=7344  |       Time=1.35 ns |  Last step size=0.08 ps | 
+     |       Stage=8     | Stage-step=2429    |      Stage-time=0.63 ns | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 1350.000000 ps----
+       nmag:2016-12-24 20:05:26,573 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=6,step=7559.
+==========================================================================
+ID=6 |        Step=7559  |       Time=1.40 ns |  Last step size=0.20 ps | 
+     |       Stage=8     | Stage-step=2644    |      Stage-time=0.68 ns | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 1400.000000 ps----
+       nmag:2016-12-24 20:05:31,563 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=6,step=7726.
+==========================================================================
+ID=6 |        Step=7726  |       Time=1.45 ns |  Last step size=0.07 ps | 
+     |       Stage=8     | Stage-step=2811    |      Stage-time=0.73 ns | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 1450.000000 ps----
+       nmag:2016-12-24 20:05:39,978 hysteresis.py   40    INFO it 7890, time <7.70751e-10s>; stage 8; H_ext=[0 0 169108]<A/m>
+       nmag:2016-12-24 20:05:41,795 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=6,step=7931.
+==========================================================================
+ID=6 |        Step=7931  |       Time=1.50 ns |  Last step size=0.06 ps | 
+     |       Stage=8     | Stage-step=3016    |      Stage-time=0.78 ns | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 1500.000000 ps----
+       nmag:2016-12-24 20:05:45,674 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=6,step=8143.
+==========================================================================
+ID=6 |        Step=8143  |       Time=1.55 ns |  Last step size=0.16 ps | 
+     |       Stage=8     | Stage-step=3228    |      Stage-time=0.83 ns | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 1550.000000 ps----
+       nmag:2016-12-24 20:05:50,345 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=6,step=8350.
+==========================================================================
+ID=6 |        Step=8350  |       Time=1.60 ns |  Last step size=0.12 ps | 
+     |       Stage=8     | Stage-step=3435    |      Stage-time=0.88 ns | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 1600.000000 ps----
+       nmag:2016-12-24 20:06:29,277 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=6,step=8731.
+==========================================================================
+ID=6 |        Step=8731  |       Time=1.65 ns |  Last step size=0.30 ps | 
+     |       Stage=8     | Stage-step=3816    |      Stage-time=0.93 ns | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 1650.000000 ps----
+       nmag:2016-12-24 20:06:40,108 hysteresis.py   40    INFO it 8840, time <9.52637e-10s>; stage 8; H_ext=[0 0 169108]<A/m>
+       nmag:2016-12-24 20:06:48,081 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=6,step=8915.
+=========================================================================
+ID=6 |        Step=8915 |       Time=1.68 ns |  Last step size=0.28 ps | 
+     |       Stage=8    | Stage-step=4000    |      Stage-time=0.97 ns | 
+     | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+=========================================================================
+----SIM Time 1684.226864 ps----
+       nmag:2016-12-24 20:06:48,081 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=6,step=8915.
+=========================================================================
+ID=6 |        Step=8915 |       Time=1.68 ns |  Last step size=0.28 ps | 
+     |       Stage=8    | Stage-step=4000    |      Stage-time=0.97 ns | 
+     | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+=========================================================================
+       nmag:2016-12-24 20:06:48,081    main.py 2593    INFO save_data(): id->id+1=7, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:06:48,123    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:06:48,123 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 253663]<A/m>
+       nmag:2016-12-24 20:06:49,547 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=7,step=8992.
+===========================================================================
+ID=7 |        Step=8992  |       Time=1.70 ns |  Last step size=0.24 ps  | 
+     |       Stage=9     | Stage-step=77      |      Stage-time=15.77 ps | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False    | 
+===========================================================================
+----SIM Time 1700.000000 ps----
+       nmag:2016-12-24 20:07:05,465 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=7,step=9220.
+==========================================================================
+ID=7 |        Step=9220 |       Time=1.75 ns |  Last step size=0.12 ps  | 
+     |       Stage=9    | Stage-step=305     |      Stage-time=64.12 ps | 
+     | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+==========================================================================
+----SIM Time 1748.346380 ps----
+       nmag:2016-12-24 20:07:05,466 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=7,step=9220.
+==========================================================================
+ID=7 |        Step=9220 |       Time=1.75 ns |  Last step size=0.12 ps  | 
+     |       Stage=9    | Stage-step=305     |      Stage-time=64.12 ps | 
+     | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+==========================================================================
+       nmag:2016-12-24 20:07:05,466    main.py 2593    INFO save_data(): id->id+1=8, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:07:05,526    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:07:05,526 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 338217]<A/m>
+       nmag:2016-12-24 20:07:06,092 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=8,step=9238.
+==========================================================================
+ID=8 |        Step=9238  |       Time=1.75 ns |  Last step size=0.10 ps | 
+     |       Stage=10    | Stage-step=18      |      Stage-time=1.65 ps | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 1750.000000 ps----
+       nmag:2016-12-24 20:07:09,293 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=8,step=9365.
+==========================================================================
+ID=8 |        Step=9365 |       Time=1.79 ns |  Last step size=0.28 ps  | 
+     |       Stage=10   | Stage-step=145     |      Stage-time=36.88 ps | 
+     | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+==========================================================================
+----SIM Time 1785.222194 ps----
+       nmag:2016-12-24 20:07:09,294 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=8,step=9365.
+==========================================================================
+ID=8 |        Step=9365 |       Time=1.79 ns |  Last step size=0.28 ps  | 
+     |       Stage=10   | Stage-step=145     |      Stage-time=36.88 ps | 
+     | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+==========================================================================
+       nmag:2016-12-24 20:07:09,294    main.py 2593    INFO save_data(): id->id+1=9, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:07:09,334    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:07:09,334 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 422771]<A/m>
+       nmag:2016-12-24 20:07:10,789 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=9,step=9430.
+===========================================================================
+ID=9 |        Step=9430  |       Time=1.80 ns |  Last step size=0.05 ps  | 
+     |       Stage=11    | Stage-step=65      |      Stage-time=14.78 ps | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False    | 
+===========================================================================
+----SIM Time 1800.000000 ps----
+       nmag:2016-12-24 20:07:15,798 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=9,step=9480.
+==========================================================================
+ID=9 |        Step=9480 |       Time=1.81 ns |  Last step size=0.61 ps  | 
+     |       Stage=11   | Stage-step=115     |      Stage-time=23.76 ps | 
+     | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+==========================================================================
+----SIM Time 1808.978863 ps----
+       nmag:2016-12-24 20:07:15,799 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=9,step=9480.
+==========================================================================
+ID=9 |        Step=9480 |       Time=1.81 ns |  Last step size=0.61 ps  | 
+     |       Stage=11   | Stage-step=115     |      Stage-time=23.76 ps | 
+     | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+==========================================================================
+       nmag:2016-12-24 20:07:15,799    main.py 2593    INFO save_data(): id->id+1=10, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:07:15,841    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:07:15,841 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 507325]<A/m>
+       nmag:2016-12-24 20:07:21,250 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=10,step=9575.
+===========================================================================
+ID=10 |        Step=9575 |       Time=1.83 ns |  Last step size=0.20 ps  | 
+      |       Stage=12   | Stage-step=95      |      Stage-time=18.83 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+===========================================================================
+----SIM Time 1827.807440 ps----
+       nmag:2016-12-24 20:07:21,251 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=10,step=9575.
+===========================================================================
+ID=10 |        Step=9575 |       Time=1.83 ns |  Last step size=0.20 ps  | 
+      |       Stage=12   | Stage-step=95      |      Stage-time=18.83 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+===========================================================================
+       nmag:2016-12-24 20:07:21,251    main.py 2593    INFO save_data(): id->id+1=11, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:07:21,293    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:07:21,293 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 591880]<A/m>
+       nmag:2016-12-24 20:07:25,698 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=11,step=9655.
+===========================================================================
+ID=11 |        Step=9655 |       Time=1.84 ns |  Last step size=0.15 ps  | 
+      |       Stage=13   | Stage-step=80      |      Stage-time=13.66 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+===========================================================================
+----SIM Time 1841.464726 ps----
+       nmag:2016-12-24 20:07:25,699 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=11,step=9655.
+===========================================================================
+ID=11 |        Step=9655 |       Time=1.84 ns |  Last step size=0.15 ps  | 
+      |       Stage=13   | Stage-step=80      |      Stage-time=13.66 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+===========================================================================
+       nmag:2016-12-24 20:07:25,699    main.py 2593    INFO save_data(): id->id+1=12, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:07:25,739    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:07:25,739 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 676434]<A/m>
+       nmag:2016-12-24 20:07:26,625 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=12,step=9702.
+===========================================================================
+ID=12 |        Step=9702  |       Time=1.85 ns |  Last step size=0.15 ps | 
+      |       Stage=14    | Stage-step=47      |      Stage-time=8.54 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 1850.000000 ps----
+       nmag:2016-12-24 20:07:28,400 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=12,step=9720.
+===========================================================================
+ID=12 |        Step=9720 |       Time=1.85 ns |  Last step size=0.13 ps  | 
+      |       Stage=14   | Stage-step=65      |      Stage-time=11.72 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+===========================================================================
+----SIM Time 1853.182474 ps----
+       nmag:2016-12-24 20:07:28,401 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=12,step=9720.
+===========================================================================
+ID=12 |        Step=9720 |       Time=1.85 ns |  Last step size=0.13 ps  | 
+      |       Stage=14   | Stage-step=65      |      Stage-time=11.72 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+===========================================================================
+       nmag:2016-12-24 20:07:28,401    main.py 2593    INFO save_data(): id->id+1=13, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:07:28,440    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:07:28,441 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 760988]<A/m>
+       nmag:2016-12-24 20:07:31,847 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=13,step=9780.
+==========================================================================
+ID=13 |        Step=9780 |       Time=1.86 ns |  Last step size=0.12 ps | 
+      |       Stage=15   | Stage-step=60      |      Stage-time=9.67 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 1862.851510 ps----
+       nmag:2016-12-24 20:07:31,848 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=13,step=9780.
+==========================================================================
+ID=13 |        Step=9780 |       Time=1.86 ns |  Last step size=0.12 ps | 
+      |       Stage=15   | Stage-step=60      |      Stage-time=9.67 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-24 20:07:31,848    main.py 2593    INFO save_data(): id->id+1=14, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:07:31,888    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:07:31,889 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 845542]<A/m>
+       nmag:2016-12-24 20:07:33,197 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=14,step=9825.
+==========================================================================
+ID=14 |        Step=9825 |       Time=1.87 ns |  Last step size=0.32 ps | 
+      |       Stage=16   | Stage-step=45      |      Stage-time=8.65 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 1871.499134 ps----
+       nmag:2016-12-24 20:07:33,198 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=14,step=9825.
+==========================================================================
+ID=14 |        Step=9825 |       Time=1.87 ns |  Last step size=0.32 ps | 
+      |       Stage=16   | Stage-step=45      |      Stage-time=8.65 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-24 20:07:33,198    main.py 2593    INFO save_data(): id->id+1=15, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:07:33,238    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:07:33,238 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 930097]<A/m>
+       nmag:2016-12-24 20:07:34,161 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=15,step=9870.
+==========================================================================
+ID=15 |        Step=9870 |       Time=1.88 ns |  Last step size=0.30 ps | 
+      |       Stage=17   | Stage-step=45      |      Stage-time=8.57 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 1880.069256 ps----
+       nmag:2016-12-24 20:07:34,161 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=15,step=9870.
+==========================================================================
+ID=15 |        Step=9870 |       Time=1.88 ns |  Last step size=0.30 ps | 
+      |       Stage=17   | Stage-step=45      |      Stage-time=8.57 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-24 20:07:34,161    main.py 2593    INFO save_data(): id->id+1=16, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:07:34,203    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:07:34,203 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 1.01465e+06]<A/m>
+       nmag:2016-12-24 20:07:35,156 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=16,step=9915.
+==========================================================================
+ID=16 |        Step=9915 |       Time=1.89 ns |  Last step size=0.29 ps | 
+      |       Stage=18   | Stage-step=45      |      Stage-time=8.49 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 1888.559534 ps----
+       nmag:2016-12-24 20:07:35,156 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=16,step=9915.
+==========================================================================
+ID=16 |        Step=9915 |       Time=1.89 ns |  Last step size=0.29 ps | 
+      |       Stage=18   | Stage-step=45      |      Stage-time=8.49 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-24 20:07:35,157    main.py 2593    INFO save_data(): id->id+1=17, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:07:35,196    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:07:35,197 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 1.09921e+06]<A/m>
+       nmag:2016-12-24 20:07:36,052 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=17,step=9960.
+==========================================================================
+ID=17 |        Step=9960 |       Time=1.90 ns |  Last step size=0.28 ps | 
+      |       Stage=19   | Stage-step=45      |      Stage-time=8.21 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+----SIM Time 1896.767741 ps----
+       nmag:2016-12-24 20:07:36,053 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=17,step=9960.
+==========================================================================
+ID=17 |        Step=9960 |       Time=1.90 ns |  Last step size=0.28 ps | 
+      |       Stage=19   | Stage-step=45      |      Stage-time=8.21 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-24 20:07:36,053    main.py 2593    INFO save_data(): id->id+1=18, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:07:36,095    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:07:36,095 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 1.18376e+06]<A/m>
+       nmag:2016-12-24 20:07:36,621 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=18,step=9987.
+===========================================================================
+ID=18 |        Step=9987  |       Time=1.90 ns |  Last step size=0.12 ps | 
+      |       Stage=20    | Stage-step=27      |      Stage-time=3.23 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 1900.000000 ps----
+       nmag:2016-12-24 20:07:37,604 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=18,step=10005.
+===========================================================================
+ID=18 |        Step=10005 |       Time=1.90 ns |  Last step size=0.43 ps | 
+      |       Stage=20    | Stage-step=45      |      Stage-time=7.60 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 1904.371060 ps----
+       nmag:2016-12-24 20:07:37,605 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=18,step=10005.
+===========================================================================
+ID=18 |        Step=10005 |       Time=1.90 ns |  Last step size=0.43 ps | 
+      |       Stage=20    | Stage-step=45      |      Stage-time=7.60 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:07:37,605    main.py 2593    INFO save_data(): id->id+1=19, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:07:37,647    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:07:37,648 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 1.26831e+06]<A/m>
+       nmag:2016-12-24 20:07:38,944 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=19,step=10050.
+===========================================================================
+ID=19 |        Step=10050 |       Time=1.91 ns |  Last step size=0.15 ps | 
+      |       Stage=21    | Stage-step=45      |      Stage-time=7.35 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 1911.718244 ps----
+       nmag:2016-12-24 20:07:38,945 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=19,step=10050.
+===========================================================================
+ID=19 |        Step=10050 |       Time=1.91 ns |  Last step size=0.15 ps | 
+      |       Stage=21    | Stage-step=45      |      Stage-time=7.35 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:07:38,945    main.py 2593    INFO save_data(): id->id+1=20, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:07:38,985    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:07:38,985 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 1.35287e+06]<A/m>
+       nmag:2016-12-24 20:07:40,176 hysteresis.py   40    INFO it 10090, time <7.12272e-12s>; stage 22; H_ext=[0 0 1.35287e+06]<A/m>
+       nmag:2016-12-24 20:07:40,675 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=20,step=10095.
+===========================================================================
+ID=20 |        Step=10095 |       Time=1.92 ns |  Last step size=0.21 ps | 
+      |       Stage=22    | Stage-step=45      |      Stage-time=7.84 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 1919.559446 ps----
+       nmag:2016-12-24 20:07:40,676 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=20,step=10095.
+===========================================================================
+ID=20 |        Step=10095 |       Time=1.92 ns |  Last step size=0.21 ps | 
+      |       Stage=22    | Stage-step=45      |      Stage-time=7.84 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:07:40,676    main.py 2593    INFO save_data(): id->id+1=21, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:07:40,721    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:07:40,721 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 1.43742e+06]<A/m>
+       nmag:2016-12-24 20:07:41,821 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=21,step=10140.
+===========================================================================
+ID=21 |        Step=10140 |       Time=1.93 ns |  Last step size=0.29 ps | 
+      |       Stage=23    | Stage-step=45      |      Stage-time=8.00 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 1927.555136 ps----
+       nmag:2016-12-24 20:07:41,822 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=21,step=10140.
+===========================================================================
+ID=21 |        Step=10140 |       Time=1.93 ns |  Last step size=0.29 ps | 
+      |       Stage=23    | Stage-step=45      |      Stage-time=8.00 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:07:41,822    main.py 2593    INFO save_data(): id->id+1=22, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:07:41,864    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:07:41,864 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 1.52198e+06]<A/m>
+       nmag:2016-12-24 20:07:43,879 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=22,step=10190.
+===========================================================================
+ID=22 |        Step=10190 |       Time=1.94 ns |  Last step size=0.35 ps | 
+      |       Stage=24    | Stage-step=50      |      Stage-time=7.67 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 1935.225718 ps----
+       nmag:2016-12-24 20:07:43,879 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=22,step=10190.
+===========================================================================
+ID=22 |        Step=10190 |       Time=1.94 ns |  Last step size=0.35 ps | 
+      |       Stage=24    | Stage-step=50      |      Stage-time=7.67 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:07:43,880    main.py 2593    INFO save_data(): id->id+1=23, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:07:43,921    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:07:43,921 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 1.60653e+06]<A/m>
+       nmag:2016-12-24 20:07:45,986 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=23,step=10240.
+===========================================================================
+ID=23 |        Step=10240 |       Time=1.94 ns |  Last step size=0.15 ps | 
+      |       Stage=25    | Stage-step=50      |      Stage-time=7.66 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 1942.886590 ps----
+       nmag:2016-12-24 20:07:45,987 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=23,step=10240.
+===========================================================================
+ID=23 |        Step=10240 |       Time=1.94 ns |  Last step size=0.15 ps | 
+      |       Stage=25    | Stage-step=50      |      Stage-time=7.66 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:07:45,987    main.py 2593    INFO save_data(): id->id+1=24, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:07:46,028    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:07:46,028 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 1.69108e+06]<A/m>
+       nmag:2016-12-24 20:07:47,305 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=24,step=10281.
+===========================================================================
+ID=24 |        Step=10281 |       Time=1.95 ns |  Last step size=0.42 ps | 
+      |       Stage=26    | Stage-step=41      |      Stage-time=7.11 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 1950.000000 ps----
+       nmag:2016-12-24 20:07:47,306 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=24,step=10281.
+===========================================================================
+ID=24 |        Step=10281 |       Time=1.95 ns |  Last step size=0.42 ps | 
+      |       Stage=26    | Stage-step=41      |      Stage-time=7.11 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:07:47,306    main.py 2593    INFO save_data(): id->id+1=25, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:07:47,346    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:07:47,346 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 1.77564e+06]<A/m>
+       nmag:2016-12-24 20:07:47,348 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=25,step=10281.
+===========================================================================
+ID=25 |        Step=10281 |       Time=1.95 ns |  Last step size=0.42 ps | 
+      |       Stage=27    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 1950.000000 ps----
+       nmag:2016-12-24 20:07:49,030 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=25,step=10330.
+===========================================================================
+ID=25 |        Step=10330 |       Time=1.96 ns |  Last step size=0.08 ps | 
+      |       Stage=27    | Stage-step=49      |      Stage-time=7.00 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 1956.995162 ps----
+       nmag:2016-12-24 20:07:49,031 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=25,step=10330.
+===========================================================================
+ID=25 |        Step=10330 |       Time=1.96 ns |  Last step size=0.08 ps | 
+      |       Stage=27    | Stage-step=49      |      Stage-time=7.00 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:07:49,031    main.py 2593    INFO save_data(): id->id+1=26, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:07:49,072    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:07:49,073 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 1.86019e+06]<A/m>
+       nmag:2016-12-24 20:07:51,134 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=26,step=10380.
+===========================================================================
+ID=26 |        Step=10380 |       Time=1.97 ns |  Last step size=0.16 ps | 
+      |       Stage=28    | Stage-step=50      |      Stage-time=8.28 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 1965.274381 ps----
+       nmag:2016-12-24 20:07:51,135 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=26,step=10380.
+===========================================================================
+ID=26 |        Step=10380 |       Time=1.97 ns |  Last step size=0.16 ps | 
+      |       Stage=28    | Stage-step=50      |      Stage-time=8.28 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:07:51,135    main.py 2593    INFO save_data(): id->id+1=27, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:07:51,178    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:07:51,178 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 1.94475e+06]<A/m>
+       nmag:2016-12-24 20:07:52,027 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=27,step=10425.
+===========================================================================
+ID=27 |        Step=10425 |       Time=1.97 ns |  Last step size=0.28 ps | 
+      |       Stage=29    | Stage-step=45      |      Stage-time=8.42 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 1973.697312 ps----
+       nmag:2016-12-24 20:07:52,028 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=27,step=10425.
+===========================================================================
+ID=27 |        Step=10425 |       Time=1.97 ns |  Last step size=0.28 ps | 
+      |       Stage=29    | Stage-step=45      |      Stage-time=8.42 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:07:52,028    main.py 2593    INFO save_data(): id->id+1=28, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:07:52,068    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:07:52,068 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 2.0293e+06]<A/m>
+       nmag:2016-12-24 20:07:53,267 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=28,step=10475.
+===========================================================================
+ID=28 |        Step=10475 |       Time=1.98 ns |  Last step size=0.12 ps | 
+      |       Stage=30    | Stage-step=50      |      Stage-time=8.43 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 1982.123956 ps----
+       nmag:2016-12-24 20:07:53,268 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=28,step=10475.
+===========================================================================
+ID=28 |        Step=10475 |       Time=1.98 ns |  Last step size=0.12 ps | 
+      |       Stage=30    | Stage-step=50      |      Stage-time=8.43 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:07:53,268    main.py 2593    INFO save_data(): id->id+1=29, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:07:53,307    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:07:53,308 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 2.11386e+06]<A/m>
+       nmag:2016-12-24 20:07:55,139 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=29,step=10525.
+===========================================================================
+ID=29 |        Step=10525 |       Time=1.99 ns |  Last step size=0.30 ps | 
+      |       Stage=31    | Stage-step=50      |      Stage-time=8.70 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 1990.824438 ps----
+       nmag:2016-12-24 20:07:55,140 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=29,step=10525.
+===========================================================================
+ID=29 |        Step=10525 |       Time=1.99 ns |  Last step size=0.30 ps | 
+      |       Stage=31    | Stage-step=50      |      Stage-time=8.70 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:07:55,140    main.py 2593    INFO save_data(): id->id+1=30, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:07:55,181    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:07:55,181 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 2.19841e+06]<A/m>
+       nmag:2016-12-24 20:07:56,476 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=30,step=10575.
+===========================================================================
+ID=30 |        Step=10575 |       Time=2.00 ns |  Last step size=0.12 ps | 
+      |       Stage=32    | Stage-step=50      |      Stage-time=8.99 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 1999.814674 ps----
+       nmag:2016-12-24 20:07:56,477 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=30,step=10575.
+===========================================================================
+ID=30 |        Step=10575 |       Time=2.00 ns |  Last step size=0.12 ps | 
+      |       Stage=32    | Stage-step=50      |      Stage-time=8.99 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:07:56,477    main.py 2593    INFO save_data(): id->id+1=31, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:07:56,520    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:07:56,520 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 2.28296e+06]<A/m>
+       nmag:2016-12-24 20:07:56,748 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=31,step=10581.
+===========================================================================
+ID=31 |        Step=10581 |       Time=2.00 ns |  Last step size=0.01 ps | 
+      |       Stage=33    | Stage-step=6       |      Stage-time=0.19 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 2000.000000 ps----
+       nmag:2016-12-24 20:07:57,563 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=31,step=10625.
+===========================================================================
+ID=31 |        Step=10625 |       Time=2.01 ns |  Last step size=0.29 ps | 
+      |       Stage=33    | Stage-step=50      |      Stage-time=9.58 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 2009.396712 ps----
+       nmag:2016-12-24 20:07:57,564 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=31,step=10625.
+===========================================================================
+ID=31 |        Step=10625 |       Time=2.01 ns |  Last step size=0.29 ps | 
+      |       Stage=33    | Stage-step=50      |      Stage-time=9.58 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:07:57,564    main.py 2593    INFO save_data(): id->id+1=32, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:07:57,604    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:07:57,604 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 2.36752e+06]<A/m>
+       nmag:2016-12-24 20:07:58,825 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=32,step=10675.
+===========================================================================
+ID=32 |        Step=10675 |       Time=2.02 ns |  Last step size=0.31 ps | 
+      |       Stage=34    | Stage-step=50      |      Stage-time=9.53 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 2018.922452 ps----
+       nmag:2016-12-24 20:07:58,826 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=32,step=10675.
+===========================================================================
+ID=32 |        Step=10675 |       Time=2.02 ns |  Last step size=0.31 ps | 
+      |       Stage=34    | Stage-step=50      |      Stage-time=9.53 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:07:58,826    main.py 2593    INFO save_data(): id->id+1=33, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:07:58,865    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:07:58,866 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 2.45207e+06]<A/m>
+       nmag:2016-12-24 20:08:00,408 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=33,step=10725.
+===========================================================================
+ID=33 |        Step=10725 |       Time=2.03 ns |  Last step size=0.10 ps | 
+      |       Stage=35    | Stage-step=50      |      Stage-time=8.10 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 2027.018729 ps----
+       nmag:2016-12-24 20:08:00,409 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=33,step=10725.
+===========================================================================
+ID=33 |        Step=10725 |       Time=2.03 ns |  Last step size=0.10 ps | 
+      |       Stage=35    | Stage-step=50      |      Stage-time=8.10 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:08:00,409    main.py 2593    INFO save_data(): id->id+1=34, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:08:00,448    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:08:00,448 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 2.53663e+06]<A/m>
+       nmag:2016-12-24 20:08:01,353 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=34,step=10775.
+===========================================================================
+ID=34 |        Step=10775 |       Time=2.04 ns |  Last step size=0.25 ps | 
+      |       Stage=36    | Stage-step=50      |      Stage-time=9.32 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 2036.337069 ps----
+       nmag:2016-12-24 20:08:01,353 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=34,step=10775.
+===========================================================================
+ID=34 |        Step=10775 |       Time=2.04 ns |  Last step size=0.25 ps | 
+      |       Stage=36    | Stage-step=50      |      Stage-time=9.32 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:08:01,354    main.py 2593    INFO save_data(): id->id+1=35, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:08:01,394    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:08:01,394 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 2.62118e+06]<A/m>
+       nmag:2016-12-24 20:08:02,520 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=35,step=10825.
+===========================================================================
+ID=35 |        Step=10825 |       Time=2.05 ns |  Last step size=0.31 ps | 
+      |       Stage=37    | Stage-step=50      |      Stage-time=9.85 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 2046.182260 ps----
+       nmag:2016-12-24 20:08:02,521 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=35,step=10825.
+===========================================================================
+ID=35 |        Step=10825 |       Time=2.05 ns |  Last step size=0.31 ps | 
+      |       Stage=37    | Stage-step=50      |      Stage-time=9.85 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:08:02,521    main.py 2593    INFO save_data(): id->id+1=36, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:08:02,561    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:08:02,561 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 2.70574e+06]<A/m>
+       nmag:2016-12-24 20:08:03,131 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=36,step=10855.
+===========================================================================
+ID=36 |        Step=10855 |       Time=2.05 ns |  Last step size=0.12 ps | 
+      |       Stage=38    | Stage-step=30      |      Stage-time=3.82 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 2050.000000 ps----
+       nmag:2016-12-24 20:08:03,738 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=36,step=10875.
+===========================================================================
+ID=36 |        Step=10875 |       Time=2.05 ns |  Last step size=0.09 ps | 
+      |       Stage=38    | Stage-step=50      |      Stage-time=8.04 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 2054.217672 ps----
+       nmag:2016-12-24 20:08:03,739 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=36,step=10875.
+===========================================================================
+ID=36 |        Step=10875 |       Time=2.05 ns |  Last step size=0.09 ps | 
+      |       Stage=38    | Stage-step=50      |      Stage-time=8.04 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:08:03,739    main.py 2593    INFO save_data(): id->id+1=37, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:08:03,779    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:08:03,779 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 2.79029e+06]<A/m>
+       nmag:2016-12-24 20:08:05,546 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=37,step=10925.
+===========================================================================
+ID=37 |        Step=10925 |       Time=2.06 ns |  Last step size=0.13 ps | 
+      |       Stage=39    | Stage-step=50      |      Stage-time=8.79 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 2063.010563 ps----
+       nmag:2016-12-24 20:08:05,547 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=37,step=10925.
+===========================================================================
+ID=37 |        Step=10925 |       Time=2.06 ns |  Last step size=0.13 ps | 
+      |       Stage=39    | Stage-step=50      |      Stage-time=8.79 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:08:05,547    main.py 2593    INFO save_data(): id->id+1=38, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:08:05,586    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:08:05,587 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 2.87484e+06]<A/m>
+       nmag:2016-12-24 20:08:07,488 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=38,step=10975.
+===========================================================================
+ID=38 |        Step=10975 |       Time=2.07 ns |  Last step size=0.08 ps | 
+      |       Stage=40    | Stage-step=50      |      Stage-time=7.80 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 2070.812387 ps----
+       nmag:2016-12-24 20:08:07,489 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=38,step=10975.
+===========================================================================
+ID=38 |        Step=10975 |       Time=2.07 ns |  Last step size=0.08 ps | 
+      |       Stage=40    | Stage-step=50      |      Stage-time=7.80 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:08:07,489    main.py 2593    INFO save_data(): id->id+1=39, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:08:07,531    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:08:07,532 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 2.9594e+06]<A/m>
+       nmag:2016-12-24 20:08:09,973 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=39,step=11030.
+===========================================================================
+ID=39 |        Step=11030 |       Time=2.08 ns |  Last step size=0.14 ps | 
+      |       Stage=41    | Stage-step=55      |      Stage-time=8.88 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 2079.695342 ps----
+       nmag:2016-12-24 20:08:09,974 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=39,step=11030.
+===========================================================================
+ID=39 |        Step=11030 |       Time=2.08 ns |  Last step size=0.14 ps | 
+      |       Stage=41    | Stage-step=55      |      Stage-time=8.88 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:08:09,974    main.py 2593    INFO save_data(): id->id+1=40, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:08:10,015    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:08:10,016 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 3.04395e+06]<A/m>
+       nmag:2016-12-24 20:08:12,902 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=40,step=11090.
+============================================================================
+ID=40 |        Step=11090 |       Time=2.09 ns |  Last step size=0.16 ps  | 
+      |       Stage=42    | Stage-step=60      |      Stage-time=10.11 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2089.809040 ps----
+       nmag:2016-12-24 20:08:12,903 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=40,step=11090.
+============================================================================
+ID=40 |        Step=11090 |       Time=2.09 ns |  Last step size=0.16 ps  | 
+      |       Stage=42    | Stage-step=60      |      Stage-time=10.11 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:08:12,903    main.py 2593    INFO save_data(): id->id+1=41, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:08:12,945    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:08:12,946 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 3.12851e+06]<A/m>
+       nmag:2016-12-24 20:08:14,563 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=41,step=11145.
+===========================================================================
+ID=41 |        Step=11145 |       Time=2.10 ns |  Last step size=0.14 ps | 
+      |       Stage=43    | Stage-step=55      |      Stage-time=9.76 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 2099.568406 ps----
+       nmag:2016-12-24 20:08:14,563 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=41,step=11145.
+===========================================================================
+ID=41 |        Step=11145 |       Time=2.10 ns |  Last step size=0.14 ps | 
+      |       Stage=43    | Stage-step=55      |      Stage-time=9.76 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:08:14,563    main.py 2593    INFO save_data(): id->id+1=42, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:08:14,603    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:08:14,604 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 3.21306e+06]<A/m>
+       nmag:2016-12-24 20:08:14,857 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=42,step=11153.
+===========================================================================
+ID=42 |        Step=11153 |       Time=2.10 ns |  Last step size=0.05 ps | 
+      |       Stage=44    | Stage-step=8       |      Stage-time=0.43 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 2100.000000 ps----
+       nmag:2016-12-24 20:08:17,149 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=42,step=11205.
+===========================================================================
+ID=42 |        Step=11205 |       Time=2.11 ns |  Last step size=0.12 ps | 
+      |       Stage=44    | Stage-step=60      |      Stage-time=9.79 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 2109.358268 ps----
+       nmag:2016-12-24 20:08:17,150 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=42,step=11205.
+===========================================================================
+ID=42 |        Step=11205 |       Time=2.11 ns |  Last step size=0.12 ps | 
+      |       Stage=44    | Stage-step=60      |      Stage-time=9.79 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:08:17,150    main.py 2593    INFO save_data(): id->id+1=43, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:08:17,192    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:08:17,192 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 3.29762e+06]<A/m>
+       nmag:2016-12-24 20:08:19,127 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=43,step=11260.
+============================================================================
+ID=43 |        Step=11260 |       Time=2.12 ns |  Last step size=0.15 ps  | 
+      |       Stage=45    | Stage-step=55      |      Stage-time=10.21 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2119.566166 ps----
+       nmag:2016-12-24 20:08:19,127 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=43,step=11260.
+============================================================================
+ID=43 |        Step=11260 |       Time=2.12 ns |  Last step size=0.15 ps  | 
+      |       Stage=45    | Stage-step=55      |      Stage-time=10.21 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:08:19,128    main.py 2593    INFO save_data(): id->id+1=44, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:08:19,168    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:08:19,168 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 3.38217e+06]<A/m>
+       nmag:2016-12-24 20:08:21,355 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=44,step=11315.
+===========================================================================
+ID=44 |        Step=11315 |       Time=2.13 ns |  Last step size=0.23 ps | 
+      |       Stage=46    | Stage-step=55      |      Stage-time=9.76 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 2129.326141 ps----
+       nmag:2016-12-24 20:08:21,356 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=44,step=11315.
+===========================================================================
+ID=44 |        Step=11315 |       Time=2.13 ns |  Last step size=0.23 ps | 
+      |       Stage=46    | Stage-step=55      |      Stage-time=9.76 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:08:21,356    main.py 2593    INFO save_data(): id->id+1=45, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:08:21,396    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:08:21,396 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 3.46672e+06]<A/m>
+       nmag:2016-12-24 20:08:24,577 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=45,step=11380.
+===========================================================================
+ID=45 |        Step=11380 |       Time=2.14 ns |  Last step size=0.15 ps | 
+      |       Stage=47    | Stage-step=65      |      Stage-time=9.99 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 2139.314996 ps----
+       nmag:2016-12-24 20:08:24,577 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=45,step=11380.
+===========================================================================
+ID=45 |        Step=11380 |       Time=2.14 ns |  Last step size=0.15 ps | 
+      |       Stage=47    | Stage-step=65      |      Stage-time=9.99 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:08:24,578    main.py 2593    INFO save_data(): id->id+1=46, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:08:24,617    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:08:24,617 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 3.55128e+06]<A/m>
+       nmag:2016-12-24 20:08:27,674 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=46,step=11440.
+===========================================================================
+ID=46 |        Step=11440 |       Time=2.15 ns |  Last step size=0.09 ps | 
+      |       Stage=48    | Stage-step=60      |      Stage-time=9.55 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 2148.861105 ps----
+       nmag:2016-12-24 20:08:27,675 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=46,step=11440.
+===========================================================================
+ID=46 |        Step=11440 |       Time=2.15 ns |  Last step size=0.09 ps | 
+      |       Stage=48    | Stage-step=60      |      Stage-time=9.55 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:08:27,675    main.py 2593    INFO save_data(): id->id+1=47, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:08:27,716    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:08:27,716 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 3.63583e+06]<A/m>
+       nmag:2016-12-24 20:08:28,045 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=47,step=11454.
+===========================================================================
+ID=47 |        Step=11454 |       Time=2.15 ns |  Last step size=0.02 ps | 
+      |       Stage=49    | Stage-step=14      |      Stage-time=1.14 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 2150.000000 ps----
+       nmag:2016-12-24 20:08:28,780 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=47,step=11495.
+============================================================================
+ID=47 |        Step=11495 |       Time=2.16 ns |  Last step size=0.29 ps  | 
+      |       Stage=49    | Stage-step=55      |      Stage-time=11.02 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2159.884270 ps----
+       nmag:2016-12-24 20:08:28,781 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=47,step=11495.
+============================================================================
+ID=47 |        Step=11495 |       Time=2.16 ns |  Last step size=0.29 ps  | 
+      |       Stage=49    | Stage-step=55      |      Stage-time=11.02 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:08:28,781    main.py 2593    INFO save_data(): id->id+1=48, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:08:28,821    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:08:28,822 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 3.72039e+06]<A/m>
+       nmag:2016-12-24 20:08:30,308 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=48,step=11555.
+============================================================================
+ID=48 |        Step=11555 |       Time=2.17 ns |  Last step size=0.10 ps  | 
+      |       Stage=50    | Stage-step=60      |      Stage-time=10.65 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2170.532707 ps----
+       nmag:2016-12-24 20:08:30,309 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=48,step=11555.
+============================================================================
+ID=48 |        Step=11555 |       Time=2.17 ns |  Last step size=0.10 ps  | 
+      |       Stage=50    | Stage-step=60      |      Stage-time=10.65 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:08:30,309    main.py 2593    INFO save_data(): id->id+1=49, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:08:30,350    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:08:30,350 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 3.80494e+06]<A/m>
+       nmag:2016-12-24 20:08:33,833 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=49,step=11620.
+============================================================================
+ID=49 |        Step=11620 |       Time=2.18 ns |  Last step size=0.23 ps  | 
+      |       Stage=51    | Stage-step=65      |      Stage-time=10.99 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2181.524562 ps----
+       nmag:2016-12-24 20:08:33,834 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=49,step=11620.
+============================================================================
+ID=49 |        Step=11620 |       Time=2.18 ns |  Last step size=0.23 ps  | 
+      |       Stage=51    | Stage-step=65      |      Stage-time=10.99 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:08:33,834    main.py 2593    INFO save_data(): id->id+1=50, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:08:33,874    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:08:33,874 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 3.8895e+06]<A/m>
+       nmag:2016-12-24 20:08:34,948 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=50,step=11680.
+============================================================================
+ID=50 |        Step=11680 |       Time=2.19 ns |  Last step size=0.26 ps  | 
+      |       Stage=52    | Stage-step=60      |      Stage-time=12.24 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2193.766159 ps----
+       nmag:2016-12-24 20:08:34,948 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=50,step=11680.
+============================================================================
+ID=50 |        Step=11680 |       Time=2.19 ns |  Last step size=0.26 ps  | 
+      |       Stage=52    | Stage-step=60      |      Stage-time=12.24 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:08:34,948    main.py 2593    INFO save_data(): id->id+1=51, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:08:34,990    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:08:34,990 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 3.97405e+06]<A/m>
+       nmag:2016-12-24 20:08:35,739 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=51,step=11719.
+===========================================================================
+ID=51 |        Step=11719 |       Time=2.20 ns |  Last step size=0.22 ps | 
+      |       Stage=53    | Stage-step=39      |      Stage-time=6.23 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 2200.000000 ps----
+       nmag:2016-12-24 20:08:36,917 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=51,step=11740.
+============================================================================
+ID=51 |        Step=11740 |       Time=2.20 ns |  Last step size=0.15 ps  | 
+      |       Stage=53    | Stage-step=60      |      Stage-time=10.98 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2204.748229 ps----
+       nmag:2016-12-24 20:08:36,917 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=51,step=11740.
+============================================================================
+ID=51 |        Step=11740 |       Time=2.20 ns |  Last step size=0.15 ps  | 
+      |       Stage=53    | Stage-step=60      |      Stage-time=10.98 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:08:36,918    main.py 2593    INFO save_data(): id->id+1=52, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:08:36,957    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:08:36,957 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 4.0586e+06]<A/m>
+       nmag:2016-12-24 20:08:38,462 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=52,step=11800.
+============================================================================
+ID=52 |        Step=11800 |       Time=2.22 ns |  Last step size=0.18 ps  | 
+      |       Stage=54    | Stage-step=60      |      Stage-time=12.34 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2217.084445 ps----
+       nmag:2016-12-24 20:08:38,463 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=52,step=11800.
+============================================================================
+ID=52 |        Step=11800 |       Time=2.22 ns |  Last step size=0.18 ps  | 
+      |       Stage=54    | Stage-step=60      |      Stage-time=12.34 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:08:38,463    main.py 2593    INFO save_data(): id->id+1=53, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:08:38,503    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:08:38,503 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 4.14316e+06]<A/m>
+       nmag:2016-12-24 20:08:40,095 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=53,step=11860.
+============================================================================
+ID=53 |        Step=11860 |       Time=2.23 ns |  Last step size=0.17 ps  | 
+      |       Stage=55    | Stage-step=60      |      Stage-time=11.91 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2228.998415 ps----
+       nmag:2016-12-24 20:08:40,096 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=53,step=11860.
+============================================================================
+ID=53 |        Step=11860 |       Time=2.23 ns |  Last step size=0.17 ps  | 
+      |       Stage=55    | Stage-step=60      |      Stage-time=11.91 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:08:40,096    main.py 2593    INFO save_data(): id->id+1=54, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:08:40,139    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:08:40,140 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 4.22771e+06]<A/m>
+       nmag:2016-12-24 20:08:40,362 hysteresis.py   40    INFO it 11865, time <2.21989e-13s>; stage 56; H_ext=[0 0 4.22771e+06]<A/m>
+       nmag:2016-12-24 20:08:43,184 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=54,step=11925.
+============================================================================
+ID=54 |        Step=11925 |       Time=2.24 ns |  Last step size=0.19 ps  | 
+      |       Stage=56    | Stage-step=65      |      Stage-time=11.76 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2240.759946 ps----
+       nmag:2016-12-24 20:08:43,185 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=54,step=11925.
+============================================================================
+ID=54 |        Step=11925 |       Time=2.24 ns |  Last step size=0.19 ps  | 
+      |       Stage=56    | Stage-step=65      |      Stage-time=11.76 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:08:43,185    main.py 2593    INFO save_data(): id->id+1=55, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:08:43,225    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:08:43,225 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 4.31227e+06]<A/m>
+       nmag:2016-12-24 20:08:44,310 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=55,step=11972.
+===========================================================================
+ID=55 |        Step=11972 |       Time=2.25 ns |  Last step size=0.28 ps | 
+      |       Stage=57    | Stage-step=47      |      Stage-time=9.24 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 2250.000000 ps----
+       nmag:2016-12-24 20:08:44,529 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=55,step=11985.
+============================================================================
+ID=55 |        Step=11985 |       Time=2.25 ns |  Last step size=0.28 ps  | 
+      |       Stage=57    | Stage-step=60      |      Stage-time=12.93 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2253.694339 ps----
+       nmag:2016-12-24 20:08:44,530 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=55,step=11985.
+============================================================================
+ID=55 |        Step=11985 |       Time=2.25 ns |  Last step size=0.28 ps  | 
+      |       Stage=57    | Stage-step=60      |      Stage-time=12.93 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:08:44,530    main.py 2593    INFO save_data(): id->id+1=56, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:08:44,570    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:08:44,571 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 4.39682e+06]<A/m>
+       nmag:2016-12-24 20:08:45,690 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=56,step=12050.
+============================================================================
+ID=56 |        Step=12050 |       Time=2.27 ns |  Last step size=0.27 ps  | 
+      |       Stage=58    | Stage-step=65      |      Stage-time=13.16 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2266.857302 ps----
+       nmag:2016-12-24 20:08:45,691 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=56,step=12050.
+============================================================================
+ID=56 |        Step=12050 |       Time=2.27 ns |  Last step size=0.27 ps  | 
+      |       Stage=58    | Stage-step=65      |      Stage-time=13.16 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:08:45,691    main.py 2593    INFO save_data(): id->id+1=57, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:08:45,733    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:08:45,733 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 4.48138e+06]<A/m>
+       nmag:2016-12-24 20:08:49,133 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=57,step=12125.
+============================================================================
+ID=57 |        Step=12125 |       Time=2.28 ns |  Last step size=0.15 ps  | 
+      |       Stage=59    | Stage-step=75      |      Stage-time=12.77 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2279.629131 ps----
+       nmag:2016-12-24 20:08:49,134 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=57,step=12125.
+============================================================================
+ID=57 |        Step=12125 |       Time=2.28 ns |  Last step size=0.15 ps  | 
+      |       Stage=59    | Stage-step=75      |      Stage-time=12.77 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:08:49,134    main.py 2593    INFO save_data(): id->id+1=58, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:08:49,175    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:08:49,175 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 4.56593e+06]<A/m>
+       nmag:2016-12-24 20:08:52,159 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=58,step=12200.
+============================================================================
+ID=58 |        Step=12200 |       Time=2.29 ns |  Last step size=0.23 ps  | 
+      |       Stage=60    | Stage-step=75      |      Stage-time=13.82 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2293.451807 ps----
+       nmag:2016-12-24 20:08:52,160 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=58,step=12200.
+============================================================================
+ID=58 |        Step=12200 |       Time=2.29 ns |  Last step size=0.23 ps  | 
+      |       Stage=60    | Stage-step=75      |      Stage-time=13.82 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:08:52,160    main.py 2593    INFO save_data(): id->id+1=59, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:08:52,200    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:08:52,200 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 4.65048e+06]<A/m>
+       nmag:2016-12-24 20:08:52,945 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=59,step=12241.
+===========================================================================
+ID=59 |        Step=12241 |       Time=2.30 ns |  Last step size=0.24 ps | 
+      |       Stage=61    | Stage-step=41      |      Stage-time=6.55 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 2300.000000 ps----
+       nmag:2016-12-24 20:08:53,865 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=59,step=12270.
+============================================================================
+ID=59 |        Step=12270 |       Time=2.31 ns |  Last step size=0.16 ps  | 
+      |       Stage=61    | Stage-step=70      |      Stage-time=13.46 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2306.912256 ps----
+       nmag:2016-12-24 20:08:53,866 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=59,step=12270.
+============================================================================
+ID=59 |        Step=12270 |       Time=2.31 ns |  Last step size=0.16 ps  | 
+      |       Stage=61    | Stage-step=70      |      Stage-time=13.46 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:08:53,866    main.py 2593    INFO save_data(): id->id+1=60, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:08:53,908    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:08:53,908 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 4.73504e+06]<A/m>
+       nmag:2016-12-24 20:08:58,326 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=60,step=12355.
+============================================================================
+ID=60 |        Step=12355 |       Time=2.32 ns |  Last step size=0.18 ps  | 
+      |       Stage=62    | Stage-step=85      |      Stage-time=15.00 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2321.912625 ps----
+       nmag:2016-12-24 20:08:58,327 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=60,step=12355.
+============================================================================
+ID=60 |        Step=12355 |       Time=2.32 ns |  Last step size=0.18 ps  | 
+      |       Stage=62    | Stage-step=85      |      Stage-time=15.00 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:08:58,327    main.py 2593    INFO save_data(): id->id+1=61, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:08:58,368    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:08:58,368 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 4.81959e+06]<A/m>
+       nmag:2016-12-24 20:09:01,647 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=61,step=12435.
+============================================================================
+ID=61 |        Step=12435 |       Time=2.34 ns |  Last step size=0.29 ps  | 
+      |       Stage=63    | Stage-step=80      |      Stage-time=15.68 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2337.596394 ps----
+       nmag:2016-12-24 20:09:01,648 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=61,step=12435.
+============================================================================
+ID=61 |        Step=12435 |       Time=2.34 ns |  Last step size=0.29 ps  | 
+      |       Stage=63    | Stage-step=80      |      Stage-time=15.68 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:09:01,648    main.py 2593    INFO save_data(): id->id+1=62, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:09:01,690    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:09:01,690 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 4.90415e+06]<A/m>
+       nmag:2016-12-24 20:09:03,191 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=62,step=12501.
+============================================================================
+ID=62 |        Step=12501 |       Time=2.35 ns |  Last step size=0.01 ps  | 
+      |       Stage=64    | Stage-step=66      |      Stage-time=12.40 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2350.000000 ps----
+       nmag:2016-12-24 20:09:04,353 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=62,step=12515.
+============================================================================
+ID=62 |        Step=12515 |       Time=2.35 ns |  Last step size=0.10 ps  | 
+      |       Stage=64    | Stage-step=80      |      Stage-time=13.73 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2351.328715 ps----
+       nmag:2016-12-24 20:09:04,353 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=62,step=12515.
+============================================================================
+ID=62 |        Step=12515 |       Time=2.35 ns |  Last step size=0.10 ps  | 
+      |       Stage=64    | Stage-step=80      |      Stage-time=13.73 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:09:04,353    main.py 2593    INFO save_data(): id->id+1=63, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:09:04,395    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:09:04,395 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 4.9887e+06]<A/m>
+       nmag:2016-12-24 20:09:05,707 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=63,step=12590.
+============================================================================
+ID=63 |        Step=12590 |       Time=2.37 ns |  Last step size=0.27 ps  | 
+      |       Stage=65    | Stage-step=75      |      Stage-time=16.09 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2367.420829 ps----
+       nmag:2016-12-24 20:09:05,708 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=63,step=12590.
+============================================================================
+ID=63 |        Step=12590 |       Time=2.37 ns |  Last step size=0.27 ps  | 
+      |       Stage=65    | Stage-step=75      |      Stage-time=16.09 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:09:05,708    main.py 2593    INFO save_data(): id->id+1=64, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:09:05,749    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:09:05,749 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 5.07325e+06]<A/m>
+       nmag:2016-12-24 20:09:09,676 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=64,step=12675.
+============================================================================
+ID=64 |        Step=12675 |       Time=2.38 ns |  Last step size=0.12 ps  | 
+      |       Stage=66    | Stage-step=85      |      Stage-time=14.93 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2382.355268 ps----
+       nmag:2016-12-24 20:09:09,676 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=64,step=12675.
+============================================================================
+ID=64 |        Step=12675 |       Time=2.38 ns |  Last step size=0.12 ps  | 
+      |       Stage=66    | Stage-step=85      |      Stage-time=14.93 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:09:09,676    main.py 2593    INFO save_data(): id->id+1=65, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:09:09,716    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:09:09,716 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 5.15781e+06]<A/m>
+       nmag:2016-12-24 20:09:13,872 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=65,step=12760.
+============================================================================
+ID=65 |        Step=12760 |       Time=2.40 ns |  Last step size=0.33 ps  | 
+      |       Stage=67    | Stage-step=85      |      Stage-time=16.36 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2398.718431 ps----
+       nmag:2016-12-24 20:09:13,872 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=65,step=12760.
+============================================================================
+ID=65 |        Step=12760 |       Time=2.40 ns |  Last step size=0.33 ps  | 
+      |       Stage=67    | Stage-step=85      |      Stage-time=16.36 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:09:13,872    main.py 2593    INFO save_data(): id->id+1=66, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:09:13,913    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:09:13,913 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 5.24236e+06]<A/m>
+       nmag:2016-12-24 20:09:14,275 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=66,step=12775.
+===========================================================================
+ID=66 |        Step=12775 |       Time=2.40 ns |  Last step size=0.13 ps | 
+      |       Stage=68    | Stage-step=15      |      Stage-time=1.28 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 2400.000000 ps----
+       nmag:2016-12-24 20:09:15,919 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=66,step=12840.
+============================================================================
+ID=66 |        Step=12840 |       Time=2.42 ns |  Last step size=0.31 ps  | 
+      |       Stage=68    | Stage-step=80      |      Stage-time=17.30 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2416.018335 ps----
+       nmag:2016-12-24 20:09:15,919 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=66,step=12840.
+============================================================================
+ID=66 |        Step=12840 |       Time=2.42 ns |  Last step size=0.31 ps  | 
+      |       Stage=68    | Stage-step=80      |      Stage-time=17.30 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:09:15,919    main.py 2593    INFO save_data(): id->id+1=67, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:09:15,961    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:09:15,961 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 5.32692e+06]<A/m>
+       nmag:2016-12-24 20:09:22,134 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=67,step=12940.
+============================================================================
+ID=67 |        Step=12940 |       Time=2.43 ns |  Last step size=0.12 ps  | 
+      |       Stage=69    | Stage-step=100     |      Stage-time=17.24 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2433.257298 ps----
+       nmag:2016-12-24 20:09:22,135 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=67,step=12940.
+============================================================================
+ID=67 |        Step=12940 |       Time=2.43 ns |  Last step size=0.12 ps  | 
+      |       Stage=69    | Stage-step=100     |      Stage-time=17.24 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:09:22,135    main.py 2593    INFO save_data(): id->id+1=68, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:09:22,175    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:09:22,175 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 5.41147e+06]<A/m>
+       nmag:2016-12-24 20:09:27,515 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=68,step=13029.
+============================================================================
+ID=68 |        Step=13029 |       Time=2.45 ns |  Last step size=0.27 ps  | 
+      |       Stage=70    | Stage-step=89      |      Stage-time=16.74 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2450.000000 ps----
+       nmag:2016-12-24 20:09:27,693 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=68,step=13030.
+============================================================================
+ID=68 |        Step=13030 |       Time=2.45 ns |  Last step size=0.12 ps  | 
+      |       Stage=70    | Stage-step=90      |      Stage-time=16.87 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2450.124745 ps----
+       nmag:2016-12-24 20:09:27,694 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=68,step=13030.
+============================================================================
+ID=68 |        Step=13030 |       Time=2.45 ns |  Last step size=0.12 ps  | 
+      |       Stage=70    | Stage-step=90      |      Stage-time=16.87 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:09:27,694    main.py 2593    INFO save_data(): id->id+1=69, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:09:27,736    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:09:27,737 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 5.49603e+06]<A/m>
+       nmag:2016-12-24 20:09:34,333 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=69,step=13145.
+============================================================================
+ID=69 |        Step=13145 |       Time=2.47 ns |  Last step size=0.11 ps  | 
+      |       Stage=71    | Stage-step=115     |      Stage-time=17.30 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2467.427972 ps----
+       nmag:2016-12-24 20:09:34,334 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=69,step=13145.
+============================================================================
+ID=69 |        Step=13145 |       Time=2.47 ns |  Last step size=0.11 ps  | 
+      |       Stage=71    | Stage-step=115     |      Stage-time=17.30 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:09:34,334    main.py 2593    INFO save_data(): id->id+1=70, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:09:34,376    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:09:34,376 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 5.58058e+06]<A/m>
+       nmag:2016-12-24 20:09:36,340 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=70,step=13230.
+============================================================================
+ID=70 |        Step=13230 |       Time=2.49 ns |  Last step size=0.31 ps  | 
+      |       Stage=72    | Stage-step=85      |      Stage-time=19.52 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2486.948929 ps----
+       nmag:2016-12-24 20:09:36,341 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=70,step=13230.
+============================================================================
+ID=70 |        Step=13230 |       Time=2.49 ns |  Last step size=0.31 ps  | 
+      |       Stage=72    | Stage-step=85      |      Stage-time=19.52 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:09:36,341    main.py 2593    INFO save_data(): id->id+1=71, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:09:36,381    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:09:36,381 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 5.66513e+06]<A/m>
+       nmag:2016-12-24 20:09:38,305 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=71,step=13297.
+============================================================================
+ID=71 |        Step=13297 |       Time=2.50 ns |  Last step size=0.04 ps  | 
+      |       Stage=73    | Stage-step=67      |      Stage-time=13.05 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2500.000000 ps----
+       nmag:2016-12-24 20:09:40,734 hysteresis.py   40    INFO it 13325, time <1.93338e-11s>; stage 73; H_ext=[0 0 5.66513e+06]<A/m>
+       nmag:2016-12-24 20:09:41,131 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=71,step=13330.
+============================================================================
+ID=71 |        Step=13330 |       Time=2.51 ns |  Last step size=0.30 ps  | 
+      |       Stage=73    | Stage-step=100     |      Stage-time=20.65 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2507.594343 ps----
+       nmag:2016-12-24 20:09:41,132 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=71,step=13330.
+============================================================================
+ID=71 |        Step=13330 |       Time=2.51 ns |  Last step size=0.30 ps  | 
+      |       Stage=73    | Stage-step=100     |      Stage-time=20.65 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:09:41,132    main.py 2593    INFO save_data(): id->id+1=72, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:09:41,172    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:09:41,172 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 5.74969e+06]<A/m>
+       nmag:2016-12-24 20:09:43,182 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=72,step=13425.
+============================================================================
+ID=72 |        Step=13425 |       Time=2.53 ns |  Last step size=0.12 ps  | 
+      |       Stage=74    | Stage-step=95      |      Stage-time=20.45 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2528.045665 ps----
+       nmag:2016-12-24 20:09:43,183 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=72,step=13425.
+============================================================================
+ID=72 |        Step=13425 |       Time=2.53 ns |  Last step size=0.12 ps  | 
+      |       Stage=74    | Stage-step=95      |      Stage-time=20.45 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:09:43,183    main.py 2593    INFO save_data(): id->id+1=73, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:09:43,223    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:09:43,223 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 5.83424e+06]<A/m>
+       nmag:2016-12-24 20:09:49,098 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=73,step=13539.
+============================================================================
+ID=73 |        Step=13539 |       Time=2.55 ns |  Last step size=0.27 ps  | 
+      |       Stage=75    | Stage-step=114     |      Stage-time=21.95 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2550.000000 ps----
+       nmag:2016-12-24 20:09:49,098 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=73,step=13539.
+============================================================================
+ID=73 |        Step=13539 |       Time=2.55 ns |  Last step size=0.27 ps  | 
+      |       Stage=75    | Stage-step=114     |      Stage-time=21.95 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:09:49,099    main.py 2593    INFO save_data(): id->id+1=74, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:09:49,138    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:09:49,139 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 5.9188e+06]<A/m>
+       nmag:2016-12-24 20:09:49,140 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=74,step=13539.
+===========================================================================
+ID=74 |        Step=13539 |       Time=2.55 ns |  Last step size=0.27 ps | 
+      |       Stage=76    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 2550.000000 ps----
+       nmag:2016-12-24 20:09:51,358 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=74,step=13640.
+============================================================================
+ID=74 |        Step=13640 |       Time=2.57 ns |  Last step size=0.29 ps  | 
+      |       Stage=76    | Stage-step=101     |      Stage-time=22.95 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2572.954586 ps----
+       nmag:2016-12-24 20:09:51,359 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=74,step=13640.
+============================================================================
+ID=74 |        Step=13640 |       Time=2.57 ns |  Last step size=0.29 ps  | 
+      |       Stage=76    | Stage-step=101     |      Stage-time=22.95 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:09:51,359    main.py 2593    INFO save_data(): id->id+1=75, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:09:51,399    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:09:51,400 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 6.00335e+06]<A/m>
+       nmag:2016-12-24 20:09:55,804 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=75,step=13745.
+============================================================================
+ID=75 |        Step=13745 |       Time=2.60 ns |  Last step size=0.20 ps  | 
+      |       Stage=77    | Stage-step=105     |      Stage-time=23.82 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2596.778925 ps----
+       nmag:2016-12-24 20:09:55,805 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=75,step=13745.
+============================================================================
+ID=75 |        Step=13745 |       Time=2.60 ns |  Last step size=0.20 ps  | 
+      |       Stage=77    | Stage-step=105     |      Stage-time=23.82 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:09:55,805    main.py 2593    INFO save_data(): id->id+1=76, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:09:55,846    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:09:55,846 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 6.08791e+06]<A/m>
+       nmag:2016-12-24 20:09:56,334 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=76,step=13770.
+===========================================================================
+ID=76 |        Step=13770 |       Time=2.60 ns |  Last step size=0.21 ps | 
+      |       Stage=78    | Stage-step=25      |      Stage-time=3.22 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 2600.000000 ps----
+       nmag:2016-12-24 20:10:03,280 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=76,step=13890.
+============================================================================
+ID=76 |        Step=13890 |       Time=2.62 ns |  Last step size=0.12 ps  | 
+      |       Stage=78    | Stage-step=145     |      Stage-time=24.17 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2620.944426 ps----
+       nmag:2016-12-24 20:10:03,281 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=76,step=13890.
+============================================================================
+ID=76 |        Step=13890 |       Time=2.62 ns |  Last step size=0.12 ps  | 
+      |       Stage=78    | Stage-step=145     |      Stage-time=24.17 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:10:03,281    main.py 2593    INFO save_data(): id->id+1=77, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:10:03,323    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:10:03,323 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 6.17246e+06]<A/m>
+       nmag:2016-12-24 20:10:06,404 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=77,step=14000.
+============================================================================
+ID=77 |        Step=14000 |       Time=2.65 ns |  Last step size=0.13 ps  | 
+      |       Stage=79    | Stage-step=110     |      Stage-time=26.43 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2647.375096 ps----
+       nmag:2016-12-24 20:10:06,405 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=77,step=14000.
+============================================================================
+ID=77 |        Step=14000 |       Time=2.65 ns |  Last step size=0.13 ps  | 
+      |       Stage=79    | Stage-step=110     |      Stage-time=26.43 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:10:06,405    main.py 2593    INFO save_data(): id->id+1=78, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:10:06,446    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:10:06,446 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 6.25701e+06]<A/m>
+       nmag:2016-12-24 20:10:06,905 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=78,step=14022.
+===========================================================================
+ID=78 |        Step=14022 |       Time=2.65 ns |  Last step size=0.00 ps | 
+      |       Stage=80    | Stage-step=22      |      Stage-time=2.62 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 2650.000000 ps----
+       nmag:2016-12-24 20:10:09,866 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=78,step=14135.
+============================================================================
+ID=78 |        Step=14135 |       Time=2.68 ns |  Last step size=0.30 ps  | 
+      |       Stage=80    | Stage-step=135     |      Stage-time=29.31 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2676.683903 ps----
+       nmag:2016-12-24 20:10:09,867 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=78,step=14135.
+============================================================================
+ID=78 |        Step=14135 |       Time=2.68 ns |  Last step size=0.30 ps  | 
+      |       Stage=80    | Stage-step=135     |      Stage-time=29.31 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:10:09,867    main.py 2593    INFO save_data(): id->id+1=79, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:10:09,907    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:10:09,907 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 6.34157e+06]<A/m>
+       nmag:2016-12-24 20:10:12,930 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=79,step=14235.
+============================================================================
+ID=79 |        Step=14235 |       Time=2.70 ns |  Last step size=0.18 ps  | 
+      |       Stage=81    | Stage-step=100     |      Stage-time=23.32 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2700.000000 ps----
+       nmag:2016-12-24 20:10:15,185 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=79,step=14265.
+============================================================================
+ID=79 |        Step=14265 |       Time=2.71 ns |  Last step size=0.12 ps  | 
+      |       Stage=81    | Stage-step=130     |      Stage-time=30.55 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2707.233483 ps----
+       nmag:2016-12-24 20:10:15,185 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=79,step=14265.
+============================================================================
+ID=79 |        Step=14265 |       Time=2.71 ns |  Last step size=0.12 ps  | 
+      |       Stage=81    | Stage-step=130     |      Stage-time=30.55 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:10:15,186    main.py 2593    INFO save_data(): id->id+1=80, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:10:15,226    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:10:15,226 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 6.42612e+06]<A/m>
+       nmag:2016-12-24 20:10:22,384 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=80,step=14415.
+============================================================================
+ID=80 |        Step=14415 |       Time=2.74 ns |  Last step size=0.56 ps  | 
+      |       Stage=82    | Stage-step=150     |      Stage-time=33.64 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2740.871170 ps----
+       nmag:2016-12-24 20:10:22,385 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=80,step=14415.
+============================================================================
+ID=80 |        Step=14415 |       Time=2.74 ns |  Last step size=0.56 ps  | 
+      |       Stage=82    | Stage-step=150     |      Stage-time=33.64 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:10:22,385    main.py 2593    INFO save_data(): id->id+1=81, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:10:22,425    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:10:22,426 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 6.51068e+06]<A/m>
+       nmag:2016-12-24 20:10:23,304 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=81,step=14463.
+===========================================================================
+ID=81 |        Step=14463 |       Time=2.75 ns |  Last step size=0.05 ps | 
+      |       Stage=83    | Stage-step=48      |      Stage-time=9.13 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 2750.000000 ps----
+       nmag:2016-12-24 20:10:32,030 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=81,step=14595.
+============================================================================
+ID=81 |        Step=14595 |       Time=2.78 ns |  Last step size=0.14 ps  | 
+      |       Stage=83    | Stage-step=180     |      Stage-time=36.32 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2777.192156 ps----
+       nmag:2016-12-24 20:10:32,031 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=81,step=14595.
+============================================================================
+ID=81 |        Step=14595 |       Time=2.78 ns |  Last step size=0.14 ps  | 
+      |       Stage=83    | Stage-step=180     |      Stage-time=36.32 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:10:32,031    main.py 2593    INFO save_data(): id->id+1=82, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:10:32,070    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:10:32,071 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 6.59523e+06]<A/m>
+       nmag:2016-12-24 20:10:34,889 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=82,step=14693.
+============================================================================
+ID=82 |        Step=14693 |       Time=2.80 ns |  Last step size=0.04 ps  | 
+      |       Stage=84    | Stage-step=98      |      Stage-time=22.81 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2800.000000 ps----
+       nmag:2016-12-24 20:10:40,210 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=82,step=14770.
+============================================================================
+ID=82 |        Step=14770 |       Time=2.82 ns |  Last step size=0.09 ps  | 
+      |       Stage=84    | Stage-step=175     |      Stage-time=41.40 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2818.593262 ps----
+       nmag:2016-12-24 20:10:40,211 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=82,step=14770.
+============================================================================
+ID=82 |        Step=14770 |       Time=2.82 ns |  Last step size=0.09 ps  | 
+      |       Stage=84    | Stage-step=175     |      Stage-time=41.40 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:10:40,211    main.py 2593    INFO save_data(): id->id+1=83, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:10:40,251    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:10:40,251 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 6.67979e+06]<A/m>
+       nmag:2016-12-24 20:10:41,197 hysteresis.py   40    INFO it 14795, time <4.0262e-12s>; stage 85; H_ext=[0 0 6.67979e+06]<A/m>
+       nmag:2016-12-24 20:10:44,317 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=83,step=14896.
+============================================================================
+ID=83 |        Step=14896 |       Time=2.85 ns |  Last step size=0.28 ps  | 
+      |       Stage=85    | Stage-step=126     |      Stage-time=31.41 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2850.000000 ps----
+       nmag:2016-12-24 20:10:49,849 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=83,step=14985.
+============================================================================
+ID=83 |        Step=14985 |       Time=2.87 ns |  Last step size=0.17 ps  | 
+      |       Stage=85    | Stage-step=215     |      Stage-time=50.66 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2869.257394 ps----
+       nmag:2016-12-24 20:10:49,850 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=83,step=14985.
+============================================================================
+ID=83 |        Step=14985 |       Time=2.87 ns |  Last step size=0.17 ps  | 
+      |       Stage=85    | Stage-step=215     |      Stage-time=50.66 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:10:49,850    main.py 2593    INFO save_data(): id->id+1=84, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:10:49,890    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:10:49,890 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 6.76434e+06]<A/m>
+       nmag:2016-12-24 20:10:54,307 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=84,step=15113.
+============================================================================
+ID=84 |        Step=15113 |       Time=2.90 ns |  Last step size=0.22 ps  | 
+      |       Stage=86    | Stage-step=128     |      Stage-time=30.74 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2900.000000 ps----
+       nmag:2016-12-24 20:11:06,820 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=84,step=15310.
+============================================================================
+ID=84 |        Step=15310 |       Time=2.94 ns |  Last step size=0.22 ps  | 
+      |       Stage=86    | Stage-step=325     |      Stage-time=72.80 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2942.056472 ps----
+       nmag:2016-12-24 20:11:06,821 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=84,step=15310.
+============================================================================
+ID=84 |        Step=15310 |       Time=2.94 ns |  Last step size=0.22 ps  | 
+      |       Stage=86    | Stage-step=325     |      Stage-time=72.80 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:11:06,821    main.py 2593    INFO save_data(): id->id+1=85, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:11:06,862    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:11:06,862 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 6.84889e+06]<A/m>
+       nmag:2016-12-24 20:11:07,857 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=85,step=15350.
+===========================================================================
+ID=85 |        Step=15350 |       Time=2.95 ns |  Last step size=0.01 ps | 
+      |       Stage=87    | Stage-step=40      |      Stage-time=7.94 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 2950.000000 ps----
+       nmag:2016-12-24 20:11:19,957 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=85,step=16125.
+============================================================================
+ID=85 |        Step=16125 |       Time=2.99 ns |  Last step size=0.36 ps  | 
+      |       Stage=87    | Stage-step=815     |      Stage-time=46.35 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+----SIM Time 2988.402189 ps----
+       nmag:2016-12-24 20:11:19,958 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=85,step=16125.
+============================================================================
+ID=85 |        Step=16125 |       Time=2.99 ns |  Last step size=0.36 ps  | 
+      |       Stage=87    | Stage-step=815     |      Stage-time=46.35 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-24 20:11:19,958    main.py 2593    INFO save_data(): id->id+1=86, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:11:20,001    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:11:20,001 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 6.93345e+06]<A/m>
+       nmag:2016-12-24 20:11:20,586 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=86,step=16155.
+===========================================================================
+ID=86 |        Step=16155 |       Time=2.99 ns |  Last step size=0.28 ps | 
+      |       Stage=88    | Stage-step=30      |      Stage-time=4.64 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 2993.045534 ps----
+       nmag:2016-12-24 20:11:20,587 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=86,step=16155.
+===========================================================================
+ID=86 |        Step=16155 |       Time=2.99 ns |  Last step size=0.28 ps | 
+      |       Stage=88    | Stage-step=30      |      Stage-time=4.64 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:11:20,587    main.py 2593    INFO save_data(): id->id+1=87, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:11:20,627    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:11:20,627 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 7.018e+06]<A/m>
+       nmag:2016-12-24 20:11:21,533 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=87,step=16185.
+===========================================================================
+ID=87 |        Step=16185 |       Time=3.00 ns |  Last step size=0.11 ps | 
+      |       Stage=89    | Stage-step=30      |      Stage-time=4.15 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 2997.191252 ps----
+       nmag:2016-12-24 20:11:21,533 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=87,step=16185.
+===========================================================================
+ID=87 |        Step=16185 |       Time=3.00 ns |  Last step size=0.11 ps | 
+      |       Stage=89    | Stage-step=30      |      Stage-time=4.15 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:11:21,533    main.py 2593    INFO save_data(): id->id+1=88, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:11:21,573    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:11:21,573 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 7.10256e+06]<A/m>
+       nmag:2016-12-24 20:11:22,014 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=88,step=16207.
+===========================================================================
+ID=88 |        Step=16207 |       Time=3.00 ns |  Last step size=0.00 ps | 
+      |       Stage=90    | Stage-step=22      |      Stage-time=2.81 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 3000.000000 ps----
+       nmag:2016-12-24 20:11:22,014 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=88,step=16207.
+===========================================================================
+ID=88 |        Step=16207 |       Time=3.00 ns |  Last step size=0.00 ps | 
+      |       Stage=90    | Stage-step=22      |      Stage-time=2.81 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:11:22,015    main.py 2593    INFO save_data(): id->id+1=89, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:11:22,056    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:11:22,056 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 7.18711e+06]<A/m>
+       nmag:2016-12-24 20:11:22,058 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=89,step=16207.
+===========================================================================
+ID=89 |        Step=16207 |       Time=3.00 ns |  Last step size=0.00 ps | 
+      |       Stage=91    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 3000.000000 ps----
+       nmag:2016-12-24 20:11:22,618 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=89,step=16235.
+===========================================================================
+ID=89 |        Step=16235 |       Time=3.00 ns |  Last step size=0.28 ps | 
+      |       Stage=91    | Stage-step=28      |      Stage-time=4.61 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 3004.606085 ps----
+       nmag:2016-12-24 20:11:22,619 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=89,step=16235.
+===========================================================================
+ID=89 |        Step=16235 |       Time=3.00 ns |  Last step size=0.28 ps | 
+      |       Stage=91    | Stage-step=28      |      Stage-time=4.61 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:11:22,619    main.py 2593    INFO save_data(): id->id+1=90, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:11:22,661    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:11:22,661 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 7.27167e+06]<A/m>
+       nmag:2016-12-24 20:11:23,752 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=90,step=16265.
+===========================================================================
+ID=90 |        Step=16265 |       Time=3.01 ns |  Last step size=0.11 ps | 
+      |       Stage=92    | Stage-step=30      |      Stage-time=4.22 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 3008.823631 ps----
+       nmag:2016-12-24 20:11:23,752 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=90,step=16265.
+===========================================================================
+ID=90 |        Step=16265 |       Time=3.01 ns |  Last step size=0.11 ps | 
+      |       Stage=92    | Stage-step=30      |      Stage-time=4.22 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:11:23,752    main.py 2593    INFO save_data(): id->id+1=91, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:11:23,793    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:11:23,793 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 7.35622e+06]<A/m>
+       nmag:2016-12-24 20:11:24,287 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=91,step=16290.
+===========================================================================
+ID=91 |        Step=16290 |       Time=3.01 ns |  Last step size=0.28 ps | 
+      |       Stage=93    | Stage-step=25      |      Stage-time=3.76 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 3012.587335 ps----
+       nmag:2016-12-24 20:11:24,287 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=91,step=16290.
+===========================================================================
+ID=91 |        Step=16290 |       Time=3.01 ns |  Last step size=0.28 ps | 
+      |       Stage=93    | Stage-step=25      |      Stage-time=3.76 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:11:24,288    main.py 2593    INFO save_data(): id->id+1=92, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:11:24,328    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:11:24,328 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 7.44077e+06]<A/m>
+       nmag:2016-12-24 20:11:25,250 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=92,step=16320.
+===========================================================================
+ID=92 |        Step=16320 |       Time=3.02 ns |  Last step size=0.18 ps | 
+      |       Stage=94    | Stage-step=30      |      Stage-time=5.00 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 3017.586961 ps----
+       nmag:2016-12-24 20:11:25,251 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=92,step=16320.
+===========================================================================
+ID=92 |        Step=16320 |       Time=3.02 ns |  Last step size=0.18 ps | 
+      |       Stage=94    | Stage-step=30      |      Stage-time=5.00 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:11:25,251    main.py 2593    INFO save_data(): id->id+1=93, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:11:25,291    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:11:25,292 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 7.52533e+06]<A/m>
+       nmag:2016-12-24 20:11:25,797 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=93,step=16345.
+===========================================================================
+ID=93 |        Step=16345 |       Time=3.02 ns |  Last step size=0.28 ps | 
+      |       Stage=95    | Stage-step=25      |      Stage-time=3.96 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 3021.542140 ps----
+       nmag:2016-12-24 20:11:25,798 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=93,step=16345.
+===========================================================================
+ID=93 |        Step=16345 |       Time=3.02 ns |  Last step size=0.28 ps | 
+      |       Stage=95    | Stage-step=25      |      Stage-time=3.96 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:11:25,798    main.py 2593    INFO save_data(): id->id+1=94, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:11:25,839    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:11:25,839 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 7.60988e+06]<A/m>
+       nmag:2016-12-24 20:11:26,917 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=94,step=16375.
+===========================================================================
+ID=94 |        Step=16375 |       Time=3.03 ns |  Last step size=0.11 ps | 
+      |       Stage=96    | Stage-step=30      |      Stage-time=4.15 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 3025.693440 ps----
+       nmag:2016-12-24 20:11:26,917 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=94,step=16375.
+===========================================================================
+ID=94 |        Step=16375 |       Time=3.03 ns |  Last step size=0.11 ps | 
+      |       Stage=96    | Stage-step=30      |      Stage-time=4.15 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:11:26,918    main.py 2593    INFO save_data(): id->id+1=95, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:11:26,958    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:11:26,958 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 7.69444e+06]<A/m>
+       nmag:2016-12-24 20:11:27,488 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=95,step=16400.
+===========================================================================
+ID=95 |        Step=16400 |       Time=3.03 ns |  Last step size=0.43 ps | 
+      |       Stage=97    | Stage-step=25      |      Stage-time=4.22 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 3029.913892 ps----
+       nmag:2016-12-24 20:11:27,489 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=95,step=16400.
+===========================================================================
+ID=95 |        Step=16400 |       Time=3.03 ns |  Last step size=0.43 ps | 
+      |       Stage=97    | Stage-step=25      |      Stage-time=4.22 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:11:27,489    main.py 2593    INFO save_data(): id->id+1=96, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:11:27,530    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:11:27,530 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 7.77899e+06]<A/m>
+       nmag:2016-12-24 20:11:28,624 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=96,step=16430.
+===========================================================================
+ID=96 |        Step=16430 |       Time=3.03 ns |  Last step size=0.17 ps | 
+      |       Stage=98    | Stage-step=30      |      Stage-time=4.52 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 3034.436746 ps----
+       nmag:2016-12-24 20:11:28,624 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=96,step=16430.
+===========================================================================
+ID=96 |        Step=16430 |       Time=3.03 ns |  Last step size=0.17 ps | 
+      |       Stage=98    | Stage-step=30      |      Stage-time=4.52 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:11:28,625    main.py 2593    INFO save_data(): id->id+1=97, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:11:28,665    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:11:28,665 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 7.86354e+06]<A/m>
+       nmag:2016-12-24 20:11:29,505 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=97,step=16455.
+===========================================================================
+ID=97 |        Step=16455 |       Time=3.04 ns |  Last step size=0.08 ps | 
+      |       Stage=99    | Stage-step=25      |      Stage-time=3.22 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 3037.651849 ps----
+       nmag:2016-12-24 20:11:29,505 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=97,step=16455.
+===========================================================================
+ID=97 |        Step=16455 |       Time=3.04 ns |  Last step size=0.08 ps | 
+      |       Stage=99    | Stage-step=25      |      Stage-time=3.22 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:11:29,506    main.py 2593    INFO save_data(): id->id+1=98, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:11:29,546    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:11:29,546 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 7.9481e+06]<A/m>
+       nmag:2016-12-24 20:11:30,053 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=98,step=16480.
+===========================================================================
+ID=98 |        Step=16480 |       Time=3.04 ns |  Last step size=0.28 ps | 
+      |       Stage=100   | Stage-step=25      |      Stage-time=4.00 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 3041.653031 ps----
+       nmag:2016-12-24 20:11:30,053 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=98,step=16480.
+===========================================================================
+ID=98 |        Step=16480 |       Time=3.04 ns |  Last step size=0.28 ps | 
+      |       Stage=100   | Stage-step=25      |      Stage-time=4.00 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:11:30,054    main.py 2593    INFO save_data(): id->id+1=99, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:11:30,093    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:11:30,094 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 8.03265e+06]<A/m>
+       nmag:2016-12-24 20:11:30,605 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=99,step=16505.
+===========================================================================
+ID=99 |        Step=16505 |       Time=3.05 ns |  Last step size=0.29 ps | 
+      |       Stage=101   | Stage-step=25      |      Stage-time=3.76 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+----SIM Time 3045.417635 ps----
+       nmag:2016-12-24 20:11:30,606 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=99,step=16505.
+===========================================================================
+ID=99 |        Step=16505 |       Time=3.05 ns |  Last step size=0.29 ps | 
+      |       Stage=101   | Stage-step=25      |      Stage-time=3.76 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-24 20:11:30,606    main.py 2593    INFO save_data(): id->id+1=100, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:11:30,646    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:11:30,646 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 8.11721e+06]<A/m>
+       nmag:2016-12-24 20:11:31,233 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=100,step=16534.
+============================================================================
+ID=100 |        Step=16534 |       Time=3.05 ns |  Last step size=0.17 ps | 
+       |       Stage=102   | Stage-step=29      |      Stage-time=4.58 ps | 
+       | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+============================================================================
+----SIM Time 3050.000000 ps----
+       nmag:2016-12-24 20:11:31,234 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=100,step=16534.
+============================================================================
+ID=100 |        Step=16534 |       Time=3.05 ns |  Last step size=0.17 ps | 
+       |       Stage=102   | Stage-step=29      |      Stage-time=4.58 ps | 
+       | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+============================================================================
+       nmag:2016-12-24 20:11:31,234    main.py 2593    INFO save_data(): id->id+1=101, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:11:31,274    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:11:31,274 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 8.20176e+06]<A/m>
+       nmag:2016-12-24 20:11:31,276 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=101,step=16534.
+============================================================================
+ID=101 |        Step=16534 |       Time=3.05 ns |  Last step size=0.17 ps | 
+       |       Stage=103   | Stage-step=0       |      Stage-time=0.00 ps | 
+       | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+============================================================================
+----SIM Time 3050.000000 ps----
+       nmag:2016-12-24 20:11:31,972 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=101,step=16560.
+============================================================================
+ID=101 |        Step=16560 |       Time=3.05 ns |  Last step size=0.16 ps | 
+       |       Stage=103   | Stage-step=26      |      Stage-time=4.18 ps | 
+       | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+============================================================================
+----SIM Time 3054.175788 ps----
+       nmag:2016-12-24 20:11:31,973 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=101,step=16560.
+============================================================================
+ID=101 |        Step=16560 |       Time=3.05 ns |  Last step size=0.16 ps | 
+       |       Stage=103   | Stage-step=26      |      Stage-time=4.18 ps | 
+       | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+============================================================================
+       nmag:2016-12-24 20:11:31,973    main.py 2593    INFO save_data(): id->id+1=102, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:11:32,014    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:11:32,014 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 8.28632e+06]<A/m>
+       nmag:2016-12-24 20:11:32,854 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=102,step=16585.
+============================================================================
+ID=102 |        Step=16585 |       Time=3.06 ns |  Last step size=0.11 ps | 
+       |       Stage=104   | Stage-step=25      |      Stage-time=3.98 ps | 
+       | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+============================================================================
+----SIM Time 3058.152840 ps----
+       nmag:2016-12-24 20:11:32,855 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=102,step=16585.
+============================================================================
+ID=102 |        Step=16585 |       Time=3.06 ns |  Last step size=0.11 ps | 
+       |       Stage=104   | Stage-step=25      |      Stage-time=3.98 ps | 
+       | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+============================================================================
+       nmag:2016-12-24 20:11:32,855    main.py 2593    INFO save_data(): id->id+1=103, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:11:32,895    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:11:32,895 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 8.37087e+06]<A/m>
+       nmag:2016-12-24 20:11:33,421 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=103,step=16610.
+============================================================================
+ID=103 |        Step=16610 |       Time=3.06 ns |  Last step size=0.44 ps | 
+       |       Stage=105   | Stage-step=25      |      Stage-time=4.25 ps | 
+       | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+============================================================================
+----SIM Time 3062.404135 ps----
+       nmag:2016-12-24 20:11:33,421 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=103,step=16610.
+============================================================================
+ID=103 |        Step=16610 |       Time=3.06 ns |  Last step size=0.44 ps | 
+       |       Stage=105   | Stage-step=25      |      Stage-time=4.25 ps | 
+       | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+============================================================================
+       nmag:2016-12-24 20:11:33,422    main.py 2593    INFO save_data(): id->id+1=104, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:11:33,461    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+       nmag:2016-12-24 20:11:33,461 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 8.45542e+06]<A/m>
+       nmag:2016-12-24 20:11:33,964 hysteresis.py  499    INFO hysteresis: saving <function print_time at 0x1d1daa0> at id=104,step=16635.
+============================================================================
+ID=104 |        Step=16635 |       Time=3.07 ns |  Last step size=0.28 ps | 
+       |       Stage=106   | Stage-step=25      |      Stage-time=3.63 ps | 
+       | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+============================================================================
+----SIM Time 3066.032895 ps----
+       nmag:2016-12-24 20:11:33,965 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1d1da28> at id=104,step=16635.
+============================================================================
+ID=104 |        Step=16635 |       Time=3.07 ns |  Last step size=0.28 ps | 
+       |       Stage=106   | Stage-step=25      |      Stage-time=3.63 ps | 
+       | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+============================================================================
+       nmag:2016-12-24 20:11:33,965    main.py 2593    INFO save_data(): id->id+1=105, fields=['M', 'm', 'H_ext'] 
+       nmag:2016-12-24 20:11:34,007    main.py 2793    INFO Written fields ['M', 'm', 'H_ext'] data to ./cubes_dat.h5
+Use Time 12.940941 min
