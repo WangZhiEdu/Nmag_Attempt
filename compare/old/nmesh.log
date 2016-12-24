@@ -1,0 +1,14 @@
+INFO:nmesh:Reading 'SOFT=6_HARD=4.msh'
+INFO:nmesh:Number of nodes      =    2375
+INFO:nmesh:Number of elements   =    9035
+INFO:nmesh:Number of tetrahedra =    9035
+INFO:nmesh:Physical Regions:
+	 reg_phys 1 -> 3998 times
+	 reg_phys 2 -> 5037 times
+INFO:root:Number of physical regions: 2
+INFO:root:Smallest physical region id: 1
+INFO:root:Largest physical region id: 2
+INFO:nmesh:Completed reading 'SOFT=6_HARD=4.msh'
+INFO:nmesh:Paranoia check: Found 2375 points used 
+INFO:root:Saving nmesh object to file 'SOFT=6_HARD=4.nmesh.h5'.
+INFO:nmesh:Have written mesh to 'SOFT=6_HARD=4.nmesh.h5' (hdf5 format)
