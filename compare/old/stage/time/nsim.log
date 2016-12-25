@@ -1,0 +1,2105 @@
+       nsim:2016-12-25 15:58:55,662   setup.py  471    INFO Nsim 0.2.1
+       nsim:2016-12-25 15:58:55,662   setup.py  472    INFO Runid is 'SOFT=6_HARD=4'
+       nsim:2016-12-25 15:58:55,662   setup.py  473    INFO Using 1 CPUs
+       nmag:2016-12-25 15:58:55,768 simulation_core.py  141    INFO Simulation(name=SOFT=6_HARD=4) object created
+       nmag:2016-12-25 15:58:55,768    main.py  859    INFO Versions:
+	     nsim version = 0.2.1
+	     release date = Fri Jan 13 09:38:20 2012
+	          VC info = 467:d7c316deb156
+	distribution mode = all-source
+	distribution date = Fri Jan 13 09:38:22 GMT 2012
+       nmag:2016-12-25 15:58:55,768    main.py  860    INFO Paths:
+	nsimpath = /home/nmag/nmag-0.2.1/nsim/interface/nsim
+	nmagpath = /home/nmag/nmag-0.2.1/nsim/interface/nmag
+       nmag:2016-12-25 15:58:55,770    main.py  472    INFO Created new Material:
+ Material 'Py_hard_layer'
+                      name = Py_hard_layer
+                        Ms = <SI: 500000  A / m >
+         exchange_coupling = <SI: 1.2e-11  m kg / s^2 >
+                anisotropy = <function f at 0x3352938>
+          anisotropy_order = 2
+               llg_gamma_G = <SI: 221017  m / s A >
+               llg_damping = 1.0
+   llg_normalisationfactor = <SI: 1e+11  / s >
+             do_precession = True
+          llg_polarisation = 0.0
+                    llg_xi = 0.0
+            thermal_factor = <SI: 1.98522e-28  m s A^2 / K >
+            extended_print = False
+ 
+       nmag:2016-12-25 15:58:55,771    main.py  472    INFO Created new Material:
+ Material 'Py_soft_layer'
+                      name = Py_soft_layer
+                        Ms = <SI: 1.2e+06  A / m >
+         exchange_coupling = <SI: 2.8e-11  m kg / s^2 >
+                anisotropy = <function f at 0x3352a28>
+          anisotropy_order = 2
+               llg_gamma_G = <SI: 221017  m / s A >
+               llg_damping = 1.0
+   llg_normalisationfactor = <SI: 1e+11  / s >
+             do_precession = True
+          llg_polarisation = 0.0
+                    llg_xi = 0.0
+            thermal_factor = <SI: 8.27177e-29  m s A^2 / K >
+            extended_print = False
+ 
+       nmag:2016-12-25 15:58:55,771    main.py 1164    INFO Reading mesh from SOFT=6_HARD=4.nmesh.h5, unit_length is <SI: 1e-09  m >. 
+nmesh.ocaml:2016-12-25 15:58:55,899    INFO Computing mesh connectivity data
+nmesh.ocaml:2016-12-25 15:58:55,945    INFO Mesh nodes: 2375,  simplices: 9035 
+       nmag:2016-12-25 15:58:55,981    main.py 1225    INFO Adding region 'Py_hard_layer' to 'SOFT=6_HARD=4' simulation object
+       nmag:2016-12-25 15:58:55,981    main.py 1225    INFO Adding region 'Py_soft_layer' to 'SOFT=6_HARD=4' simulation object
+       nmag:2016-12-25 15:58:55,982 nmag_lam.py   97    INFO properties_by_region: [(-1, ['outer']), (0, ['0']), (1, ['1', 'Py_hard_layer', 'magnetic', 'material']), (2, ['2', 'Py_soft_layer', 'magnetic', 'material'])]
+       nmag:2016-12-25 15:58:55,982 nmag_lam.py  189    INFO Processing material 'Py_hard_layer'
+       nmag:2016-12-25 15:58:55,982 nmag_lam.py  189    INFO Processing material 'Py_soft_layer'
+ nfem.ocaml:2016-12-25 15:58:55,982    INFO Associating elements to mesh ('m')
+ nfem.ocaml:2016-12-25 15:58:56,103    INFO Associating elements to mesh ('E')
+ nfem.ocaml:2016-12-25 15:58:56,163    INFO Associating elements to mesh ('H_demag')
+ nfem.ocaml:2016-12-25 15:58:56,308    INFO Associating elements to mesh ('scalar')
+ nfem.ocaml:2016-12-25 15:58:56,388    INFO Assembling site-wise offsets for fields [|"m"|]
+ nfem.ocaml:2016-12-25 15:58:56,436    INFO Compiling linalg_machine
+ nfem.ocaml:2016-12-25 15:58:57,529    INFO Starting to build dense matrices (BEM)
+ nfem.ocaml:2016-12-25 15:58:59,390    INFO Populating BEM took 1.860636 seconds
+ nfem.ocaml:2016-12-25 15:58:59,531    INFO Creating site-wise-executor 'local_M_from_m'
+ nfem.ocaml:2016-12-25 15:58:59,531    INFO Assembling site-wise offsets for fields [|"m"; "M"|]
+ nfem.ocaml:2016-12-25 15:58:59,539    INFO Creating site-wise-executor 'local_E_total'
+ nfem.ocaml:2016-12-25 15:58:59,540    INFO Assembling site-wise offsets for fields [|"m"; "E_anis"; "E_ext"; "E_demag"; "E_exch"; "E_total"; "H_ext"; "H_demag"; "H_exch"; "H_total"|]
+ nfem.ocaml:2016-12-25 15:58:59,560    INFO Creating site-wise-executor 'local_H_total'
+ nfem.ocaml:2016-12-25 15:58:59,560    INFO Assembling site-wise offsets for fields [|"H_total"; "H_exch"; "H_ext"; "H_anis"; "H_demag"|]
+ nfem.ocaml:2016-12-25 15:58:59,571    INFO Creating site-wise-executor 'local_correct_m_lengths'
+ nfem.ocaml:2016-12-25 15:58:59,571    INFO Assembling site-wise offsets for fields [|"m"|]
+ nfem.ocaml:2016-12-25 15:58:59,576    INFO Creating site-wise-executor 'local_E_anis'
+ nfem.ocaml:2016-12-25 15:58:59,576    INFO Assembling site-wise offsets for fields [|"E_anis"; "m"|]
+ nfem.ocaml:2016-12-25 15:58:59,582    INFO Creating site-wise-executor 'local_H_anis'
+ nfem.ocaml:2016-12-25 15:58:59,582    INFO Assembling site-wise offsets for fields [|"H_anis"; "m"|]
+ nfem.ocaml:2016-12-25 15:58:59,589    INFO Creating site-wise-executor 'local_dmdt'
+ nfem.ocaml:2016-12-25 15:58:59,589    INFO Assembling site-wise offsets for fields [|"m"; "dmdt"; "H_total"; "pin"|]
+ nfem.ocaml:2016-12-25 15:58:59,623    INFO Assembling site-wise offsets for fields [|"m"|]
+       nmag:2016-12-25 15:58:59,632 hysteresis.py  441    INFO Hysteresis loop: starting a new simulation.
+       nmag:2016-12-25 15:58:59,632 hysteresis.py  443    INFO Hysteresis loop: check file 'SOFT=6_HARD=4_progress.txt' for progress data
+       nmag:2016-12-25 15:58:59,632 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 -84550 -8.455e+06]<A/m>
+       nmag:2016-12-25 15:58:59,636 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=-1,step=0.
+===========================================================================
+ID=-1 |        Step=0     |       Time=0.00 ps |  Last step size=0.00 ps | 
+      |       Stage=1     | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 0
+H_ext>>>>>>>>>>>>>>>>> [0, 0, -8455001.9221152421]
+ex_bottom>>>>>>>>>>>>> [0.0, 0.0, -8419001.9221152421]
+ex_top>>>>>>>>>>>>>>>> [0.0, 0.0, -8455000.566872146]
+ nfem.ocaml:2016-12-25 15:59:00,296    INFO Making Jacobi MX: 7125 x 7125 ([|7125|] x [|7125|])
+       nmag:2016-12-25 15:59:00,595 hysteresis.py   40    INFO it 5, time <7.80769e-15s>; stage 1; H_ext=[0 -84550 -8.455e+06]<A/m>
+       nmag:2016-12-25 15:59:17,258 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=-1,step=1160.
+============================================================================
+ID=-1 |        Step=1160 |       Time=31.48 ps |  Last step size=0.10 ps  | 
+      |       Stage=1    | Stage-step=1160     |      Stage-time=31.48 ps | 
+      | Convergence=True |  Stage-end=True     | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 15:59:17,258    main.py 2593    INFO save_data(): id->id+1=0, fields=all 
+       nmag:2016-12-25 15:59:17,812    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 15:59:17,812 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 -67640 -6.764e+06]<A/m>
+       nmag:2016-12-25 15:59:17,814 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=0,step=1160.
+===========================================================================
+ID=0 |        Step=1160  |       Time=31.48 ps |  Last step size=0.10 ps | 
+     |       Stage=2     | Stage-step=0        |      Stage-time=0.00 ps | 
+     | Convergence=False |  Stage-end=False    | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 1
+H_ext>>>>>>>>>>>>>>>>> [0, 0, -6764001.5376921948]
+ex_bottom>>>>>>>>>>>>> [-16.381190670786285, -20.729943624435716, -6800001.2380762501]
+ex_top>>>>>>>>>>>>>>>> [-0.00062636569245639066, 0.032804840185745039, -6764002.8925280403]
+       nmag:2016-12-25 15:59:19,304 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=0,step=1225.
+==========================================================================
+ID=0 |        Step=1225 |       Time=37.28 ps |  Last step size=0.47 ps | 
+     |       Stage=2    | Stage-step=65       |      Stage-time=5.80 ps | 
+     | Convergence=True |  Stage-end=True     | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 15:59:19,305    main.py 2593    INFO save_data(): id->id+1=1, fields=all 
+       nmag:2016-12-25 15:59:19,413    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 15:59:19,414 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 -50730 -5.073e+06]<A/m>
+       nmag:2016-12-25 15:59:19,415 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=1,step=1225.
+===========================================================================
+ID=1 |        Step=1225  |       Time=37.28 ps |  Last step size=0.47 ps | 
+     |       Stage=3     | Stage-step=0        |      Stage-time=0.00 ps | 
+     | Convergence=False |  Stage-end=False    | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 2
+H_ext>>>>>>>>>>>>>>>>> [0, 0, -5073001.1532691466]
+ex_bottom>>>>>>>>>>>>> [-17.046143041721503, -22.780655886585585, -5109000.870141387]
+ex_top>>>>>>>>>>>>>>>> [-0.00065657007265304231, 0.03645049770545665, -5073002.5080111912]
+       nmag:2016-12-25 15:59:20,800 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=1,step=1295.
+==========================================================================
+ID=1 |        Step=1295 |       Time=43.86 ps |  Last step size=0.31 ps | 
+     |       Stage=3    | Stage-step=70       |      Stage-time=6.59 ps | 
+     | Convergence=True |  Stage-end=True     | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 15:59:20,800    main.py 2593    INFO save_data(): id->id+1=2, fields=all 
+       nmag:2016-12-25 15:59:20,916    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 15:59:20,916 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 -33820 -3.382e+06]<A/m>
+       nmag:2016-12-25 15:59:20,917 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=2,step=1295.
+===========================================================================
+ID=2 |        Step=1295  |       Time=43.86 ps |  Last step size=0.31 ps | 
+     |       Stage=4     | Stage-step=0        |      Stage-time=0.00 ps | 
+     | Convergence=False |  Stage-end=False    | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 3
+H_ext>>>>>>>>>>>>>>>>> [0, 0, -3382000.7688460983]
+ex_bottom>>>>>>>>>>>>> [-17.758933396126157, -25.846661781566759, -3418000.4732177784]
+ex_top>>>>>>>>>>>>>>>> [-0.00068967547279581622, 0.040999266962828365, -3382002.1234570546]
+       nmag:2016-12-25 15:59:22,366 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=2,step=1370.
+==========================================================================
+ID=2 |        Step=1370 |       Time=50.95 ps |  Last step size=0.32 ps | 
+     |       Stage=4    | Stage-step=75       |      Stage-time=7.08 ps | 
+     | Convergence=True |  Stage-end=True     | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 15:59:22,366    main.py 2593    INFO save_data(): id->id+1=3, fields=all 
+       nmag:2016-12-25 15:59:22,482    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 15:59:22,482 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 -16910 -1.691e+06]<A/m>
+       nmag:2016-12-25 15:59:22,484 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=3,step=1370.
+===========================================================================
+ID=3 |        Step=1370  |       Time=50.95 ps |  Last step size=0.32 ps | 
+     |       Stage=5     | Stage-step=0        |      Stage-time=0.00 ps | 
+     | Convergence=False |  Stage-end=False    | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 4
+H_ext>>>>>>>>>>>>>>>>> [0, 0, -1691000.3844230501]
+ex_bottom>>>>>>>>>>>>> [-18.355965427644836, -31.426095652425051, -1727000.0619454831]
+ex_top>>>>>>>>>>>>>>>> [-0.00072692380941954916, 0.046837615576009205, -1691001.738843363]
+       nmag:2016-12-25 15:59:24,281 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=3,step=1465.
+===========================================================================
+ID=3 |        Step=1465 |       Time=62.51 ps |  Last step size=0.28 ps  | 
+     |       Stage=5    | Stage-step=95       |      Stage-time=11.56 ps | 
+     | Convergence=True |  Stage-end=True     | Exit hysteresis=False    | 
+===========================================================================
+       nmag:2016-12-25 15:59:24,281    main.py 2593    INFO save_data(): id->id+1=4, fields=all 
+       nmag:2016-12-25 15:59:24,388    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 15:59:24,388 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 0]<A/m>
+       nmag:2016-12-25 15:59:24,389 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=4,step=1465.
+===========================================================================
+ID=4 |        Step=1465  |       Time=62.51 ps |  Last step size=0.28 ps | 
+     |       Stage=6     | Stage-step=0        |      Stage-time=0.00 ps | 
+     | Convergence=False |  Stage-end=False    | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 5
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 0.0]
+ex_bottom>>>>>>>>>>>>> [-18.382013751517643, -45.87704367761107, -35999.634285658409]
+ex_top>>>>>>>>>>>>>>>> [-0.00077027638860952712, 0.054594414158243981, -1.3541282021403722]
+       nmag:2016-12-25 15:59:39,592 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=4,step=2150.
+=========================================================================
+ID=4 |        Step=2150 |       Time=0.24 ns |  Last step size=0.29 ps | 
+     |       Stage=6    | Stage-step=685     |      Stage-time=0.18 ns | 
+     | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+=========================================================================
+       nmag:2016-12-25 15:59:39,592    main.py 2593    INFO save_data(): id->id+1=5, fields=all 
+       nmag:2016-12-25 15:59:39,711    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 15:59:39,711 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 845.5 84550]<A/m>
+       nmag:2016-12-25 15:59:39,713 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=5,step=2150.
+==========================================================================
+ID=5 |        Step=2150  |       Time=0.24 ns |  Last step size=0.29 ps | 
+     |       Stage=7     | Stage-step=0       |      Stage-time=0.00 ps | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+This function is called : 6
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 84550.019221152426]
+ex_bottom>>>>>>>>>>>>> [-2.8345883101510667, -427.23793700067927, 48552.917786915699]
+ex_top>>>>>>>>>>>>>>>> [-0.00082495536991994997, 0.065596646902929753, 84548.66558329876]
+       nmag:2016-12-25 16:00:00,657 hysteresis.py   40    INFO it 2990, time <2.38035e-10s>; stage 7; H_ext=[0 845.5 84550]<A/m>
+       nmag:2016-12-25 16:01:00,825 hysteresis.py   40    INFO it 3800, time <4.00159e-10s>; stage 7; H_ext=[0 845.5 84550]<A/m>
+       nmag:2016-12-25 16:01:38,034 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=5,step=4180.
+=========================================================================
+ID=5 |        Step=4180 |       Time=0.71 ns |  Last step size=0.15 ps | 
+     |       Stage=7    | Stage-step=2030    |      Stage-time=0.47 ns | 
+     | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+=========================================================================
+       nmag:2016-12-25 16:01:38,034    main.py 2593    INFO save_data(): id->id+1=6, fields=all 
+       nmag:2016-12-25 16:01:38,137    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:01:38,137 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 1691 169100]<A/m>
+       nmag:2016-12-25 16:01:38,139 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=6,step=4180.
+==========================================================================
+ID=6 |        Step=4180  |       Time=0.71 ns |  Last step size=0.15 ps | 
+     |       Stage=8     | Stage-step=0       |      Stage-time=0.00 ps | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+This function is called : 7
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 169100.03844230485]
+ex_bottom>>>>>>>>>>>>> [61.464641491154993, -1262.360584848331, 133122.59351093438]
+ex_top>>>>>>>>>>>>>>>> [-0.00086230116265502877, 0.066688857332165882, 169098.6848580392]
+       nmag:2016-12-25 16:02:00,919 hysteresis.py   40    INFO it 5075, time <2.59961e-10s>; stage 8; H_ext=[0 1691 169100]<A/m>
+       nmag:2016-12-25 16:03:00,954 hysteresis.py   40    INFO it 6870, time <7.91318e-10s>; stage 8; H_ext=[0 1691 169100]<A/m>
+       nmag:2016-12-25 16:03:19,538 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=6,step=7525.
+=========================================================================
+ID=6 |        Step=7525 |       Time=1.69 ns |  Last step size=0.56 ps | 
+     |       Stage=8    | Stage-step=3345    |      Stage-time=0.98 ns | 
+     | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+=========================================================================
+       nmag:2016-12-25 16:03:19,538    main.py 2593    INFO save_data(): id->id+1=7, fields=all 
+       nmag:2016-12-25 16:03:19,649    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:03:19,649 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 2536.5 253650]<A/m>
+       nmag:2016-12-25 16:03:19,650 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=7,step=7525.
+==========================================================================
+ID=7 |        Step=7525  |       Time=1.69 ns |  Last step size=0.56 ps | 
+     |       Stage=9     | Stage-step=0       |      Stage-time=0.00 ps | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+This function is called : 8
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 253650.05766345729]
+ex_bottom>>>>>>>>>>>>> [36.793398220981672, -249.37995321040219, 289646.55172011105]
+ex_top>>>>>>>>>>>>>>>> [0.0015112612686872871, 0.073050950247061153, 253648.70444432989]
+       nmag:2016-12-25 16:03:52,212 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=7,step=7915.
+==========================================================================
+ID=7 |        Step=7915 |       Time=1.76 ns |  Last step size=0.16 ps  | 
+     |       Stage=9    | Stage-step=390     |      Stage-time=67.75 ps | 
+     | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+==========================================================================
+       nmag:2016-12-25 16:03:52,212    main.py 2593    INFO save_data(): id->id+1=8, fields=all 
+       nmag:2016-12-25 16:03:52,318    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:03:52,319 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 3382 338200]<A/m>
+       nmag:2016-12-25 16:03:52,320 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=8,step=7915.
+==========================================================================
+ID=8 |        Step=7915  |       Time=1.76 ns |  Last step size=0.16 ps | 
+     |       Stage=10    | Stage-step=0       |      Stage-time=0.00 ps | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+This function is called : 9
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 338200.07688460971]
+ex_bottom>>>>>>>>>>>>> [65.976446783989445, -138.48418309085969, 374197.14898177225]
+ex_top>>>>>>>>>>>>>>>> [0.0014985986169825214, 0.073752479102271076, 338198.72370382264]
+       nmag:2016-12-25 16:03:56,131 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=8,step=8055.
+==========================================================================
+ID=8 |        Step=8055 |       Time=1.79 ns |  Last step size=0.12 ps  | 
+     |       Stage=10   | Stage-step=140     |      Stage-time=35.67 ps | 
+     | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+==========================================================================
+       nmag:2016-12-25 16:03:56,131    main.py 2593    INFO save_data(): id->id+1=9, fields=all 
+       nmag:2016-12-25 16:03:56,230    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:03:56,230 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 4227.5 422750]<A/m>
+       nmag:2016-12-25 16:03:56,232 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=9,step=8055.
+==========================================================================
+ID=9 |        Step=8055  |       Time=1.79 ns |  Last step size=0.12 ps | 
+     |       Stage=11    | Stage-step=0       |      Stage-time=0.00 ps | 
+     | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+==========================================================================
+This function is called : 10
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 422750.09610576218]
+ex_bottom>>>>>>>>>>>>> [62.765937381340578, -97.530976625844659, 458747.32663093909]
+ex_top>>>>>>>>>>>>>>>> [0.0015042910131528339, 0.074507095662311049, 422748.74296661315]
+       nmag:2016-12-25 16:04:01,291 hysteresis.py   40    INFO it 8140, time <1.60808e-11s>; stage 11; H_ext=[0 4227.5 422750]<A/m>
+       nmag:2016-12-25 16:04:05,867 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=9,step=8185.
+==========================================================================
+ID=9 |        Step=8185 |       Time=1.82 ns |  Last step size=0.15 ps  | 
+     |       Stage=11   | Stage-step=130     |      Stage-time=23.96 ps | 
+     | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+==========================================================================
+       nmag:2016-12-25 16:04:05,867    main.py 2593    INFO save_data(): id->id+1=10, fields=all 
+       nmag:2016-12-25 16:04:05,976    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:04:05,977 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 5073 507300]<A/m>
+       nmag:2016-12-25 16:04:05,978 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=10,step=8185.
+===========================================================================
+ID=10 |        Step=8185  |       Time=1.82 ns |  Last step size=0.15 ps | 
+      |       Stage=12    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 11
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 507300.11532691459]
+ex_bottom>>>>>>>>>>>>> [60.946376276655549, -73.072080460456391, 543297.42514849338]
+ex_top>>>>>>>>>>>>>>>> [0.0015090142754761449, 0.075287502712332699, 507298.76223126223]
+       nmag:2016-12-25 16:04:12,919 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=10,step=8285.
+===========================================================================
+ID=10 |        Step=8285 |       Time=1.84 ns |  Last step size=0.31 ps  | 
+      |       Stage=12   | Stage-step=100     |      Stage-time=18.50 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+===========================================================================
+       nmag:2016-12-25 16:04:12,919    main.py 2593    INFO save_data(): id->id+1=11, fields=all 
+       nmag:2016-12-25 16:04:13,029    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:04:13,030 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 5918.5 591850]<A/m>
+       nmag:2016-12-25 16:04:13,031 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=11,step=8285.
+===========================================================================
+ID=11 |        Step=8285  |       Time=1.84 ns |  Last step size=0.31 ps | 
+      |       Stage=13    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 12
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 591850.134548067]
+ex_bottom>>>>>>>>>>>>> [59.301300933818467, -55.522785275555449, 627847.49647911068]
+ex_top>>>>>>>>>>>>>>>> [0.0015137623532153544, 0.076088788814514419, 591848.78149753599]
+       nmag:2016-12-25 16:04:14,803 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=11,step=8355.
+===========================================================================
+ID=11 |        Step=8355 |       Time=1.85 ns |  Last step size=0.28 ps  | 
+      |       Stage=13   | Stage-step=70      |      Stage-time=15.60 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+===========================================================================
+       nmag:2016-12-25 16:04:14,803    main.py 2593    INFO save_data(): id->id+1=12, fields=all 
+       nmag:2016-12-25 16:04:14,906    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:04:14,907 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 6764 676400]<A/m>
+       nmag:2016-12-25 16:04:14,908 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=12,step=8355.
+===========================================================================
+ID=12 |        Step=8355  |       Time=1.85 ns |  Last step size=0.28 ps | 
+      |       Stage=14    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 13
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 676400.15376921941]
+ex_bottom>>>>>>>>>>>>> [57.601987612357277, -42.306078833146685, 712397.55419830384]
+ex_top>>>>>>>>>>>>>>>> [0.0015207332263283671, 0.076908615213021655, 676398.80076533859]
+       nmag:2016-12-25 16:04:16,398 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=12,step=8410.
+===========================================================================
+ID=12 |        Step=8410 |       Time=1.86 ns |  Last step size=0.29 ps  | 
+      |       Stage=14   | Stage-step=55      |      Stage-time=11.51 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+===========================================================================
+       nmag:2016-12-25 16:04:16,398    main.py 2593    INFO save_data(): id->id+1=13, fields=all 
+       nmag:2016-12-25 16:04:16,502    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:04:16,503 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 7609.5 760950]<A/m>
+       nmag:2016-12-25 16:04:16,504 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=13,step=8410.
+===========================================================================
+ID=13 |        Step=8410  |       Time=1.86 ns |  Last step size=0.29 ps | 
+      |       Stage=15    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 14
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 760950.17299037182]
+ex_bottom>>>>>>>>>>>>> [56.748913071436078, -33.336646871210213, 796947.6018480215]
+ex_top>>>>>>>>>>>>>>>> [0.0015231164173949152, 0.077749636019201762, 760948.82003487251]
+       nmag:2016-12-25 16:04:17,951 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=13,step=8465.
+===========================================================================
+ID=13 |        Step=8465 |       Time=1.87 ns |  Last step size=0.27 ps  | 
+      |       Stage=15   | Stage-step=55      |      Stage-time=10.88 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+===========================================================================
+       nmag:2016-12-25 16:04:17,952    main.py 2593    INFO save_data(): id->id+1=14, fields=all 
+       nmag:2016-12-25 16:04:18,060    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:04:18,060 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 8455 845500]<A/m>
+       nmag:2016-12-25 16:04:18,061 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=14,step=8465.
+===========================================================================
+ID=14 |        Step=8465  |       Time=1.87 ns |  Last step size=0.27 ps | 
+      |       Stage=16    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 15
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 845500.19221152435]
+ex_bottom>>>>>>>>>>>>> [55.754327818975497, -25.441233485102551, 881497.646498819]
+ex_top>>>>>>>>>>>>>>>> [0.0015266363124623828, 0.078613105633826563, 845498.8393062267]
+       nmag:2016-12-25 16:04:19,333 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=14,step=8510.
+==========================================================================
+ID=14 |        Step=8510 |       Time=1.88 ns |  Last step size=0.28 ps | 
+      |       Stage=16   | Stage-step=45      |      Stage-time=8.36 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 16:04:19,333    main.py 2593    INFO save_data(): id->id+1=15, fields=all 
+       nmag:2016-12-25 16:04:19,445    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:04:19,446 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 9300.5 930050]<A/m>
+       nmag:2016-12-25 16:04:19,447 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=15,step=8510.
+===========================================================================
+ID=15 |        Step=8510  |       Time=1.88 ns |  Last step size=0.28 ps | 
+      |       Stage=17    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 16
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 930050.21143267676]
+ex_bottom>>>>>>>>>>>>> [55.153446772871149, -19.820303014231019, 966047.68741065508]
+ex_top>>>>>>>>>>>>>>>> [0.00153243905390415, 0.079496795244844792, 930048.85857932211]
+       nmag:2016-12-25 16:04:20,699 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=15,step=8555.
+==========================================================================
+ID=15 |        Step=8555 |       Time=1.89 ns |  Last step size=0.27 ps | 
+      |       Stage=17   | Stage-step=45      |      Stage-time=8.12 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 16:04:20,699    main.py 2593    INFO save_data(): id->id+1=16, fields=all 
+       nmag:2016-12-25 16:04:20,817    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:04:20,818 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 10146 1.0146e+06]<A/m>
+       nmag:2016-12-25 16:04:20,819 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=16,step=8555.
+===========================================================================
+ID=16 |        Step=8555  |       Time=1.89 ns |  Last step size=0.27 ps | 
+      |       Stage=18    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 17
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 1014600.2306538292]
+ex_bottom>>>>>>>>>>>>> [54.479098459413208, -14.675062664035135, 1050597.7271593534]
+ex_top>>>>>>>>>>>>>>>> [0.0015346396196084756, 0.080396656669217859, 1014598.8778539586]
+       nmag:2016-12-25 16:04:22,084 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=16,step=8600.
+==========================================================================
+ID=16 |        Step=8600 |       Time=1.90 ns |  Last step size=0.27 ps | 
+      |       Stage=18   | Stage-step=45      |      Stage-time=8.12 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 16:04:22,084    main.py 2593    INFO save_data(): id->id+1=17, fields=all 
+       nmag:2016-12-25 16:04:22,202    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:04:22,202 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 10991.5 1.09915e+06]<A/m>
+       nmag:2016-12-25 16:04:22,203 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=17,step=8600.
+===========================================================================
+ID=17 |        Step=8600  |       Time=1.90 ns |  Last step size=0.27 ps | 
+      |       Stage=19    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 18
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 1099150.2498749816]
+ex_bottom>>>>>>>>>>>>> [53.656370599351149, -10.308570230973139, 1135147.7660007754]
+ex_top>>>>>>>>>>>>>>>> [0.0015396424796620708, 0.081325389869462444, 1099148.8971309497]
+       nmag:2016-12-25 16:04:24,555 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=17,step=8645.
+==========================================================================
+ID=17 |        Step=8645 |       Time=1.91 ns |  Last step size=0.14 ps | 
+      |       Stage=19   | Stage-step=45      |      Stage-time=6.99 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 16:04:24,555    main.py 2593    INFO save_data(): id->id+1=18, fields=all 
+       nmag:2016-12-25 16:04:24,664    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:04:24,665 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 11837 1.1837e+06]<A/m>
+       nmag:2016-12-25 16:04:24,666 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=18,step=8645.
+===========================================================================
+ID=18 |        Step=8645  |       Time=1.91 ns |  Last step size=0.14 ps | 
+      |       Stage=20    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 19
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 1183700.269096134]
+ex_bottom>>>>>>>>>>>>> [53.119562342391362, -7.0635227479098157, 1219697.8034731683]
+ex_top>>>>>>>>>>>>>>>> [0.0015481254483005228, 0.082268460871116028, 1183698.9164094478]
+       nmag:2016-12-25 16:04:25,894 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=18,step=8690.
+==========================================================================
+ID=18 |        Step=8690 |       Time=1.91 ns |  Last step size=0.25 ps | 
+      |       Stage=20   | Stage-step=45      |      Stage-time=7.97 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 16:04:25,894    main.py 2593    INFO save_data(): id->id+1=19, fields=all 
+       nmag:2016-12-25 16:04:25,997    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:04:25,997 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 12682.5 1.26825e+06]<A/m>
+       nmag:2016-12-25 16:04:25,999 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=19,step=8690.
+===========================================================================
+ID=19 |        Step=8690  |       Time=1.91 ns |  Last step size=0.25 ps | 
+      |       Stage=21    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 20
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 1268250.2883172864]
+ex_bottom>>>>>>>>>>>>> [52.467468181402232, -3.8860352412837553, 1304247.8406280694]
+ex_top>>>>>>>>>>>>>>>> [0.0015498996387359795, 0.083235869793334541, 1268248.9356900998]
+       nmag:2016-12-25 16:04:27,540 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=19,step=8735.
+==========================================================================
+ID=19 |        Step=8735 |       Time=1.92 ns |  Last step size=0.11 ps | 
+      |       Stage=21   | Stage-step=45      |      Stage-time=7.64 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 16:04:27,541    main.py 2593    INFO save_data(): id->id+1=20, fields=all 
+       nmag:2016-12-25 16:04:27,652    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:04:27,652 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 13528 1.3528e+06]<A/m>
+       nmag:2016-12-25 16:04:27,654 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=20,step=8735.
+===========================================================================
+ID=20 |        Step=8735  |       Time=1.92 ns |  Last step size=0.11 ps | 
+      |       Stage=22    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 21
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 1352800.3075384388]
+ex_bottom>>>>>>>>>>>>> [51.969625700784661, -1.453200537609749, 1388797.8770749508]
+ex_top>>>>>>>>>>>>>>>> [0.0015524258220506854, 0.084232218469393702, 1352798.9549732467]
+       nmag:2016-12-25 16:04:28,860 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=20,step=8780.
+==========================================================================
+ID=20 |        Step=8780 |       Time=1.93 ns |  Last step size=0.27 ps | 
+      |       Stage=22   | Stage-step=45      |      Stage-time=8.29 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 16:04:28,860    main.py 2593    INFO save_data(): id->id+1=21, fields=all 
+       nmag:2016-12-25 16:04:28,963    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:04:28,963 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 14373.5 1.43735e+06]<A/m>
+       nmag:2016-12-25 16:04:28,965 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=21,step=8780.
+===========================================================================
+ID=21 |        Step=8780  |       Time=1.93 ns |  Last step size=0.27 ps | 
+      |       Stage=23    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 22
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 1437350.3267595915]
+ex_bottom>>>>>>>>>>>>> [51.515031102633436, 0.73677820650548154, 1473347.9131178495]
+ex_top>>>>>>>>>>>>>>>> [0.0015567245554124955, 0.085252151938447721, 1437348.9742586261]
+       nmag:2016-12-25 16:04:30,663 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=21,step=8825.
+==========================================================================
+ID=21 |        Step=8825 |       Time=1.94 ns |  Last step size=0.10 ps | 
+      |       Stage=23   | Stage-step=45      |      Stage-time=7.30 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 16:04:30,663    main.py 2593    INFO save_data(): id->id+1=22, fields=all 
+       nmag:2016-12-25 16:04:30,765    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:04:30,766 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 15219 1.5219e+06]<A/m>
+       nmag:2016-12-25 16:04:30,767 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=22,step=8825.
+===========================================================================
+ID=22 |        Step=8825  |       Time=1.94 ns |  Last step size=0.10 ps | 
+      |       Stage=24    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 23
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 1521900.3459807436]
+ex_bottom>>>>>>>>>>>>> [51.285069578488958, 2.4419847980880189, 1557897.9485711444]
+ex_top>>>>>>>>>>>>>>>> [0.001565208719064433, 0.086293362801317081, 1521898.9935461453]
+       nmag:2016-12-25 16:04:31,949 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=22,step=8870.
+==========================================================================
+ID=22 |        Step=8870 |       Time=1.94 ns |  Last step size=0.25 ps | 
+      |       Stage=24   | Stage-step=45      |      Stage-time=8.02 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 16:04:31,949    main.py 2593    INFO save_data(): id->id+1=23, fields=all 
+       nmag:2016-12-25 16:04:32,063    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:04:32,063 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 16064.5 1.60645e+06]<A/m>
+       nmag:2016-12-25 16:04:32,065 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=23,step=8870.
+===========================================================================
+ID=23 |        Step=8870  |       Time=1.94 ns |  Last step size=0.25 ps | 
+      |       Stage=25    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 24
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 1606450.3652018965]
+ex_bottom>>>>>>>>>>>>> [50.967776661308505, 4.1293252300747287, 1642447.9838978921]
+ex_top>>>>>>>>>>>>>>>> [0.0015671797821945833, 0.087364747731510609, 1606449.0128364158]
+       nmag:2016-12-25 16:04:33,316 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=23,step=8915.
+==========================================================================
+ID=23 |        Step=8915 |       Time=1.95 ns |  Last step size=0.27 ps | 
+      |       Stage=25   | Stage-step=45      |      Stage-time=8.07 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 16:04:33,317    main.py 2593    INFO save_data(): id->id+1=24, fields=all 
+       nmag:2016-12-25 16:04:33,422    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:04:33,422 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 16910 1.691e+06]<A/m>
+       nmag:2016-12-25 16:04:33,424 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=24,step=8915.
+===========================================================================
+ID=24 |        Step=8915  |       Time=1.95 ns |  Last step size=0.27 ps | 
+      |       Stage=26    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 25
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 1691000.3844230487]
+ex_bottom>>>>>>>>>>>>> [50.68854392542368, 5.5189846821251756, 1726998.0189725785]
+ex_top>>>>>>>>>>>>>>>> [0.0015736101817178222, 0.088461603802234223, 1690999.0321292102]
+       nmag:2016-12-25 16:04:34,660 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=24,step=8960.
+==========================================================================
+ID=24 |        Step=8960 |       Time=1.96 ns |  Last step size=0.27 ps | 
+      |       Stage=26   | Stage-step=45      |      Stage-time=8.06 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 16:04:34,661    main.py 2593    INFO save_data(): id->id+1=25, fields=all 
+       nmag:2016-12-25 16:04:34,770    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:04:34,771 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 17755.5 1.77555e+06]<A/m>
+       nmag:2016-12-25 16:04:34,772 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=25,step=8960.
+===========================================================================
+ID=25 |        Step=8960  |       Time=1.96 ns |  Last step size=0.27 ps | 
+      |       Stage=27    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 26
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 1775550.4036442009]
+ex_bottom>>>>>>>>>>>>> [50.459600172514058, 6.7311185252591379, 1811548.0537907765]
+ex_top>>>>>>>>>>>>>>>> [0.0015768542025598939, 0.089588799120172591, 1775549.0514249038]
+       nmag:2016-12-25 16:04:37,409 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=25,step=9010.
+==========================================================================
+ID=25 |        Step=9010 |       Time=1.97 ns |  Last step size=0.35 ps | 
+      |       Stage=27   | Stage-step=50      |      Stage-time=7.89 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 16:04:37,409    main.py 2593    INFO save_data(): id->id+1=26, fields=all 
+       nmag:2016-12-25 16:04:37,511    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:04:37,511 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 18601 1.8601e+06]<A/m>
+       nmag:2016-12-25 16:04:37,513 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=26,step=9010.
+===========================================================================
+ID=26 |        Step=9010  |       Time=1.97 ns |  Last step size=0.35 ps | 
+      |       Stage=28    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 27
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 1860100.4228653535]
+ex_bottom>>>>>>>>>>>>> [50.260968448203677, 7.7950904246657799, 1896098.0883950081]
+ex_top>>>>>>>>>>>>>>>> [0.0015829889823692884, 0.090741733784706471, 1860099.0707232796]
+       nmag:2016-12-25 16:04:38,799 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=26,step=9055.
+==========================================================================
+ID=26 |        Step=9055 |       Time=1.98 ns |  Last step size=0.30 ps | 
+      |       Stage=28   | Stage-step=45      |      Stage-time=8.90 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 16:04:38,799    main.py 2593    INFO save_data(): id->id+1=27, fields=all 
+       nmag:2016-12-25 16:04:38,905    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:04:38,905 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 19446.5 1.94465e+06]<A/m>
+       nmag:2016-12-25 16:04:38,907 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=27,step=9055.
+===========================================================================
+ID=27 |        Step=9055  |       Time=1.98 ns |  Last step size=0.30 ps | 
+      |       Stage=29    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 28
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 1944650.4420865062]
+ex_bottom>>>>>>>>>>>>> [49.995669694451792, 8.7715599356397895, 1980648.1229240806]
+ex_top>>>>>>>>>>>>>>>> [0.0015817066516863822, 0.09192628910527223, 1944649.0900247782]
+       nmag:2016-12-25 16:04:40,601 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=27,step=9100.
+==========================================================================
+ID=27 |        Step=9100 |       Time=1.99 ns |  Last step size=0.16 ps | 
+      |       Stage=29   | Stage-step=45      |      Stage-time=7.93 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 16:04:40,602    main.py 2593    INFO save_data(): id->id+1=28, fields=all 
+       nmag:2016-12-25 16:04:40,713    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:04:40,713 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 20292 2.0292e+06]<A/m>
+       nmag:2016-12-25 16:04:40,715 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=28,step=9100.
+===========================================================================
+ID=28 |        Step=9100  |       Time=1.99 ns |  Last step size=0.16 ps | 
+      |       Stage=30    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 29
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 2029200.4613076583]
+ex_bottom>>>>>>>>>>>>> [49.861310533388924, 9.5695775920510222, 2065198.1571357241]
+ex_top>>>>>>>>>>>>>>>> [0.0015915177301565903, 0.093145292308248168, 2029199.109329717]
+       nmag:2016-12-25 16:04:42,954 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=28,step=9150.
+==========================================================================
+ID=28 |        Step=9150 |       Time=1.99 ns |  Last step size=0.09 ps | 
+      |       Stage=30   | Stage-step=50      |      Stage-time=7.38 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 16:04:42,954    main.py 2593    INFO save_data(): id->id+1=29, fields=all 
+       nmag:2016-12-25 16:04:43,065    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:04:43,065 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 21137.5 2.11375e+06]<A/m>
+       nmag:2016-12-25 16:04:43,066 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=29,step=9150.
+===========================================================================
+ID=29 |        Step=9150  |       Time=1.99 ns |  Last step size=0.09 ps | 
+      |       Stage=31    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 30
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 2113750.4805288105]
+ex_bottom>>>>>>>>>>>>> [49.710630483567947, 10.305170628478589, 2149748.1912179268]
+ex_top>>>>>>>>>>>>>>>> [0.0016013138096424323, 0.094395459957273373, 2113749.1286379271]
+       nmag:2016-12-25 16:04:44,264 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=29,step=9195.
+==========================================================================
+ID=29 |        Step=9195 |       Time=2.00 ns |  Last step size=0.25 ps | 
+      |       Stage=31   | Stage-step=45      |      Stage-time=8.07 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 16:04:44,264    main.py 2593    INFO save_data(): id->id+1=30, fields=all 
+       nmag:2016-12-25 16:04:44,377    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:04:44,377 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 21983 2.1983e+06]<A/m>
+       nmag:2016-12-25 16:04:44,379 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=30,step=9195.
+===========================================================================
+ID=30 |        Step=9195  |       Time=2.00 ns |  Last step size=0.25 ps | 
+      |       Stage=32    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 31
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 2198300.4997499632]
+ex_bottom>>>>>>>>>>>>> [49.492938320492364, 10.972051107883681, 2234298.2252436765]
+ex_top>>>>>>>>>>>>>>>> [0.0016013779545231892, 0.095681042692407389, 2198299.1479498199]
+       nmag:2016-12-25 16:04:45,694 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=30,step=9240.
+==========================================================================
+ID=30 |        Step=9240 |       Time=2.01 ns |  Last step size=0.29 ps | 
+      |       Stage=32   | Stage-step=45      |      Stage-time=8.70 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 16:04:45,694    main.py 2593    INFO save_data(): id->id+1=31, fields=all 
+       nmag:2016-12-25 16:04:45,798    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:04:45,799 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 22828.5 2.28285e+06]<A/m>
+       nmag:2016-12-25 16:04:45,800 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=31,step=9240.
+===========================================================================
+ID=31 |        Step=9240  |       Time=2.01 ns |  Last step size=0.29 ps | 
+      |       Stage=33    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 32
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 2282850.5189711154]
+ex_bottom>>>>>>>>>>>>> [49.293564266919709, 11.538511233717893, 2318848.2591184522]
+ex_top>>>>>>>>>>>>>>>> [0.0016015009678758867, 0.096999046263573169, 2282849.1672652606]
+       nmag:2016-12-25 16:04:47,510 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=31,step=9290.
+==========================================================================
+ID=31 |        Step=9290 |       Time=2.02 ns |  Last step size=0.15 ps | 
+      |       Stage=33   | Stage-step=50      |      Stage-time=8.97 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 16:04:47,510    main.py 2593    INFO save_data(): id->id+1=32, fields=all 
+       nmag:2016-12-25 16:04:47,612    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:04:47,612 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 23674 2.3674e+06]<A/m>
+       nmag:2016-12-25 16:04:47,614 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=32,step=9290.
+===========================================================================
+ID=32 |        Step=9290  |       Time=2.02 ns |  Last step size=0.15 ps | 
+      |       Stage=34    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 33
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 2367400.538192268]
+ex_bottom>>>>>>>>>>>>> [49.124905090737101, 12.035209837642615, 2403398.2928178869]
+ex_top>>>>>>>>>>>>>>>> [0.0016056806437794086, 0.098360004176081456, 2367399.1865851213]
+       nmag:2016-12-25 16:04:49,020 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=32,step=9340.
+==========================================================================
+ID=32 |        Step=9340 |       Time=2.03 ns |  Last step size=0.10 ps | 
+      |       Stage=34   | Stage-step=50      |      Stage-time=9.00 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 16:04:49,020    main.py 2593    INFO save_data(): id->id+1=33, fields=all 
+       nmag:2016-12-25 16:04:49,126    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:04:49,126 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 24519.5 2.45195e+06]<A/m>
+       nmag:2016-12-25 16:04:49,127 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=33,step=9340.
+===========================================================================
+ID=33 |        Step=9340  |       Time=2.03 ns |  Last step size=0.10 ps | 
+      |       Stage=35    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 34
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 2451950.5574134202]
+ex_bottom>>>>>>>>>>>>> [48.966055368981287, 12.471260983991273, 2487948.3263726849]
+ex_top>>>>>>>>>>>>>>>> [0.0016101183170745927, 0.099756839359937413, 2451949.2059090119]
+       nmag:2016-12-25 16:04:50,878 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=33,step=9390.
+==========================================================================
+ID=33 |        Step=9390 |       Time=2.04 ns |  Last step size=0.09 ps | 
+      |       Stage=35   | Stage-step=50      |      Stage-time=8.15 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 16:04:50,879    main.py 2593    INFO save_data(): id->id+1=34, fields=all 
+       nmag:2016-12-25 16:04:50,995    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:04:50,995 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 25365 2.5365e+06]<A/m>
+       nmag:2016-12-25 16:04:50,996 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=34,step=9390.
+===========================================================================
+ID=34 |        Step=9390  |       Time=2.04 ns |  Last step size=0.09 ps | 
+      |       Stage=36    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 35
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 2536500.5766345728]
+ex_bottom>>>>>>>>>>>>> [48.834472413117915, 12.856800274747659, 2572498.3597601955]
+ex_top>>>>>>>>>>>>>>>> [0.0016227223975716107, 0.10119695233733995, 2536499.2252376089]
+       nmag:2016-12-25 16:04:52,911 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=34,step=9440.
+==========================================================================
+ID=34 |        Step=9440 |       Time=2.04 ns |  Last step size=0.10 ps | 
+      |       Stage=36   | Stage-step=50      |      Stage-time=8.42 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 16:04:52,911    main.py 2593    INFO save_data(): id->id+1=35, fields=all 
+       nmag:2016-12-25 16:04:53,016    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:04:53,016 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 26210.5 2.62105e+06]<A/m>
+       nmag:2016-12-25 16:04:53,018 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=35,step=9440.
+===========================================================================
+ID=35 |        Step=9440  |       Time=2.04 ns |  Last step size=0.10 ps | 
+      |       Stage=37    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 36
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 2621050.595855725]
+ex_bottom>>>>>>>>>>>>> [48.667674858441323, 13.187376792150431, 2657048.393073515]
+ex_top>>>>>>>>>>>>>>>> [0.001626788312211605, 0.10267738688624041, 2621049.2445707927]
+       nmag:2016-12-25 16:04:54,312 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=35,step=9490.
+==========================================================================
+ID=35 |        Step=9490 |       Time=2.05 ns |  Last step size=0.25 ps | 
+      |       Stage=37   | Stage-step=50      |      Stage-time=9.23 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 16:04:54,312    main.py 2593    INFO save_data(): id->id+1=36, fields=all 
+       nmag:2016-12-25 16:04:54,412    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:04:54,412 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 27056 2.7056e+06]<A/m>
+       nmag:2016-12-25 16:04:54,414 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=36,step=9490.
+===========================================================================
+ID=36 |        Step=9490  |       Time=2.05 ns |  Last step size=0.25 ps | 
+      |       Stage=38    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 37
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 2705600.6150768776]
+ex_bottom>>>>>>>>>>>>> [48.49859978853771, 13.462110079775849, 2741598.4262689529]
+ex_top>>>>>>>>>>>>>>>> [0.0016255612862608752, 0.10420194265551394, 2705599.2639090233]
+       nmag:2016-12-25 16:04:55,847 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=36,step=9540.
+==========================================================================
+ID=36 |        Step=9540 |       Time=2.06 ns |  Last step size=0.29 ps | 
+      |       Stage=38   | Stage-step=50      |      Stage-time=9.79 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 16:04:55,847    main.py 2593    INFO save_data(): id->id+1=37, fields=all 
+       nmag:2016-12-25 16:04:55,952    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:04:55,952 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 27901.5 2.79015e+06]<A/m>
+       nmag:2016-12-25 16:04:55,953 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=37,step=9540.
+===========================================================================
+ID=37 |        Step=9540  |       Time=2.06 ns |  Last step size=0.29 ps | 
+      |       Stage=39    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 38
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 2790150.6342980303]
+ex_bottom>>>>>>>>>>>>> [48.344206288748893, 13.69474899073491, 2826148.4593225596]
+ex_top>>>>>>>>>>>>>>>> [0.0016269265124119695, 0.10577350158684067, 2790149.2832526662]
+       nmag:2016-12-25 16:04:58,783 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=37,step=9595.
+==========================================================================
+ID=37 |        Step=9595 |       Time=2.07 ns |  Last step size=0.36 ps | 
+      |       Stage=39   | Stage-step=55      |      Stage-time=9.23 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 16:04:58,783    main.py 2593    INFO save_data(): id->id+1=38, fields=all 
+       nmag:2016-12-25 16:04:58,894    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:04:58,894 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 28747 2.8747e+06]<A/m>
+       nmag:2016-12-25 16:04:58,896 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=38,step=9595.
+===========================================================================
+ID=38 |        Step=9595  |       Time=2.07 ns |  Last step size=0.36 ps | 
+      |       Stage=40    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 39
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 2874700.6535191829]
+ex_bottom>>>>>>>>>>>>> [48.205976045199066, 13.897933914716829, 2910698.4922320009]
+ex_top>>>>>>>>>>>>>>>> [0.0016384855787653985, 0.10739540914044547, 2874699.3026021477]
+       nmag:2016-12-25 16:05:01,568 hysteresis.py   40    INFO it 9650, time <9.47803e-12s>; stage 40; H_ext=[0 28747 2.8747e+06]<A/m>
+       nmag:2016-12-25 16:05:01,568 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=38,step=9650.
+==========================================================================
+ID=38 |        Step=9650 |       Time=2.08 ns |  Last step size=0.10 ps | 
+      |       Stage=40   | Stage-step=55      |      Stage-time=9.48 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 16:05:01,568    main.py 2593    INFO save_data(): id->id+1=39, fields=all 
+       nmag:2016-12-25 16:05:01,669    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:05:01,670 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 29592.5 2.95925e+06]<A/m>
+       nmag:2016-12-25 16:05:01,671 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=39,step=9650.
+===========================================================================
+ID=39 |        Step=9650  |       Time=2.08 ns |  Last step size=0.10 ps | 
+      |       Stage=41    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 40
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 2959250.6727403356]
+ex_bottom>>>>>>>>>>>>> [48.056349407133155, 14.054783379358144, 2995248.5250408603]
+ex_top>>>>>>>>>>>>>>>> [0.0016434810183935148, 0.10906540567069342, 2959249.3219574848]
+       nmag:2016-12-25 16:05:02,922 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=39,step=9700.
+==========================================================================
+ID=39 |        Step=9700 |       Time=2.09 ns |  Last step size=0.24 ps | 
+      |       Stage=41   | Stage-step=50      |      Stage-time=9.11 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 16:05:02,923    main.py 2593    INFO save_data(): id->id+1=40, fields=all 
+       nmag:2016-12-25 16:05:03,030    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:05:03,031 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 30438 3.0438e+06]<A/m>
+       nmag:2016-12-25 16:05:03,032 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=40,step=9700.
+===========================================================================
+ID=40 |        Step=9700  |       Time=2.09 ns |  Last step size=0.24 ps | 
+      |       Stage=42    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 41
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 3043800.6919614873]
+ex_bottom>>>>>>>>>>>>> [47.917326826669949, 14.182117591886458, 3079798.5577189685]
+ex_top>>>>>>>>>>>>>>>> [0.0016517905195478032, 0.11079355022709217, 3043799.3413196704]
+       nmag:2016-12-25 16:05:06,617 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=40,step=9760.
+==========================================================================
+ID=40 |        Step=9760 |       Time=2.10 ns |  Last step size=0.10 ps | 
+      |       Stage=42   | Stage-step=60      |      Stage-time=9.90 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 16:05:06,618    main.py 2593    INFO save_data(): id->id+1=41, fields=all 
+       nmag:2016-12-25 16:05:06,717    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:05:06,718 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 31283.5 3.12835e+06]<A/m>
+       nmag:2016-12-25 16:05:06,719 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=41,step=9760.
+===========================================================================
+ID=41 |        Step=9760  |       Time=2.10 ns |  Last step size=0.10 ps | 
+      |       Stage=43    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 42
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 3128350.7111826399]
+ex_bottom>>>>>>>>>>>>> [47.772188803428918, 14.267359726817835, 3164348.5902915434]
+ex_top>>>>>>>>>>>>>>>> [0.0016507525122680742, 0.11257326653024678, 3128349.3606883823]
+       nmag:2016-12-25 16:05:09,614 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=41,step=9815.
+==========================================================================
+ID=41 |        Step=9815 |       Time=2.11 ns |  Last step size=0.11 ps | 
+      |       Stage=43   | Stage-step=55      |      Stage-time=9.56 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 16:05:09,614    main.py 2593    INFO save_data(): id->id+1=42, fields=all 
+       nmag:2016-12-25 16:05:09,717    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:05:09,718 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 32129 3.2129e+06]<A/m>
+       nmag:2016-12-25 16:05:09,719 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=42,step=9815.
+===========================================================================
+ID=42 |        Step=9815  |       Time=2.11 ns |  Last step size=0.11 ps | 
+      |       Stage=44    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 43
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 3212900.730403793]
+ex_bottom>>>>>>>>>>>>> [47.632759638269142, 14.329840410800552, 3248898.6227425216]
+ex_top>>>>>>>>>>>>>>>> [0.0016591845219540169, 0.11441501535867958, 3212899.3800647184]
+       nmag:2016-12-25 16:05:11,119 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=42,step=9870.
+===========================================================================
+ID=42 |        Step=9870 |       Time=2.12 ns |  Last step size=0.27 ps  | 
+      |       Stage=44   | Stage-step=55      |      Stage-time=10.99 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+===========================================================================
+       nmag:2016-12-25 16:05:11,119    main.py 2593    INFO save_data(): id->id+1=43, fields=all 
+       nmag:2016-12-25 16:05:11,226    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:05:11,227 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 32974.5 3.29745e+06]<A/m>
+       nmag:2016-12-25 16:05:11,228 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=43,step=9870.
+===========================================================================
+ID=43 |        Step=9870  |       Time=2.12 ns |  Last step size=0.27 ps | 
+      |       Stage=45    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 44
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 3297450.7496249448]
+ex_bottom>>>>>>>>>>>>> [47.49122402772818, 14.350128624910093, 3333448.6550902929]
+ex_top>>>>>>>>>>>>>>>> [0.0016570073347988944, 0.11632019409537353, 3297449.3994490542]
+       nmag:2016-12-25 16:05:14,350 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=43,step=9930.
+===========================================================================
+ID=43 |        Step=9930 |       Time=2.13 ns |  Last step size=0.12 ps  | 
+      |       Stage=45   | Stage-step=60      |      Stage-time=10.66 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+===========================================================================
+       nmag:2016-12-25 16:05:14,350    main.py 2593    INFO save_data(): id->id+1=44, fields=all 
+       nmag:2016-12-25 16:05:14,449    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:05:14,449 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 33820 3.382e+06]<A/m>
+       nmag:2016-12-25 16:05:14,450 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=44,step=9930.
+===========================================================================
+ID=44 |        Step=9930  |       Time=2.13 ns |  Last step size=0.12 ps | 
+      |       Stage=46    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 45
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 3382000.7688460974]
+ex_bottom>>>>>>>>>>>>> [47.351890637780983, 14.356079969974362, 3417998.68731939]
+ex_top>>>>>>>>>>>>>>>> [0.001666272761582795, 0.11828502567546895, 3381999.4188413131]
+       nmag:2016-12-25 16:05:16,626 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=44,step=9985.
+==========================================================================
+ID=44 |        Step=9985 |       Time=2.14 ns |  Last step size=0.09 ps | 
+      |       Stage=46   | Stage-step=55      |      Stage-time=9.00 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-25 16:05:16,626    main.py 2593    INFO save_data(): id->id+1=45, fields=all 
+       nmag:2016-12-25 16:05:16,736    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:05:16,737 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 34665.5 3.46655e+06]<A/m>
+       nmag:2016-12-25 16:05:16,738 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=45,step=9985.
+===========================================================================
+ID=45 |        Step=9985  |       Time=2.14 ns |  Last step size=0.09 ps | 
+      |       Stage=47    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 46
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 3466550.7880672505]
+ex_bottom>>>>>>>>>>>>> [47.218924122451085, 14.335072924909099, 3502548.7194339684]
+ex_top>>>>>>>>>>>>>>>> [0.0016852478321917376, 0.12032886741203677, 3466549.4382435158]
+       nmag:2016-12-25 16:05:18,628 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=45,step=10040.
+============================================================================
+ID=45 |        Step=10040 |       Time=2.15 ns |  Last step size=0.10 ps  | 
+      |       Stage=47    | Stage-step=55      |      Stage-time=10.10 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:05:18,628    main.py 2593    INFO save_data(): id->id+1=46, fields=all 
+       nmag:2016-12-25 16:05:18,726    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:05:18,727 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 35511 3.5511e+06]<A/m>
+       nmag:2016-12-25 16:05:18,728 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=46,step=10040.
+===========================================================================
+ID=46 |        Step=10040 |       Time=2.15 ns |  Last step size=0.10 ps | 
+      |       Stage=48    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 47
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 3551100.8072884018]
+ex_bottom>>>>>>>>>>>>> [47.080441394829457, 14.273943600746481, 3587098.7514509964]
+ex_top>>>>>>>>>>>>>>>> [0.0016813981675979268, 0.12243311336632981, 3551099.4576542978]
+       nmag:2016-12-25 16:05:20,086 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=46,step=10095.
+============================================================================
+ID=46 |        Step=10095 |       Time=2.16 ns |  Last step size=0.26 ps  | 
+      |       Stage=48    | Stage-step=55      |      Stage-time=10.66 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:05:20,086    main.py 2593    INFO save_data(): id->id+1=47, fields=all 
+       nmag:2016-12-25 16:05:20,190    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:05:20,190 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 36356.5 3.63565e+06]<A/m>
+       nmag:2016-12-25 16:05:20,192 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=47,step=10095.
+===========================================================================
+ID=47 |        Step=10095 |       Time=2.16 ns |  Last step size=0.26 ps | 
+      |       Stage=49    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 48
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 3635650.8265095544]
+ex_bottom>>>>>>>>>>>>> [46.945501303029054, 14.191312380402648, 3671648.7833601255]
+ex_top>>>>>>>>>>>>>>>> [0.001682121096906266, 0.12461624194015279, 3635649.4770756816]
+       nmag:2016-12-25 16:05:22,028 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=47,step=10155.
+============================================================================
+ID=47 |        Step=10155 |       Time=2.17 ns |  Last step size=0.10 ps  | 
+      |       Stage=49    | Stage-step=60      |      Stage-time=10.60 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:05:22,028    main.py 2593    INFO save_data(): id->id+1=48, fields=all 
+       nmag:2016-12-25 16:05:22,136    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:05:22,136 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 37202 3.7202e+06]<A/m>
+       nmag:2016-12-25 16:05:22,138 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=48,step=10155.
+===========================================================================
+ID=48 |        Step=10155 |       Time=2.17 ns |  Last step size=0.10 ps | 
+      |       Stage=50    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 49
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 3720200.845730707]
+ex_bottom>>>>>>>>>>>>> [46.812002783174627, 14.085775381737138, 3756198.8151627993]
+ex_top>>>>>>>>>>>>>>>> [0.0016913727332372474, 0.12688486709682925, 3720199.4965086794]
+       nmag:2016-12-25 16:05:24,567 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=48,step=10215.
+============================================================================
+ID=48 |        Step=10215 |       Time=2.18 ns |  Last step size=0.30 ps  | 
+      |       Stage=50    | Stage-step=60      |      Stage-time=11.02 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:05:24,567    main.py 2593    INFO save_data(): id->id+1=49, fields=all 
+       nmag:2016-12-25 16:05:24,673    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:05:24,673 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 38047.5 3.80475e+06]<A/m>
+       nmag:2016-12-25 16:05:24,675 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=49,step=10215.
+===========================================================================
+ID=49 |        Step=10215 |       Time=2.18 ns |  Last step size=0.30 ps | 
+      |       Stage=51    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 50
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 3804750.8649518592]
+ex_bottom>>>>>>>>>>>>> [46.678111901961316, 13.955928294256218, 3840748.8468640056]
+ex_top>>>>>>>>>>>>>>>> [0.0016954304495340067, 0.12923457524647236, 3804749.5159532805]
+       nmag:2016-12-25 16:05:27,756 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=49,step=10280.
+============================================================================
+ID=49 |        Step=10280 |       Time=2.19 ns |  Last step size=0.40 ps  | 
+      |       Stage=51    | Stage-step=65      |      Stage-time=11.38 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:05:27,756    main.py 2593    INFO save_data(): id->id+1=50, fields=all 
+       nmag:2016-12-25 16:05:27,856    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:05:27,857 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 38893 3.8893e+06]<A/m>
+       nmag:2016-12-25 16:05:27,858 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=50,step=10280.
+===========================================================================
+ID=50 |        Step=10280 |       Time=2.19 ns |  Last step size=0.40 ps | 
+      |       Stage=52    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 51
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 3889300.8841730123]
+ex_bottom>>>>>>>>>>>>> [46.544765340889725, 13.799992871944806, 3925298.8784665517]
+ex_top>>>>>>>>>>>>>>>> [0.0017008584815806759, 0.13167672563988067, 3889299.5354110454]
+       nmag:2016-12-25 16:05:30,965 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=50,step=10345.
+============================================================================
+ID=50 |        Step=10345 |       Time=2.21 ns |  Last step size=0.14 ps  | 
+      |       Stage=52    | Stage-step=65      |      Stage-time=10.59 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:05:30,965    main.py 2593    INFO save_data(): id->id+1=51, fields=all 
+       nmag:2016-12-25 16:05:31,080    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:05:31,081 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 39738.5 3.97385e+06]<A/m>
+       nmag:2016-12-25 16:05:31,082 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=51,step=10345.
+===========================================================================
+ID=51 |        Step=10345 |       Time=2.21 ns |  Last step size=0.14 ps | 
+      |       Stage=53    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 52
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 3973850.9033941645]
+ex_bottom>>>>>>>>>>>>> [46.409296928704684, 13.616556227387292, 4009848.9099758752]
+ex_top>>>>>>>>>>>>>>>> [0.0017139570202550378, 0.13421809602552259, 3973849.5548831602]
+       nmag:2016-12-25 16:05:32,667 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=51,step=10405.
+============================================================================
+ID=51 |        Step=10405 |       Time=2.22 ns |  Last step size=0.21 ps  | 
+      |       Stage=53    | Stage-step=60      |      Stage-time=11.81 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:05:32,667    main.py 2593    INFO save_data(): id->id+1=52, fields=all 
+       nmag:2016-12-25 16:05:32,777    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:05:32,777 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 40584 4.0584e+06]<A/m>
+       nmag:2016-12-25 16:05:32,779 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=52,step=10405.
+===========================================================================
+ID=52 |        Step=10405 |       Time=2.22 ns |  Last step size=0.21 ps | 
+      |       Stage=54    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 53
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 4058400.9226153167]
+ex_bottom>>>>>>>>>>>>> [46.280461323450126, 13.410758717549379, 4094398.9413802046]
+ex_top>>>>>>>>>>>>>>>> [0.0017097881173638637, 0.13685330761771844, 4058399.574369621]
+       nmag:2016-12-25 16:05:34,888 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=52,step=10465.
+============================================================================
+ID=52 |        Step=10465 |       Time=2.23 ns |  Last step size=0.45 ps  | 
+      |       Stage=54    | Stage-step=60      |      Stage-time=11.63 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:05:34,888    main.py 2593    INFO save_data(): id->id+1=53, fields=all 
+       nmag:2016-12-25 16:05:35,005    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:05:35,006 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 41429.5 4.14295e+06]<A/m>
+       nmag:2016-12-25 16:05:35,007 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=53,step=10465.
+===========================================================================
+ID=53 |        Step=10465 |       Time=2.23 ns |  Last step size=0.45 ps | 
+      |       Stage=55    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 54
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 4142950.9418364689]
+ex_bottom>>>>>>>>>>>>> [46.148702132308308, 13.178383423701186, 4178948.9726939499]
+ex_top>>>>>>>>>>>>>>>> [0.0017202984424601359, 0.13960001806417904, 4142949.5938728279]
+       nmag:2016-12-25 16:05:37,207 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=53,step=10525.
+============================================================================
+ID=53 |        Step=10525 |       Time=2.24 ns |  Last step size=0.32 ps  | 
+      |       Stage=55    | Stage-step=60      |      Stage-time=12.12 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:05:37,207    main.py 2593    INFO save_data(): id->id+1=54, fields=all 
+       nmag:2016-12-25 16:05:37,314    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:05:37,314 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 42275 4.2275e+06]<A/m>
+       nmag:2016-12-25 16:05:37,316 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=54,step=10525.
+===========================================================================
+ID=54 |        Step=10525 |       Time=2.24 ns |  Last step size=0.32 ps | 
+      |       Stage=56    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 55
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 4227500.9610576211]
+ex_bottom>>>>>>>>>>>>> [46.017989032413375, 12.921702647753131, 4263499.0039158612]
+ex_top>>>>>>>>>>>>>>>> [0.0017210672004141735, 0.14246029097533275, 4227499.613393697]
+       nmag:2016-12-25 16:05:40,859 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=54,step=10595.
+============================================================================
+ID=54 |        Step=10595 |       Time=2.25 ns |  Last step size=0.14 ps  | 
+      |       Stage=56    | Stage-step=70      |      Stage-time=11.94 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:05:40,859    main.py 2593    INFO save_data(): id->id+1=55, fields=all 
+       nmag:2016-12-25 16:05:40,964    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:05:40,965 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 43120.5 4.31205e+06]<A/m>
+       nmag:2016-12-25 16:05:40,966 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=55,step=10595.
+===========================================================================
+ID=55 |        Step=10595 |       Time=2.25 ns |  Last step size=0.14 ps | 
+      |       Stage=57    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 56
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 4312050.9802787742]
+ex_bottom>>>>>>>>>>>>> [45.88686608534509, 12.63846474525951, 4348049.0350483991]
+ex_top>>>>>>>>>>>>>>>> [0.0017326487531489018, 0.14544822659815651, 4312049.6329344958]
+       nmag:2016-12-25 16:05:44,989 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=55,step=10665.
+============================================================================
+ID=55 |        Step=10665 |       Time=2.27 ns |  Last step size=0.18 ps  | 
+      |       Stage=57    | Stage-step=70      |      Stage-time=12.30 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:05:44,989    main.py 2593    INFO save_data(): id->id+1=56, fields=all 
+       nmag:2016-12-25 16:05:45,092    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:05:45,093 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 43966 4.3966e+06]<A/m>
+       nmag:2016-12-25 16:05:45,094 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=56,step=10665.
+===========================================================================
+ID=56 |        Step=10665 |       Time=2.27 ns |  Last step size=0.18 ps | 
+      |       Stage=58    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 57
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 4396600.9994999263]
+ex_bottom>>>>>>>>>>>>> [45.757264823989139, 12.327758819109135, 4432599.0660915235]
+ex_top>>>>>>>>>>>>>>>> [0.0017374931791716681, 0.14856288075098656, 4396599.6524959616]
+       nmag:2016-12-25 16:05:50,176 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=56,step=10740.
+============================================================================
+ID=56 |        Step=10740 |       Time=2.28 ns |  Last step size=0.34 ps  | 
+      |       Stage=58    | Stage-step=75      |      Stage-time=12.65 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:05:50,176    main.py 2593    INFO save_data(): id->id+1=57, fields=all 
+       nmag:2016-12-25 16:05:50,282    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:05:50,282 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 44811.5 4.48115e+06]<A/m>
+       nmag:2016-12-25 16:05:50,284 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=57,step=10740.
+===========================================================================
+ID=57 |        Step=10740 |       Time=2.28 ns |  Last step size=0.34 ps | 
+      |       Stage=59    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 58
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 4481151.0187210785]
+ex_bottom>>>>>>>>>>>>> [45.627108870276949, 11.993350244625626, 4517149.0970493834]
+ex_top>>>>>>>>>>>>>>>> [0.0017425218621122691, 0.15181645502337338, 4481149.6720803911]
+       nmag:2016-12-25 16:05:54,204 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=57,step=10815.
+============================================================================
+ID=57 |        Step=10815 |       Time=2.29 ns |  Last step size=0.15 ps  | 
+      |       Stage=59    | Stage-step=75      |      Stage-time=13.18 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:05:54,204    main.py 2593    INFO save_data(): id->id+1=58, fields=all 
+       nmag:2016-12-25 16:05:54,312    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:05:54,313 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 45657 4.5657e+06]<A/m>
+       nmag:2016-12-25 16:05:54,314 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=58,step=10815.
+===========================================================================
+ID=58 |        Step=10815 |       Time=2.29 ns |  Last step size=0.15 ps | 
+      |       Stage=60    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 59
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 4565701.0379422307]
+ex_bottom>>>>>>>>>>>>> [45.497978886812874, 11.628343815824429, 4601699.1279233228]
+ex_top>>>>>>>>>>>>>>>> [0.0017463172823151906, 0.1552191658751553, 4565699.6916899579]
+       nmag:2016-12-25 16:05:57,751 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=58,step=10885.
+============================================================================
+ID=58 |        Step=10885 |       Time=2.30 ns |  Last step size=0.13 ps  | 
+      |       Stage=60    | Stage-step=70      |      Stage-time=12.99 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:05:57,751    main.py 2593    INFO save_data(): id->id+1=59, fields=all 
+       nmag:2016-12-25 16:05:57,866    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:05:57,866 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 46502.5 4.65025e+06]<A/m>
+       nmag:2016-12-25 16:05:57,868 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=59,step=10885.
+===========================================================================
+ID=59 |        Step=10885 |       Time=2.30 ns |  Last step size=0.13 ps | 
+      |       Stage=61    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 60
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 4650251.0571633838]
+ex_bottom>>>>>>>>>>>>> [45.370122355721449, 11.22963897896364, 4686249.158717352]
+ex_top>>>>>>>>>>>>>>>> [0.0017588008320981287, 0.15878332983897955, 4650249.7113272874]
+       nmag:2016-12-25 16:06:00,559 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=59,step=10955.
+============================================================================
+ID=59 |        Step=10955 |       Time=2.32 ns |  Last step size=0.10 ps  | 
+      |       Stage=61    | Stage-step=70      |      Stage-time=12.91 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:06:00,559    main.py 2593    INFO save_data(): id->id+1=60, fields=all 
+       nmag:2016-12-25 16:06:00,659    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:06:00,660 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 47348 4.7348e+06]<A/m>
+       nmag:2016-12-25 16:06:00,661 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=60,step=10955.
+===========================================================================
+ID=60 |        Step=10955 |       Time=2.32 ns |  Last step size=0.10 ps | 
+      |       Stage=62    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 61
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 4734801.076384536]
+ex_bottom>>>>>>>>>>>>> [45.241963835909061, 10.804312784307257, 4770799.1894320305]
+ex_top>>>>>>>>>>>>>>>> [0.001768644442988726, 0.16252199809712828, 4734799.730995263]
+       nmag:2016-12-25 16:06:01,646 hysteresis.py   40    INFO it 10985, time <4.32418e-12s>; stage 62; H_ext=[0 47348 4.7348e+06]<A/m>
+       nmag:2016-12-25 16:06:03,471 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=60,step=11025.
+============================================================================
+ID=60 |        Step=11025 |       Time=2.33 ns |  Last step size=0.15 ps  | 
+      |       Stage=62    | Stage-step=70      |      Stage-time=14.12 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:06:03,471    main.py 2593    INFO save_data(): id->id+1=61, fields=all 
+       nmag:2016-12-25 16:06:03,574    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:06:03,574 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 48193.5 4.81935e+06]<A/m>
+       nmag:2016-12-25 16:06:03,576 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=61,step=11025.
+===========================================================================
+ID=61 |        Step=11025 |       Time=2.33 ns |  Last step size=0.15 ps | 
+      |       Stage=63    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 62
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 4819351.0956056891]
+ex_bottom>>>>>>>>>>>>> [45.115605291426839, 10.350110171542472, 4855349.2200662829]
+ex_top>>>>>>>>>>>>>>>> [0.0017645584730786481, 0.16644057613972146, 4819349.7506960016]
+       nmag:2016-12-25 16:06:07,268 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=61,step=11105.
+============================================================================
+ID=61 |        Step=11105 |       Time=2.35 ns |  Last step size=0.15 ps  | 
+      |       Stage=63    | Stage-step=80      |      Stage-time=14.87 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:06:07,268    main.py 2593    INFO save_data(): id->id+1=62, fields=all 
+       nmag:2016-12-25 16:06:07,374    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:06:07,374 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 49039 4.9039e+06]<A/m>
+       nmag:2016-12-25 16:06:07,376 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=62,step=11105.
+===========================================================================
+ID=62 |        Step=11105 |       Time=2.35 ns |  Last step size=0.15 ps | 
+      |       Stage=64    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 63
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 4903901.1148268403]
+ex_bottom>>>>>>>>>>>>> [44.987982511948367, 9.8587361663077502, 4939899.250631392]
+ex_top>>>>>>>>>>>>>>>> [0.0017675667944575431, 0.17056409686748544, 4903899.7704343628]
+       nmag:2016-12-25 16:06:11,593 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=62,step=11185.
+============================================================================
+ID=62 |        Step=11185 |       Time=2.36 ns |  Last step size=0.12 ps  | 
+      |       Stage=64    | Stage-step=80      |      Stage-time=14.52 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:06:11,593    main.py 2593    INFO save_data(): id->id+1=63, fields=all 
+       nmag:2016-12-25 16:06:11,699    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:06:11,700 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 49884.5 4.98845e+06]<A/m>
+       nmag:2016-12-25 16:06:11,701 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=63,step=11185.
+===========================================================================
+ID=63 |        Step=11185 |       Time=2.36 ns |  Last step size=0.12 ps | 
+      |       Stage=65    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 64
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 4988451.1340479935]
+ex_bottom>>>>>>>>>>>>> [44.862186071398881, 9.3278194891691069, 5024449.2811264228]
+ex_top>>>>>>>>>>>>>>>> [0.0017826436846397062, 0.17490178404111251, 4988449.7902134294]
+       nmag:2016-12-25 16:06:15,235 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=63,step=11265.
+============================================================================
+ID=63 |        Step=11265 |       Time=2.38 ns |  Last step size=0.40 ps  | 
+      |       Stage=65    | Stage-step=80      |      Stage-time=15.08 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:06:15,235    main.py 2593    INFO save_data(): id->id+1=64, fields=all 
+       nmag:2016-12-25 16:06:15,348    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:06:15,348 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 50730 5.073e+06]<A/m>
+       nmag:2016-12-25 16:06:15,350 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=64,step=11265.
+===========================================================================
+ID=64 |        Step=11265 |       Time=2.38 ns |  Last step size=0.40 ps | 
+      |       Stage=66    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 65
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 5073001.1532691456]
+ex_bottom>>>>>>>>>>>>> [44.735798965120992, 8.7648868115223681, 5108999.3115529614]
+ex_top>>>>>>>>>>>>>>>> [0.0017870072919492781, 0.17947882043511076, 5072999.8100386867]
+       nmag:2016-12-25 16:06:20,541 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=64,step=11355.
+============================================================================
+ID=64 |        Step=11355 |       Time=2.39 ns |  Last step size=0.40 ps  | 
+      |       Stage=66    | Stage-step=90      |      Stage-time=16.16 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:06:20,541    main.py 2593    INFO save_data(): id->id+1=65, fields=all 
+       nmag:2016-12-25 16:06:20,653    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:06:20,654 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 51575.5 5.15755e+06]<A/m>
+       nmag:2016-12-25 16:06:20,655 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=65,step=11355.
+===========================================================================
+ID=65 |        Step=11355 |       Time=2.39 ns |  Last step size=0.40 ps | 
+      |       Stage=67    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 66
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 5157551.1724902978]
+ex_bottom>>>>>>>>>>>>> [44.61248427690861, 8.1601970441478429, 5193549.3419116782]
+ex_top>>>>>>>>>>>>>>>> [0.0017867344601381538, 0.18430999550783267, 5157549.8299146825]
+       nmag:2016-12-25 16:06:24,448 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=65,step=11430.
+============================================================================
+ID=65 |        Step=11430 |       Time=2.41 ns |  Last step size=0.23 ps  | 
+      |       Stage=67    | Stage-step=75      |      Stage-time=15.93 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:06:24,448    main.py 2593    INFO save_data(): id->id+1=66, fields=all 
+       nmag:2016-12-25 16:06:24,554    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:06:24,554 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 52421 5.2421e+06]<A/m>
+       nmag:2016-12-25 16:06:24,555 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=66,step=11430.
+===========================================================================
+ID=66 |        Step=11430 |       Time=2.41 ns |  Last step size=0.23 ps | 
+      |       Stage=68    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 67
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 5242101.19171145]
+ex_bottom>>>>>>>>>>>>> [44.485618186784691, 7.5067308586007053, 5278099.372218349]
+ex_top>>>>>>>>>>>>>>>> [0.0018015929357321845, 0.18941942067002568, 5242099.8498476679]
+       nmag:2016-12-25 16:06:28,416 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=66,step=11510.
+============================================================================
+ID=66 |        Step=11510 |       Time=2.42 ns |  Last step size=0.11 ps  | 
+      |       Stage=68    | Stage-step=80      |      Stage-time=15.91 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:06:28,416    main.py 2593    INFO save_data(): id->id+1=67, fields=all 
+       nmag:2016-12-25 16:06:28,522    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:06:28,523 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 53266.5 5.32665e+06]<A/m>
+       nmag:2016-12-25 16:06:28,524 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=67,step=11510.
+===========================================================================
+ID=67 |        Step=11510 |       Time=2.42 ns |  Last step size=0.11 ps | 
+      |       Stage=69    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 68
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 5326651.2109326031]
+ex_bottom>>>>>>>>>>>>> [44.360514214843676, 6.8085967948934698, 5362649.4024660122]
+ex_top>>>>>>>>>>>>>>>> [0.0018135480201374114, 0.19484016467382845, 5326649.8698456716]
+       nmag:2016-12-25 16:06:31,115 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=67,step=11590.
+============================================================================
+ID=67 |        Step=11590 |       Time=2.44 ns |  Last step size=0.10 ps  | 
+      |       Stage=69    | Stage-step=80      |      Stage-time=16.84 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:06:31,115    main.py 2593    INFO save_data(): id->id+1=68, fields=all 
+       nmag:2016-12-25 16:06:31,220    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:06:31,221 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 54112 5.4112e+06]<A/m>
+       nmag:2016-12-25 16:06:31,222 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=68,step=11590.
+===========================================================================
+ID=68 |        Step=11590 |       Time=2.44 ns |  Last step size=0.10 ps | 
+      |       Stage=70    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 69
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 5411201.2301537553]
+ex_bottom>>>>>>>>>>>>> [44.23942498458058, 6.0598606495385781, 5447199.4326589918]
+ex_top>>>>>>>>>>>>>>>> [0.0018156527300263053, 0.20059198029211323, 5411199.8899155511]
+       nmag:2016-12-25 16:06:37,256 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=68,step=11690.
+============================================================================
+ID=68 |        Step=11690 |       Time=2.46 ns |  Last step size=0.19 ps  | 
+      |       Stage=70    | Stage-step=100     |      Stage-time=17.82 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:06:37,256    main.py 2593    INFO save_data(): id->id+1=69, fields=all 
+       nmag:2016-12-25 16:06:37,366    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:06:37,366 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 54957.5 5.49575e+06]<A/m>
+       nmag:2016-12-25 16:06:37,368 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=69,step=11690.
+===========================================================================
+ID=69 |        Step=11690 |       Time=2.46 ns |  Last step size=0.19 ps | 
+      |       Stage=71    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 70
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 5495751.2493749084]
+ex_bottom>>>>>>>>>>>>> [44.110536745446623, 5.2539765533237501, 5531749.462811552]
+ex_top>>>>>>>>>>>>>>>> [0.0018185826644620603, 0.2067202608439429, 5495749.9100687336]
+       nmag:2016-12-25 16:06:42,684 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=69,step=11790.
+============================================================================
+ID=69 |        Step=11790 |       Time=2.48 ns |  Last step size=0.10 ps  | 
+      |       Stage=71    | Stage-step=100     |      Stage-time=18.07 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:06:42,684    main.py 2593    INFO save_data(): id->id+1=70, fields=all 
+       nmag:2016-12-25 16:06:42,791    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:06:42,791 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 55803 5.5803e+06]<A/m>
+       nmag:2016-12-25 16:06:42,793 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=70,step=11790.
+===========================================================================
+ID=70 |        Step=11790 |       Time=2.48 ns |  Last step size=0.10 ps | 
+      |       Stage=72    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 71
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 5580301.2685960606]
+ex_bottom>>>>>>>>>>>>> [43.985147526338721, 4.3862253808235367, 5616299.4929214194]
+ex_top>>>>>>>>>>>>>>>> [0.0018298569179463866, 0.21326130843890342, 5580299.9303163523]
+       nmag:2016-12-25 16:06:48,567 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=70,step=11895.
+============================================================================
+ID=70 |        Step=11895 |       Time=2.50 ns |  Last step size=0.11 ps  | 
+      |       Stage=72    | Stage-step=105     |      Stage-time=19.72 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:06:48,567    main.py 2593    INFO save_data(): id->id+1=71, fields=all 
+       nmag:2016-12-25 16:06:48,671    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:06:48,671 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 56648.5 5.66485e+06]<A/m>
+       nmag:2016-12-25 16:06:48,673 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=71,step=11895.
+===========================================================================
+ID=71 |        Step=11895 |       Time=2.50 ns |  Last step size=0.11 ps | 
+      |       Stage=73    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 72
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 5664851.2878172128]
+ex_bottom>>>>>>>>>>>>> [43.86195085396934, 3.4513842634588632, 5700849.5229932675]
+ex_top>>>>>>>>>>>>>>>> [0.0018262030287005328, 0.22026467099676852, 5664849.9506728109]
+       nmag:2016-12-25 16:06:54,232 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=71,step=12005.
+============================================================================
+ID=71 |        Step=12005 |       Time=2.51 ns |  Last step size=0.11 ps  | 
+      |       Stage=73    | Stage-step=110     |      Stage-time=18.94 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:06:54,232    main.py 2593    INFO save_data(): id->id+1=72, fields=all 
+       nmag:2016-12-25 16:06:54,335    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:06:54,335 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 57494 5.7494e+06]<A/m>
+       nmag:2016-12-25 16:06:54,337 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=72,step=12005.
+===========================================================================
+ID=72 |        Step=12005 |       Time=2.51 ns |  Last step size=0.11 ps | 
+      |       Stage=74    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 73
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 5749401.3070383659]
+ex_bottom>>>>>>>>>>>>> [43.735390539819925, 2.4346788910385642, 5785399.5530445138]
+ex_top>>>>>>>>>>>>>>>> [0.0018529509738714903, 0.22779028588203767, 5749399.9711559163]
+       nmag:2016-12-25 16:06:59,697 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=72,step=12110.
+============================================================================
+ID=72 |        Step=12110 |       Time=2.53 ns |  Last step size=0.11 ps  | 
+      |       Stage=74    | Stage-step=105     |      Stage-time=19.76 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:06:59,697    main.py 2593    INFO save_data(): id->id+1=73, fields=all 
+       nmag:2016-12-25 16:06:59,808    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:06:59,808 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 58339.5 5.83395e+06]<A/m>
+       nmag:2016-12-25 16:06:59,810 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=73,step=12110.
+===========================================================================
+ID=73 |        Step=12110 |       Time=2.53 ns |  Last step size=0.11 ps | 
+      |       Stage=75    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 74
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 5833951.326259518]
+ex_bottom>>>>>>>>>>>>> [43.60945241784929, 1.334482231473197, 5869949.5830746777]
+ex_top>>>>>>>>>>>>>>>> [0.0018607334361917221, 0.23589398077330506, 5833949.9917846899]
+       nmag:2016-12-25 16:07:02,075 hysteresis.py   40    INFO it 12165, time <9.6029e-12s>; stage 75; H_ext=[0 58339.5 5.83395e+06]<A/m>
+       nmag:2016-12-25 16:07:06,632 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=73,step=12225.
+============================================================================
+ID=73 |        Step=12225 |       Time=2.56 ns |  Last step size=0.21 ps  | 
+      |       Stage=75    | Stage-step=115     |      Stage-time=22.20 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:07:06,632    main.py 2593    INFO save_data(): id->id+1=74, fields=all 
+       nmag:2016-12-25 16:07:06,741    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:07:06,742 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 59185 5.9185e+06]<A/m>
+       nmag:2016-12-25 16:07:06,743 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=74,step=12225.
+===========================================================================
+ID=74 |        Step=12225 |       Time=2.56 ns |  Last step size=0.21 ps | 
+      |       Stage=76    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 75
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 5918501.3454806712]
+ex_bottom>>>>>>>>>>>>> [43.48400210895467, 0.13866087840381697, 5954499.6130942469]
+ex_top>>>>>>>>>>>>>>>> [0.0018484638453268017, 0.24466396161400122, 5918500.0125863245]
+       nmag:2016-12-25 16:07:12,298 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=74,step=12335.
+============================================================================
+ID=74 |        Step=12335 |       Time=2.58 ns |  Last step size=0.14 ps  | 
+      |       Stage=76    | Stage-step=110     |      Stage-time=23.36 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:07:12,298    main.py 2593    INFO save_data(): id->id+1=75, fields=all 
+       nmag:2016-12-25 16:07:12,404    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:07:12,404 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 60030.5 6.00305e+06]<A/m>
+       nmag:2016-12-25 16:07:12,406 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=75,step=12335.
+===========================================================================
+ID=75 |        Step=12335 |       Time=2.58 ns |  Last step size=0.14 ps | 
+      |       Stage=77    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 76
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 6003051.3647018224]
+ex_bottom>>>>>>>>>>>>> [43.355803521475536, -1.173139517882906, 6039049.6431226302]
+ex_top>>>>>>>>>>>>>>>> [0.0018551156875742942, 0.25420337095580403, 6003050.0335943298]
+       nmag:2016-12-25 16:07:16,109 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=75,step=12445.
+============================================================================
+ID=75 |        Step=12445 |       Time=2.60 ns |  Last step size=0.28 ps  | 
+      |       Stage=77    | Stage-step=110     |      Stage-time=24.65 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:07:16,109    main.py 2593    INFO save_data(): id->id+1=76, fields=all 
+       nmag:2016-12-25 16:07:16,209    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:07:16,209 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 60876 6.0876e+06]<A/m>
+       nmag:2016-12-25 16:07:16,211 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=76,step=12445.
+===========================================================================
+ID=76 |        Step=12445 |       Time=2.60 ns |  Last step size=0.28 ps | 
+      |       Stage=78    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 77
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 6087601.3839229746]
+ex_bottom>>>>>>>>>>>>> [43.226827756622491, -2.6162424855837818, 6123599.6731697628]
+ex_top>>>>>>>>>>>>>>>> [0.0018603252499615839, 0.26463966398306299, 6087600.0548514454]
+       nmag:2016-12-25 16:07:19,377 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=76,step=12550.
+============================================================================
+ID=76 |        Step=12550 |       Time=2.63 ns |  Last step size=0.28 ps  | 
+      |       Stage=78    | Stage-step=105     |      Stage-time=25.29 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:07:19,377    main.py 2593    INFO save_data(): id->id+1=77, fields=all 
+       nmag:2016-12-25 16:07:19,477    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:07:19,478 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 61721.5 6.17215e+06]<A/m>
+       nmag:2016-12-25 16:07:19,479 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=77,step=12550.
+===========================================================================
+ID=77 |        Step=12550 |       Time=2.63 ns |  Last step size=0.28 ps | 
+      |       Stage=79    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 78
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 6172151.4031441268]
+ex_bottom>>>>>>>>>>>>> [43.095105994904294, -4.2166905262884011, 6208149.7032569088]
+ex_top>>>>>>>>>>>>>>>> [0.0018751089229901733, 0.27612926414125993, 6172150.0764125427]
+       nmag:2016-12-25 16:07:21,873 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=77,step=12665.
+============================================================================
+ID=77 |        Step=12665 |       Time=2.66 ns |  Last step size=0.28 ps  | 
+      |       Stage=79    | Stage-step=115     |      Stage-time=27.85 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:07:21,874    main.py 2593    INFO save_data(): id->id+1=78, fields=all 
+       nmag:2016-12-25 16:07:21,975    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:07:21,976 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 62567 6.2567e+06]<A/m>
+       nmag:2016-12-25 16:07:21,977 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=78,step=12665.
+===========================================================================
+ID=78 |        Step=12665 |       Time=2.66 ns |  Last step size=0.28 ps | 
+      |       Stage=80    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 79
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 6256701.4223652799]
+ex_bottom>>>>>>>>>>>>> [42.962942764609643, -6.0018677562083242, 6292699.7334043942]
+ex_top>>>>>>>>>>>>>>>> [0.0018711618244241356, 0.28888644716070111, 6256700.098353453]
+       nmag:2016-12-25 16:07:26,493 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=78,step=12795.
+============================================================================
+ID=78 |        Step=12795 |       Time=2.69 ns |  Last step size=0.13 ps  | 
+      |       Stage=80    | Stage-step=130     |      Stage-time=27.64 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:07:26,493    main.py 2593    INFO save_data(): id->id+1=79, fields=all 
+       nmag:2016-12-25 16:07:26,597    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:07:26,598 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 63412.5 6.34125e+06]<A/m>
+       nmag:2016-12-25 16:07:26,599 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=79,step=12795.
+===========================================================================
+ID=79 |        Step=12795 |       Time=2.69 ns |  Last step size=0.13 ps | 
+      |       Stage=81    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 80
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 6341251.441586432]
+ex_bottom>>>>>>>>>>>>> [42.82393700473753, -8.0215633807562536, 6377249.7636518683]
+ex_top>>>>>>>>>>>>>>>> [0.0019128089959427272, 0.30319842729142815, 6341250.1207790859]
+       nmag:2016-12-25 16:07:33,362 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=79,step=12930.
+============================================================================
+ID=79 |        Step=12930 |       Time=2.72 ns |  Last step size=0.13 ps  | 
+      |       Stage=81    | Stage-step=135     |      Stage-time=29.70 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:07:33,362    main.py 2593    INFO save_data(): id->id+1=80, fields=all 
+       nmag:2016-12-25 16:07:33,464    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:07:33,464 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 64258 6.4258e+06]<A/m>
+       nmag:2016-12-25 16:07:33,466 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=80,step=12930.
+===========================================================================
+ID=80 |        Step=12930 |       Time=2.72 ns |  Last step size=0.13 ps | 
+      |       Stage=82    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 81
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 6425801.4608075861]
+ex_bottom>>>>>>>>>>>>> [42.681128618047694, -10.332672867856457, 6461799.7940406706]
+ex_top>>>>>>>>>>>>>>>> [0.0019226927689959688, 0.31947407707901421, 6425800.1438426841]
+       nmag:2016-12-25 16:07:43,633 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=80,step=13090.
+============================================================================
+ID=80 |        Step=13090 |       Time=2.75 ns |  Last step size=0.49 ps  | 
+      |       Stage=82    | Stage-step=160     |      Stage-time=33.71 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:07:43,633    main.py 2593    INFO save_data(): id->id+1=81, fields=all 
+       nmag:2016-12-25 16:07:43,732    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:07:43,733 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 65103.5 6.51035e+06]<A/m>
+       nmag:2016-12-25 16:07:43,734 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=81,step=13090.
+===========================================================================
+ID=81 |        Step=13090 |       Time=2.75 ns |  Last step size=0.49 ps | 
+      |       Stage=83    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 82
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 6510351.4800287373]
+ex_bottom>>>>>>>>>>>>> [42.534240158115097, -13.028924706376952, 6546349.8246374978]
+ex_top>>>>>>>>>>>>>>>> [0.0019110125331505542, 0.33833619562611739, 6510350.1677834]
+       nmag:2016-12-25 16:07:58,563 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=81,step=13300.
+============================================================================
+ID=81 |        Step=13300 |       Time=2.79 ns |  Last step size=0.14 ps  | 
+      |       Stage=83    | Stage-step=210     |      Stage-time=36.22 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:07:58,564    main.py 2593    INFO save_data(): id->id+1=82, fields=all 
+       nmag:2016-12-25 16:07:58,666    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:07:58,667 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 65949 6.5949e+06]<A/m>
+       nmag:2016-12-25 16:07:58,668 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=82,step=13300.
+===========================================================================
+ID=82 |        Step=13300 |       Time=2.79 ns |  Last step size=0.14 ps | 
+      |       Stage=84    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 83
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 6594901.4992498895]
+ex_bottom>>>>>>>>>>>>> [42.373974054891043, -16.281978742516692, 6630899.8555611493]
+ex_top>>>>>>>>>>>>>>>> [0.0019443765392977447, 0.36083202394136382, 6594900.1930116424]
+       nmag:2016-12-25 16:08:02,362 hysteresis.py   40    INFO it 13385, time <1.64343e-11s>; stage 84; H_ext=[0 65949 6.5949e+06]<A/m>
+       nmag:2016-12-25 16:08:07,303 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=82,step=13485.
+============================================================================
+ID=82 |        Step=13485 |       Time=2.83 ns |  Last step size=0.15 ps  | 
+      |       Stage=84    | Stage-step=185     |      Stage-time=41.58 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:08:07,303    main.py 2593    INFO save_data(): id->id+1=83, fields=all 
+       nmag:2016-12-25 16:08:07,406    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:08:07,406 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 66794.5 6.67945e+06]<A/m>
+       nmag:2016-12-25 16:08:07,408 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=83,step=13485.
+===========================================================================
+ID=83 |        Step=13485 |       Time=2.83 ns |  Last step size=0.15 ps | 
+      |       Stage=85    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 84
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 6679451.5184710426]
+ex_bottom>>>>>>>>>>>>> [42.198643766564871, -20.385732461591004, 6715449.8870152971]
+ex_top>>>>>>>>>>>>>>>> [0.0019582381805173452, 0.38891028862775834, 6679450.2203161819]
+       nmag:2016-12-25 16:08:18,189 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=83,step=13700.
+============================================================================
+ID=83 |        Step=13700 |       Time=2.88 ns |  Last step size=0.17 ps  | 
+      |       Stage=85    | Stage-step=215     |      Stage-time=50.52 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:08:18,189    main.py 2593    INFO save_data(): id->id+1=84, fields=all 
+       nmag:2016-12-25 16:08:18,299    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:08:18,299 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 67640 6.764e+06]<A/m>
+       nmag:2016-12-25 16:08:18,301 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=84,step=13700.
+===========================================================================
+ID=84 |        Step=13700 |       Time=2.88 ns |  Last step size=0.17 ps | 
+      |       Stage=86    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 85
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 6764001.5376921948]
+ex_bottom>>>>>>>>>>>>> [41.986277988700934, -26.126939403954598, 6799999.9195211073]
+ex_top>>>>>>>>>>>>>>>> [0.0019888360126442549, 0.4275049388755392, 6764000.2517309999]
+       nmag:2016-12-25 16:08:34,433 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=84,step=14015.
+============================================================================
+ID=84 |        Step=14015 |       Time=2.95 ns |  Last step size=0.20 ps  | 
+      |       Stage=86    | Stage-step=315     |      Stage-time=71.63 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:08:34,433    main.py 2593    INFO save_data(): id->id+1=85, fields=all 
+       nmag:2016-12-25 16:08:34,535    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:08:34,536 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 68485.5 6.84855e+06]<A/m>
+       nmag:2016-12-25 16:08:34,537 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=85,step=14015.
+===========================================================================
+ID=85 |        Step=14015 |       Time=2.95 ns |  Last step size=0.20 ps | 
+      |       Stage=87    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 86
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 6848551.556913347]
+ex_bottom>>>>>>>>>>>>> [41.66720740703515, -38.388160221367876, 6884549.9561532307]
+ex_top>>>>>>>>>>>>>>>> [0.0018010686061232083, 0.50725588980749781, 6848550.300271092]
+       nmag:2016-12-25 16:08:47,668 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=85,step=14795.
+============================================================================
+ID=85 |        Step=14795 |       Time=2.99 ns |  Last step size=0.26 ps  | 
+      |       Stage=87    | Stage-step=780     |      Stage-time=41.19 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-25 16:08:47,668    main.py 2593    INFO save_data(): id->id+1=86, fields=all 
+       nmag:2016-12-25 16:08:47,773    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:08:47,773 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 69331 6.9331e+06]<A/m>
+       nmag:2016-12-25 16:08:47,775 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=86,step=14795.
+===========================================================================
+ID=86 |        Step=14795 |       Time=2.99 ns |  Last step size=0.26 ps | 
+      |       Stage=88    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 87
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 6933101.576134501]
+ex_bottom>>>>>>>>>>>>> [16.950752078196057, 22.693470897785716, 6969101.3115276322]
+ex_top>>>>>>>>>>>>>>>> [0.00065356646747603039, -0.036246936369302298, 6933102.9308544323]
+       nmag:2016-12-25 16:08:49,238 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=86,step=14825.
+===========================================================================
+ID=86 |        Step=14825 |       Time=2.99 ns |  Last step size=0.16 ps | 
+      |       Stage=88    | Stage-step=30      |      Stage-time=4.18 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-25 16:08:49,239    main.py 2593    INFO save_data(): id->id+1=87, fields=all 
+       nmag:2016-12-25 16:08:49,347    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:08:49,347 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 70176.5 7.01765e+06]<A/m>
+       nmag:2016-12-25 16:08:49,348 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=87,step=14825.
+===========================================================================
+ID=87 |        Step=14825 |       Time=2.99 ns |  Last step size=0.16 ps | 
+      |       Stage=89    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 88
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 7017651.5953556523]
+ex_bottom>>>>>>>>>>>>> [16.94441071834143, 22.530092477328793, 7053651.3319193339]
+ex_top>>>>>>>>>>>>>>>> [0.00065305576362645204, -0.036049094159806824, 7017652.9500966491]
+       nmag:2016-12-25 16:08:50,217 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=87,step=14850.
+===========================================================================
+ID=87 |        Step=14850 |       Time=3.00 ns |  Last step size=0.28 ps | 
+      |       Stage=89    | Stage-step=25      |      Stage-time=3.73 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-25 16:08:50,218    main.py 2593    INFO save_data(): id->id+1=88, fields=all 
+       nmag:2016-12-25 16:08:50,323    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:08:50,323 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 71022 7.1022e+06]<A/m>
+       nmag:2016-12-25 16:08:50,325 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=88,step=14850.
+===========================================================================
+ID=88 |        Step=14850 |       Time=3.00 ns |  Last step size=0.28 ps | 
+      |       Stage=90    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 89
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 7102201.6145768035]
+ex_bottom>>>>>>>>>>>>> [16.907966132963498, 22.41576670445675, 7138201.3522894364]
+ex_top>>>>>>>>>>>>>>>> [0.00065125686653046263, -0.035854102261072517, 7102202.9693293665]
+       nmag:2016-12-25 16:08:51,580 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=88,step=14880.
+===========================================================================
+ID=88 |        Step=14880 |       Time=3.00 ns |  Last step size=0.08 ps | 
+      |       Stage=90    | Stage-step=30      |      Stage-time=4.63 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-25 16:08:51,580    main.py 2593    INFO save_data(): id->id+1=89, fields=all 
+       nmag:2016-12-25 16:08:51,688    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:08:51,688 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 71867.5 7.18675e+06]<A/m>
+       nmag:2016-12-25 16:08:51,690 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=89,step=14880.
+===========================================================================
+ID=89 |        Step=14880 |       Time=3.00 ns |  Last step size=0.08 ps | 
+      |       Stage=91    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 90
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 7186751.6337979576]
+ex_bottom>>>>>>>>>>>>> [16.876718054044893, 22.307055748288771, 7222751.3726427779]
+ex_top>>>>>>>>>>>>>>>> [0.00064895447669188885, -0.035657676486634621, 7186752.9885592125]
+       nmag:2016-12-25 16:08:52,578 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=89,step=14905.
+===========================================================================
+ID=89 |        Step=14905 |       Time=3.01 ns |  Last step size=0.32 ps | 
+      |       Stage=91    | Stage-step=25      |      Stage-time=4.19 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-25 16:08:52,578    main.py 2593    INFO save_data(): id->id+1=90, fields=all 
+       nmag:2016-12-25 16:08:52,691    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:08:52,691 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 72713 7.2713e+06]<A/m>
+       nmag:2016-12-25 16:08:52,692 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=90,step=14905.
+===========================================================================
+ID=90 |        Step=14905 |       Time=3.01 ns |  Last step size=0.32 ps | 
+      |       Stage=92    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 91
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 7271301.6530191088]
+ex_bottom>>>>>>>>>>>>> [16.843533832283327, 22.195240760042463, 7307301.3929951647]
+ex_top>>>>>>>>>>>>>>>> [0.0006487906123476653, -0.035466193274507285, 7271303.0077867322]
+       nmag:2016-12-25 16:08:53,653 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=90,step=14935.
+===========================================================================
+ID=90 |        Step=14935 |       Time=3.01 ns |  Last step size=0.30 ps | 
+      |       Stage=92    | Stage-step=30      |      Stage-time=5.05 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-25 16:08:53,653    main.py 2593    INFO save_data(): id->id+1=91, fields=all 
+       nmag:2016-12-25 16:08:53,771    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:08:53,771 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 73558.5 7.35585e+06]<A/m>
+       nmag:2016-12-25 16:08:53,773 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=91,step=14935.
+===========================================================================
+ID=91 |        Step=14935 |       Time=3.01 ns |  Last step size=0.30 ps | 
+      |       Stage=93    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 92
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 7355851.672240261]
+ex_bottom>>>>>>>>>>>>> [16.812333773145497, 22.087260900699231, 7391851.4133370258]
+ex_top>>>>>>>>>>>>>>>> [0.00064731825844422427, -0.035275148273367779, 7355853.0270135468]
+       nmag:2016-12-25 16:08:54,986 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=91,step=14960.
+===========================================================================
+ID=91 |        Step=14960 |       Time=3.02 ns |  Last step size=0.26 ps | 
+      |       Stage=93    | Stage-step=25      |      Stage-time=3.49 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-25 16:08:54,987    main.py 2593    INFO save_data(): id->id+1=92, fields=all 
+       nmag:2016-12-25 16:08:55,094    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:08:55,094 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 74404 7.4404e+06]<A/m>
+       nmag:2016-12-25 16:08:55,096 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=92,step=14960.
+===========================================================================
+ID=92 |        Step=14960 |       Time=3.02 ns |  Last step size=0.26 ps | 
+      |       Stage=94    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 93
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 7440401.6914614141]
+ex_bottom>>>>>>>>>>>>> [16.779935943332966, 21.978062695905475, 7476401.433673935]
+ex_top>>>>>>>>>>>>>>>> [0.00064473283174233545, -0.035086876943799153, 7440403.0462398194]
+       nmag:2016-12-25 16:08:56,124 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=92,step=14985.
+===========================================================================
+ID=92 |        Step=14985 |       Time=3.02 ns |  Last step size=0.25 ps | 
+      |       Stage=94    | Stage-step=25      |      Stage-time=3.33 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-25 16:08:56,124    main.py 2593    INFO save_data(): id->id+1=93, fields=all 
+       nmag:2016-12-25 16:08:56,233    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:08:56,233 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 75249.5 7.52495e+06]<A/m>
+       nmag:2016-12-25 16:08:56,235 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=93,step=14985.
+===========================================================================
+ID=93 |        Step=14985 |       Time=3.02 ns |  Last step size=0.25 ps | 
+      |       Stage=95    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 94
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 7524951.7106825672]
+ex_bottom>>>>>>>>>>>>> [16.742811455695954, 21.873447404437805, 7560951.4540037755]
+ex_top>>>>>>>>>>>>>>>> [0.00064279645640122904, -0.034900331710284505, 7524953.0654659281]
+       nmag:2016-12-25 16:08:57,144 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=93,step=15010.
+===========================================================================
+ID=93 |        Step=15010 |       Time=3.02 ns |  Last step size=0.28 ps | 
+      |       Stage=95    | Stage-step=25      |      Stage-time=4.02 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-25 16:08:57,144    main.py 2593    INFO save_data(): id->id+1=94, fields=all 
+       nmag:2016-12-25 16:08:57,246    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:08:57,247 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 76095 7.6095e+06]<A/m>
+       nmag:2016-12-25 16:08:57,248 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=94,step=15010.
+===========================================================================
+ID=94 |        Step=15010 |       Time=3.02 ns |  Last step size=0.28 ps | 
+      |       Stage=96    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 95
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 7609501.7299037185]
+ex_bottom>>>>>>>>>>>>> [16.714543680958503, 21.769162716869864, 7645501.474324422]
+ex_top>>>>>>>>>>>>>>>> [0.00064292146304115649, -0.034715661958402089, 7609503.0846919231]
+       nmag:2016-12-25 16:08:58,288 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=94,step=15035.
+===========================================================================
+ID=94 |        Step=15035 |       Time=3.03 ns |  Last step size=0.39 ps | 
+      |       Stage=96    | Stage-step=25      |      Stage-time=3.81 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-25 16:08:58,288    main.py 2593    INFO save_data(): id->id+1=95, fields=all 
+       nmag:2016-12-25 16:08:58,392    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:08:58,392 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 76940.5 7.69405e+06]<A/m>
+       nmag:2016-12-25 16:08:58,394 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=95,step=15035.
+===========================================================================
+ID=95 |        Step=15035 |       Time=3.03 ns |  Last step size=0.39 ps | 
+      |       Stage=97    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 96
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 7694051.7491248725]
+ex_bottom>>>>>>>>>>>>> [16.68106897988109, 21.668738276613798, 7730051.4946395494]
+ex_top>>>>>>>>>>>>>>>> [0.00064108698759655349, -0.034532347729113622, 7694053.1039178343]
+       nmag:2016-12-25 16:08:59,624 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=95,step=15060.
+===========================================================================
+ID=95 |        Step=15060 |       Time=3.03 ns |  Last step size=0.37 ps | 
+      |       Stage=97    | Stage-step=25      |      Stage-time=3.88 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-25 16:08:59,624    main.py 2593    INFO save_data(): id->id+1=96, fields=all 
+       nmag:2016-12-25 16:08:59,730    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:08:59,730 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 77786 7.7786e+06]<A/m>
+       nmag:2016-12-25 16:08:59,732 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=96,step=15060.
+===========================================================================
+ID=96 |        Step=15060 |       Time=3.03 ns |  Last step size=0.37 ps | 
+      |       Stage=98    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 97
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 7778601.7683460247]
+ex_bottom>>>>>>>>>>>>> [16.653985398494498, 21.567475051460828, 7814601.5149437711]
+ex_top>>>>>>>>>>>>>>>> [0.00063889966645912461, -0.034352341487309514, 7778603.1231436227]
+       nmag:2016-12-25 16:09:00,940 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=96,step=15085.
+===========================================================================
+ID=96 |        Step=15085 |       Time=3.03 ns |  Last step size=0.16 ps | 
+      |       Stage=98    | Stage-step=25      |      Stage-time=3.71 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-25 16:09:00,940    main.py 2593    INFO save_data(): id->id+1=97, fields=all 
+       nmag:2016-12-25 16:09:01,047    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:09:01,047 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 78631.5 7.86315e+06]<A/m>
+       nmag:2016-12-25 16:09:01,049 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=97,step=15085.
+===========================================================================
+ID=97 |        Step=15085 |       Time=3.03 ns |  Last step size=0.16 ps | 
+      |       Stage=99    | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 98
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 7863151.7875671769]
+ex_bottom>>>>>>>>>>>>> [16.617475980793095, 21.471162629458679, 7899151.535241765]
+ex_top>>>>>>>>>>>>>>>> [0.00063735923273369483, -0.034172849723781047, 7863153.1423693681]
+       nmag:2016-12-25 16:09:02,275 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=97,step=15110.
+===========================================================================
+ID=97 |        Step=15110 |       Time=3.04 ns |  Last step size=0.10 ps | 
+      |       Stage=99    | Stage-step=25      |      Stage-time=3.35 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-25 16:09:02,275    main.py 2593    INFO save_data(): id->id+1=98, fields=all 
+       nmag:2016-12-25 16:09:02,382    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:09:02,382 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 79477 7.9477e+06]<A/m>
+       nmag:2016-12-25 16:09:02,384 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=98,step=15110.
+===========================================================================
+ID=98 |        Step=15110 |       Time=3.04 ns |  Last step size=0.10 ps | 
+      |       Stage=100   | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 99
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 7947701.806788329]
+ex_bottom>>>>>>>>>>>>> [16.585399238149677, 21.37366543093982, 7983701.5555336596]
+ex_top>>>>>>>>>>>>>>>> [0.00063551343460423952, -0.033995819654039992, 7947703.161595026]
+       nmag:2016-12-25 16:09:02,985 hysteresis.py   40    INFO it 15115, time <2.44848e-13s>; stage 100; H_ext=[0 79477 7.9477e+06]<A/m>
+       nmag:2016-12-25 16:09:03,280 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=98,step=15135.
+===========================================================================
+ID=98 |        Step=15135 |       Time=3.04 ns |  Last step size=0.29 ps | 
+      |       Stage=100   | Stage-step=25      |      Stage-time=4.06 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-25 16:09:03,280    main.py 2593    INFO save_data(): id->id+1=99, fields=all 
+       nmag:2016-12-25 16:09:03,391    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:09:03,391 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 80322.5 8.03225e+06]<A/m>
+       nmag:2016-12-25 16:09:03,392 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=99,step=15135.
+===========================================================================
+ID=99 |        Step=15135 |       Time=3.04 ns |  Last step size=0.29 ps | 
+      |       Stage=101   | Stage-step=0       |      Stage-time=0.00 ps | 
+      | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+===========================================================================
+This function is called : 100
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 8032251.8260094812]
+ex_bottom>>>>>>>>>>>>> [16.556242222789837, 21.279141712138617, 8068251.5758167747]
+ex_top>>>>>>>>>>>>>>>> [0.00063569969120788096, -0.033820622510869078, 8032253.1808206104]
+       nmag:2016-12-25 16:09:04,419 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=99,step=15160.
+===========================================================================
+ID=99 |        Step=15160 |       Time=3.05 ns |  Last step size=0.16 ps | 
+      |       Stage=101   | Stage-step=25      |      Stage-time=3.75 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-25 16:09:04,419    main.py 2593    INFO save_data(): id->id+1=100, fields=all 
+       nmag:2016-12-25 16:09:04,524    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:09:04,524 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 81168 8.1168e+06]<A/m>
+       nmag:2016-12-25 16:09:04,525 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=100,step=15160.
+============================================================================
+ID=100 |        Step=15160 |       Time=3.05 ns |  Last step size=0.16 ps | 
+       |       Stage=102   | Stage-step=0       |      Stage-time=0.00 ps | 
+       | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+============================================================================
+This function is called : 101
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 8116801.8452306334]
+ex_bottom>>>>>>>>>>>>> [16.523641226998691, 21.184834115337779, 8152801.5960940141]
+ex_top>>>>>>>>>>>>>>>> [0.00063309160284739886, -0.033647363639349899, 8116803.2000461267]
+       nmag:2016-12-25 16:09:05,434 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=100,step=15185.
+============================================================================
+ID=100 |        Step=15185 |       Time=3.05 ns |  Last step size=0.29 ps | 
+       |       Stage=102   | Stage-step=25      |      Stage-time=4.06 ps | 
+       | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+============================================================================
+       nmag:2016-12-25 16:09:05,434    main.py 2593    INFO save_data(): id->id+1=101, fields=all 
+       nmag:2016-12-25 16:09:05,549    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:09:05,549 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 82013.5 8.20135e+06]<A/m>
+       nmag:2016-12-25 16:09:05,551 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=101,step=15185.
+============================================================================
+ID=101 |        Step=15185 |       Time=3.05 ns |  Last step size=0.29 ps | 
+       |       Stage=103   | Stage-step=0       |      Stage-time=0.00 ps | 
+       | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+============================================================================
+This function is called : 102
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 8201351.8644517865]
+ex_bottom>>>>>>>>>>>>> [16.492152853115527, 21.092430779311162, 8237351.6163673429]
+ex_top>>>>>>>>>>>>>>>> [0.00063354940084486822, -0.033475093443393306, 8201353.2192715947]
+       nmag:2016-12-25 16:09:06,427 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=101,step=15210.
+============================================================================
+ID=101 |        Step=15210 |       Time=3.05 ns |  Last step size=0.30 ps | 
+       |       Stage=103   | Stage-step=25      |      Stage-time=4.18 ps | 
+       | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+============================================================================
+       nmag:2016-12-25 16:09:06,427    main.py 2593    INFO save_data(): id->id+1=102, fields=all 
+       nmag:2016-12-25 16:09:06,545    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:09:06,545 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 82859 8.2859e+06]<A/m>
+       nmag:2016-12-25 16:09:06,547 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=102,step=15210.
+============================================================================
+ID=102 |        Step=15210 |       Time=3.05 ns |  Last step size=0.30 ps | 
+       |       Stage=104   | Stage-step=0       |      Stage-time=0.00 ps | 
+       | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+============================================================================
+This function is called : 103
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 8285901.8836729378]
+ex_bottom>>>>>>>>>>>>> [16.461445678548614, 21.001869822389605, 8321901.6366319507]
+ex_top>>>>>>>>>>>>>>>> [0.00063059110509137441, -0.033306313850037551, 8285903.2384969527]
+       nmag:2016-12-25 16:09:07,470 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=102,step=15235.
+============================================================================
+ID=102 |        Step=15235 |       Time=3.06 ns |  Last step size=0.41 ps | 
+       |       Stage=104   | Stage-step=25      |      Stage-time=3.80 ps | 
+       | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+============================================================================
+       nmag:2016-12-25 16:09:07,471    main.py 2593    INFO save_data(): id->id+1=103, fields=all 
+       nmag:2016-12-25 16:09:07,576    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:09:07,576 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 83704.5 8.37045e+06]<A/m>
+       nmag:2016-12-25 16:09:07,577 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=103,step=15235.
+============================================================================
+ID=103 |        Step=15235 |       Time=3.06 ns |  Last step size=0.41 ps | 
+       |       Stage=105   | Stage-step=0       |      Stage-time=0.00 ps | 
+       | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+============================================================================
+This function is called : 104
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 8370451.9028940918]
+ex_bottom>>>>>>>>>>>>> [16.430424993239942, 20.911229155943506, 8406451.6568877064]
+ex_top>>>>>>>>>>>>>>>> [0.00062932529923581931, -0.033137256267873616, 8370453.2577223005]
+       nmag:2016-12-25 16:09:08,616 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=103,step=15260.
+============================================================================
+ID=103 |        Step=15260 |       Time=3.06 ns |  Last step size=0.10 ps | 
+       |       Stage=105   | Stage-step=25      |      Stage-time=3.16 ps | 
+       | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+============================================================================
+       nmag:2016-12-25 16:09:08,616    main.py 2593    INFO save_data(): id->id+1=104, fields=all 
+       nmag:2016-12-25 16:09:08,719    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+       nmag:2016-12-25 16:09:08,719 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 84550 8.455e+06]<A/m>
+       nmag:2016-12-25 16:09:08,721 hysteresis.py  499    INFO hysteresis: saving <function get_ave_exchange_coupling_field at 0x3431de8> at id=104,step=15260.
+============================================================================
+ID=104 |        Step=15260 |       Time=3.06 ns |  Last step size=0.10 ps | 
+       |       Stage=106   | Stage-step=0       |      Stage-time=0.00 ps | 
+       | Convergence=False |  Stage-end=False   | Exit hysteresis=False   | 
+============================================================================
+This function is called : 105
+H_ext>>>>>>>>>>>>>>>>> [0, 0, 8455001.9221152421]
+ex_bottom>>>>>>>>>>>>> [16.398085652163388, 20.823743026797857, 8491001.6771377157]
+ex_top>>>>>>>>>>>>>>>> [0.00062674023550451127, -0.032970860678696479, 8455003.2769475579]
+       nmag:2016-12-25 16:09:09,599 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x33526e0> at id=104,step=15285.
+============================================================================
+ID=104 |        Step=15285 |       Time=3.06 ns |  Last step size=0.27 ps | 
+       |       Stage=106   | Stage-step=25      |      Stage-time=4.03 ps | 
+       | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+============================================================================
+       nmag:2016-12-25 16:09:09,600    main.py 2593    INFO save_data(): id->id+1=105, fields=all 
+       nmag:2016-12-25 16:09:09,711    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=6_HARD=4_dat.h5
+Elapsed time :::: 613.943897963 s
