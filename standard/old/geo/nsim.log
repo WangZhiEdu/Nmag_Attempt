@@ -1,0 +1,1044 @@
+       nsim:2016-12-26 12:35:12,059   setup.py  471    INFO Nsim 0.2.1
+       nsim:2016-12-26 12:35:12,059   setup.py  472    INFO Runid is 'SOFT=4_HARD=6'
+       nsim:2016-12-26 12:35:12,060   setup.py  473    INFO Using 1 CPUs
+       nmag:2016-12-26 12:35:12,164 simulation_core.py  141    INFO Simulation(name=SOFT=4_HARD=6) object created
+       nmag:2016-12-26 12:35:12,165    main.py  859    INFO Versions:
+	     nsim version = 0.2.1
+	     release date = Fri Jan 13 09:38:20 2012
+	          VC info = 467:d7c316deb156
+	distribution mode = all-source
+	distribution date = Fri Jan 13 09:38:22 GMT 2012
+       nmag:2016-12-26 12:35:12,165    main.py  860    INFO Paths:
+	nsimpath = /home/nmag/nmag-0.2.1/nsim/interface/nsim
+	nmagpath = /home/nmag/nmag-0.2.1/nsim/interface/nmag
+       nmag:2016-12-26 12:35:12,167    main.py  472    INFO Created new Material:
+ Material 'Py_hard_layer'
+                      name = Py_hard_layer
+                        Ms = <SI: 500000  A / m >
+         exchange_coupling = <SI: 1.2e-11  m kg / s^2 >
+                anisotropy = <function f at 0x2336938>
+          anisotropy_order = 2
+               llg_gamma_G = <SI: 221017  m / s A >
+               llg_damping = 1.0
+   llg_normalisationfactor = <SI: 1e+11  / s >
+             do_precession = True
+          llg_polarisation = 0.0
+                    llg_xi = 0.0
+            thermal_factor = <SI: 1.98522e-28  m s A^2 / K >
+            extended_print = False
+ 
+       nmag:2016-12-26 12:35:12,168    main.py  472    INFO Created new Material:
+ Material 'Py_soft_layer'
+                      name = Py_soft_layer
+                        Ms = <SI: 750000  A / m >
+         exchange_coupling = <SI: 1e-11  m kg / s^2 >
+                anisotropy = <function f at 0x2336a28>
+          anisotropy_order = 2
+               llg_gamma_G = <SI: 221017  m / s A >
+               llg_damping = 1.0
+   llg_normalisationfactor = <SI: 1e+11  / s >
+             do_precession = True
+          llg_polarisation = 0.0
+                    llg_xi = 0.0
+            thermal_factor = <SI: 1.32348e-28  m s A^2 / K >
+            extended_print = False
+ 
+       nmag:2016-12-26 12:35:12,168    main.py 1164    INFO Reading mesh from cubes.nmesh.h5, unit_length is <SI: 1e-09  m >. 
+nmesh.ocaml:2016-12-26 12:35:12,239    INFO Computing mesh connectivity data
+nmesh.ocaml:2016-12-26 12:35:12,264    INFO Mesh nodes: 1498,  simplices: 5369 
+       nmag:2016-12-26 12:35:12,285    main.py 1225    INFO Adding region 'Py_hard_layer' to 'SOFT=4_HARD=6' simulation object
+       nmag:2016-12-26 12:35:12,285    main.py 1225    INFO Adding region 'Py_soft_layer' to 'SOFT=4_HARD=6' simulation object
+       nmag:2016-12-26 12:35:12,285 nmag_lam.py   97    INFO properties_by_region: [(-1, ['outer']), (0, ['0']), (1, ['1', 'Py_hard_layer', 'magnetic', 'material']), (2, ['2', 'Py_soft_layer', 'magnetic', 'material'])]
+       nmag:2016-12-26 12:35:12,285 nmag_lam.py  189    INFO Processing material 'Py_hard_layer'
+       nmag:2016-12-26 12:35:12,286 nmag_lam.py  189    INFO Processing material 'Py_soft_layer'
+ nfem.ocaml:2016-12-26 12:35:12,286    INFO Associating elements to mesh ('m')
+ nfem.ocaml:2016-12-26 12:35:12,349    INFO Associating elements to mesh ('E')
+ nfem.ocaml:2016-12-26 12:35:12,382    INFO Associating elements to mesh ('H_demag')
+ nfem.ocaml:2016-12-26 12:35:12,452    INFO Associating elements to mesh ('scalar')
+ nfem.ocaml:2016-12-26 12:35:12,491    INFO Assembling site-wise offsets for fields [|"m"|]
+ nfem.ocaml:2016-12-26 12:35:12,519    INFO Compiling linalg_machine
+ nfem.ocaml:2016-12-26 12:35:13,151    INFO Starting to build dense matrices (BEM)
+ nfem.ocaml:2016-12-26 12:35:13,904    INFO Populating BEM took 0.753239 seconds
+ nfem.ocaml:2016-12-26 12:35:13,952    INFO Creating site-wise-executor 'local_M_from_m'
+ nfem.ocaml:2016-12-26 12:35:13,952    INFO Assembling site-wise offsets for fields [|"m"; "M"|]
+ nfem.ocaml:2016-12-26 12:35:13,956    INFO Creating site-wise-executor 'local_E_total'
+ nfem.ocaml:2016-12-26 12:35:13,956    INFO Assembling site-wise offsets for fields [|"m"; "E_anis"; "E_ext"; "E_demag"; "E_exch"; "E_total"; "H_ext"; "H_demag"; "H_exch"; "H_total"|]
+ nfem.ocaml:2016-12-26 12:35:13,966    INFO Creating site-wise-executor 'local_H_total'
+ nfem.ocaml:2016-12-26 12:35:13,966    INFO Assembling site-wise offsets for fields [|"H_total"; "H_exch"; "H_ext"; "H_anis"; "H_demag"|]
+ nfem.ocaml:2016-12-26 12:35:13,974    INFO Creating site-wise-executor 'local_correct_m_lengths'
+ nfem.ocaml:2016-12-26 12:35:13,974    INFO Assembling site-wise offsets for fields [|"m"|]
+ nfem.ocaml:2016-12-26 12:35:13,978    INFO Creating site-wise-executor 'local_E_anis'
+ nfem.ocaml:2016-12-26 12:35:13,978    INFO Assembling site-wise offsets for fields [|"E_anis"; "m"|]
+ nfem.ocaml:2016-12-26 12:35:13,983    INFO Creating site-wise-executor 'local_H_anis'
+ nfem.ocaml:2016-12-26 12:35:13,983    INFO Assembling site-wise offsets for fields [|"H_anis"; "m"|]
+ nfem.ocaml:2016-12-26 12:35:13,988    INFO Creating site-wise-executor 'local_dmdt'
+ nfem.ocaml:2016-12-26 12:35:13,988    INFO Assembling site-wise offsets for fields [|"m"; "dmdt"; "H_total"; "pin"|]
+ nfem.ocaml:2016-12-26 12:35:14,006    INFO Assembling site-wise offsets for fields [|"m"|]
+       nmag:2016-12-26 12:35:14,013 hysteresis.py  441    INFO Hysteresis loop: starting a new simulation.
+       nmag:2016-12-26 12:35:14,013 hysteresis.py  443    INFO Hysteresis loop: check file 'SOFT=4_HARD=6_progress.txt' for progress data
+       nmag:2016-12-26 12:35:14,013 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 -51065 -5.1065e+06]<A/m>
+ nfem.ocaml:2016-12-26 12:35:14,232    INFO Making Jacobi MX: 4494 x 4494 ([|4494|] x [|4494|])
+       nmag:2016-12-26 12:35:14,377 hysteresis.py   40    INFO it 5, time <9.99197e-15s>; stage 1; H_ext=[0 -51065 -5.1065e+06]<A/m>
+       nmag:2016-12-26 12:35:24,722 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=-1,step=1135.
+============================================================================
+ID=-1 |        Step=1135 |       Time=30.79 ps |  Last step size=0.46 ps  | 
+      |       Stage=1    | Stage-step=1135     |      Stage-time=30.79 ps | 
+      | Convergence=True |  Stage-end=True     | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:35:24,723    main.py 2593    INFO save_data(): id->id+1=0, fields=all 
+       nmag:2016-12-26 12:35:25,078    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:35:25,078 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 -40852 -4.0852e+06]<A/m>
+       nmag:2016-12-26 12:35:26,103 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=0,step=1205.
+==========================================================================
+ID=0 |        Step=1205 |       Time=38.13 ps |  Last step size=0.12 ps | 
+     |       Stage=2    | Stage-step=70       |      Stage-time=7.34 ps | 
+     | Convergence=True |  Stage-end=True     | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-26 12:35:26,103    main.py 2593    INFO save_data(): id->id+1=1, fields=all 
+       nmag:2016-12-26 12:35:26,184    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:35:26,185 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 -30639 -3.0639e+06]<A/m>
+       nmag:2016-12-26 12:35:26,839 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=1,step=1280.
+==========================================================================
+ID=1 |        Step=1280 |       Time=47.07 ps |  Last step size=0.27 ps | 
+     |       Stage=3    | Stage-step=75       |      Stage-time=8.94 ps | 
+     | Convergence=True |  Stage-end=True     | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-26 12:35:26,839    main.py 2593    INFO save_data(): id->id+1=2, fields=all 
+       nmag:2016-12-26 12:35:26,919    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:35:26,919 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 -20426 -2.0426e+06]<A/m>
+       nmag:2016-12-26 12:35:28,341 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=2,step=1370.
+===========================================================================
+ID=2 |        Step=1370 |       Time=58.84 ps |  Last step size=0.52 ps  | 
+     |       Stage=4    | Stage-step=90       |      Stage-time=11.77 ps | 
+     | Convergence=True |  Stage-end=True     | Exit hysteresis=False    | 
+===========================================================================
+       nmag:2016-12-26 12:35:28,341    main.py 2593    INFO save_data(): id->id+1=3, fields=all 
+       nmag:2016-12-26 12:35:28,418    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:35:28,418 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 -10213 -1.0213e+06]<A/m>
+       nmag:2016-12-26 12:35:29,428 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=3,step=1480.
+===========================================================================
+ID=3 |        Step=1480 |       Time=76.69 ps |  Last step size=0.29 ps  | 
+     |       Stage=5    | Stage-step=110      |      Stage-time=17.86 ps | 
+     | Convergence=True |  Stage-end=True     | Exit hysteresis=False    | 
+===========================================================================
+       nmag:2016-12-26 12:35:29,428    main.py 2593    INFO save_data(): id->id+1=4, fields=all 
+       nmag:2016-12-26 12:35:29,507    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:35:29,507 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 0 0]<A/m>
+       nmag:2016-12-26 12:35:36,289 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=4,step=1690.
+==========================================================================
+ID=4 |        Step=1690 |       Time=0.13 ns |  Last step size=0.24 ps  | 
+     |       Stage=6    | Stage-step=210     |      Stage-time=49.16 ps | 
+     | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+==========================================================================
+       nmag:2016-12-26 12:35:36,289    main.py 2593    INFO save_data(): id->id+1=5, fields=all 
+       nmag:2016-12-26 12:35:36,370    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:35:36,371 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 510.65 51065]<A/m>
+       nmag:2016-12-26 12:35:37,154 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=5,step=1750.
+==========================================================================
+ID=5 |        Step=1750 |       Time=0.14 ns |  Last step size=0.13 ps  | 
+     |       Stage=7    | Stage-step=60      |      Stage-time=15.26 ps | 
+     | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+==========================================================================
+       nmag:2016-12-26 12:35:37,154    main.py 2593    INFO save_data(): id->id+1=6, fields=all 
+       nmag:2016-12-26 12:35:37,233    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:35:37,233 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 1021.3 102130]<A/m>
+       nmag:2016-12-26 12:35:40,813 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=6,step=1840.
+==========================================================================
+ID=6 |        Step=1840 |       Time=0.17 ns |  Last step size=0.20 ps  | 
+     |       Stage=8    | Stage-step=90      |      Stage-time=23.95 ps | 
+     | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+==========================================================================
+       nmag:2016-12-26 12:35:40,813    main.py 2593    INFO save_data(): id->id+1=7, fields=all 
+       nmag:2016-12-26 12:35:40,893    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:35:40,894 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 1531.95 153195]<A/m>
+       nmag:2016-12-26 12:35:42,029 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=7,step=1930.
+==========================================================================
+ID=7 |        Step=1930 |       Time=0.19 ns |  Last step size=0.32 ps  | 
+     |       Stage=9    | Stage-step=90      |      Stage-time=25.63 ps | 
+     | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+==========================================================================
+       nmag:2016-12-26 12:35:42,029    main.py 2593    INFO save_data(): id->id+1=8, fields=all 
+       nmag:2016-12-26 12:35:42,113    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:35:42,113 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 2042.6 204260]<A/m>
+       nmag:2016-12-26 12:35:44,575 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=8,step=2035.
+==========================================================================
+ID=8 |        Step=2035 |       Time=0.22 ns |  Last step size=0.14 ps  | 
+     |       Stage=10   | Stage-step=105     |      Stage-time=28.10 ps | 
+     | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+==========================================================================
+       nmag:2016-12-26 12:35:44,575    main.py 2593    INFO save_data(): id->id+1=9, fields=all 
+       nmag:2016-12-26 12:35:44,659    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:35:44,659 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 2553.25 255325]<A/m>
+       nmag:2016-12-26 12:35:46,064 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=9,step=2165.
+==========================================================================
+ID=9 |        Step=2165 |       Time=0.25 ns |  Last step size=0.30 ps  | 
+     |       Stage=11   | Stage-step=130     |      Stage-time=36.08 ps | 
+     | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+==========================================================================
+       nmag:2016-12-26 12:35:46,065    main.py 2593    INFO save_data(): id->id+1=10, fields=all 
+       nmag:2016-12-26 12:35:46,146    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:35:46,146 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 3063.9 306390]<A/m>
+       nmag:2016-12-26 12:35:47,826 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=10,step=2310.
+===========================================================================
+ID=10 |        Step=2310 |       Time=0.30 ns |  Last step size=0.31 ps  | 
+      |       Stage=12   | Stage-step=145     |      Stage-time=42.13 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+===========================================================================
+       nmag:2016-12-26 12:35:47,826    main.py 2593    INFO save_data(): id->id+1=11, fields=all 
+       nmag:2016-12-26 12:35:47,905    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:35:47,906 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 3574.55 357455]<A/m>
+       nmag:2016-12-26 12:35:57,018 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=11,step=2505.
+===========================================================================
+ID=11 |        Step=2505 |       Time=0.35 ns |  Last step size=0.21 ps  | 
+      |       Stage=13   | Stage-step=195     |      Stage-time=52.85 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+===========================================================================
+       nmag:2016-12-26 12:35:57,018    main.py 2593    INFO save_data(): id->id+1=12, fields=all 
+       nmag:2016-12-26 12:35:57,109    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:35:57,109 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 4085.2 408520]<A/m>
+       nmag:2016-12-26 12:36:09,396 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=12,step=2770.
+===========================================================================
+ID=12 |        Step=2770 |       Time=0.42 ns |  Last step size=0.15 ps  | 
+      |       Stage=14   | Stage-step=265     |      Stage-time=72.03 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+===========================================================================
+       nmag:2016-12-26 12:36:09,396    main.py 2593    INFO save_data(): id->id+1=13, fields=all 
+       nmag:2016-12-26 12:36:09,478    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:36:09,478 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 4595.85 459585]<A/m>
+       nmag:2016-12-26 12:36:14,557 hysteresis.py   40    INFO it 2955, time <4.98978e-11s>; stage 15; H_ext=[0 4595.85 459585]<A/m>
+       nmag:2016-12-26 12:36:25,255 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=13,step=3135.
+==========================================================================
+ID=13 |        Step=3135 |       Time=0.52 ns |  Last step size=0.68 ps | 
+      |       Stage=15   | Stage-step=365     |      Stage-time=0.10 ns | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-26 12:36:25,255    main.py 2593    INFO save_data(): id->id+1=14, fields=all 
+       nmag:2016-12-26 12:36:25,335    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:36:25,336 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 5106.5 510650]<A/m>
+       nmag:2016-12-26 12:36:57,033 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=14,step=3760.
+==========================================================================
+ID=14 |        Step=3760 |       Time=0.68 ns |  Last step size=0.32 ps | 
+      |       Stage=16   | Stage-step=625     |      Stage-time=0.16 ns | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-26 12:36:57,033    main.py 2593    INFO save_data(): id->id+1=15, fields=all 
+       nmag:2016-12-26 12:36:57,121    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:36:57,121 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 5617.15 561715]<A/m>
+       nmag:2016-12-26 12:37:14,761 hysteresis.py   40    INFO it 4440, time <1.85381e-10s>; stage 17; H_ext=[0 5617.15 561715]<A/m>
+       nmag:2016-12-26 12:38:14,974 hysteresis.py   40    INFO it 5450, time <4.53726e-10s>; stage 17; H_ext=[0 5617.15 561715]<A/m>
+       nmag:2016-12-26 12:39:14,990 hysteresis.py   40    INFO it 6590, time <7.22032e-10s>; stage 17; H_ext=[0 5617.15 561715]<A/m>
+       nmag:2016-12-26 12:40:15,123 hysteresis.py   40    INFO it 7935, time <1.02468e-09s>; stage 17; H_ext=[0 5617.15 561715]<A/m>
+       nmag:2016-12-26 12:40:47,885 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=15,step=9555.
+==========================================================================
+ID=15 |        Step=9555 |       Time=2.14 ns |  Last step size=0.31 ps | 
+      |       Stage=17   | Stage-step=5795    |      Stage-time=1.46 ns | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-26 12:40:47,886    main.py 2593    INFO save_data(): id->id+1=16, fields=all 
+       nmag:2016-12-26 12:40:47,971    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:40:47,971 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 6127.8 612780]<A/m>
+       nmag:2016-12-26 12:40:48,521 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=16,step=9600.
+===========================================================================
+ID=16 |        Step=9600 |       Time=2.15 ns |  Last step size=0.31 ps  | 
+      |       Stage=18   | Stage-step=45      |      Stage-time=10.68 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+===========================================================================
+       nmag:2016-12-26 12:40:48,521    main.py 2593    INFO save_data(): id->id+1=17, fields=all 
+       nmag:2016-12-26 12:40:48,604    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:40:48,604 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 6638.45 663845]<A/m>
+       nmag:2016-12-26 12:40:49,187 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=17,step=9650.
+===========================================================================
+ID=17 |        Step=9650 |       Time=2.16 ns |  Last step size=0.28 ps  | 
+      |       Stage=19   | Stage-step=50      |      Stage-time=11.49 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+===========================================================================
+       nmag:2016-12-26 12:40:49,187    main.py 2593    INFO save_data(): id->id+1=18, fields=all 
+       nmag:2016-12-26 12:40:49,266    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:40:49,266 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 7149.09 714909]<A/m>
+       nmag:2016-12-26 12:40:50,401 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=18,step=9695.
+==========================================================================
+ID=18 |        Step=9695 |       Time=2.17 ns |  Last step size=0.37 ps | 
+      |       Stage=20   | Stage-step=45      |      Stage-time=9.11 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-26 12:40:50,401    main.py 2593    INFO save_data(): id->id+1=19, fields=all 
+       nmag:2016-12-26 12:40:50,483    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:40:50,483 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 7659.74 765974]<A/m>
+       nmag:2016-12-26 12:40:51,346 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=19,step=9740.
+==========================================================================
+ID=19 |        Step=9740 |       Time=2.18 ns |  Last step size=0.11 ps | 
+      |       Stage=21   | Stage-step=45      |      Stage-time=9.59 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-26 12:40:51,346    main.py 2593    INFO save_data(): id->id+1=20, fields=all 
+       nmag:2016-12-26 12:40:51,427    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:40:51,427 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 8170.39 817039]<A/m>
+       nmag:2016-12-26 12:40:52,319 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=20,step=9790.
+===========================================================================
+ID=20 |        Step=9790 |       Time=2.19 ns |  Last step size=0.33 ps  | 
+      |       Stage=22   | Stage-step=50      |      Stage-time=11.28 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+===========================================================================
+       nmag:2016-12-26 12:40:52,319    main.py 2593    INFO save_data(): id->id+1=21, fields=all 
+       nmag:2016-12-26 12:40:52,401    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:40:52,402 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 8681.04 868104]<A/m>
+       nmag:2016-12-26 12:40:52,950 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=21,step=9835.
+===========================================================================
+ID=21 |        Step=9835 |       Time=2.21 ns |  Last step size=0.31 ps  | 
+      |       Stage=23   | Stage-step=45      |      Stage-time=10.63 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+===========================================================================
+       nmag:2016-12-26 12:40:52,950    main.py 2593    INFO save_data(): id->id+1=22, fields=all 
+       nmag:2016-12-26 12:40:53,032    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:40:53,032 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 9191.69 919169]<A/m>
+       nmag:2016-12-26 12:40:53,552 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=22,step=9880.
+==========================================================================
+ID=22 |        Step=9880 |       Time=2.22 ns |  Last step size=0.29 ps | 
+      |       Stage=24   | Stage-step=45      |      Stage-time=9.95 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-26 12:40:53,552    main.py 2593    INFO save_data(): id->id+1=23, fields=all 
+       nmag:2016-12-26 12:40:53,630    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:40:53,631 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 9702.34 970234]<A/m>
+       nmag:2016-12-26 12:40:54,602 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=23,step=9925.
+==========================================================================
+ID=23 |        Step=9925 |       Time=2.22 ns |  Last step size=0.09 ps | 
+      |       Stage=25   | Stage-step=45      |      Stage-time=9.21 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False   | 
+==========================================================================
+       nmag:2016-12-26 12:40:54,603    main.py 2593    INFO save_data(): id->id+1=24, fields=all 
+       nmag:2016-12-26 12:40:54,680    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:40:54,680 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 10213 1.0213e+06]<A/m>
+       nmag:2016-12-26 12:40:55,209 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=24,step=9975.
+===========================================================================
+ID=24 |        Step=9975 |       Time=2.24 ns |  Last step size=0.26 ps  | 
+      |       Stage=26   | Stage-step=50      |      Stage-time=10.95 ps | 
+      | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+===========================================================================
+       nmag:2016-12-26 12:40:55,209    main.py 2593    INFO save_data(): id->id+1=25, fields=all 
+       nmag:2016-12-26 12:40:55,288    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:40:55,288 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 10723.6 1.07236e+06]<A/m>
+       nmag:2016-12-26 12:40:56,059 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=25,step=10025.
+============================================================================
+ID=25 |        Step=10025 |       Time=2.25 ns |  Last step size=0.11 ps  | 
+      |       Stage=27    | Stage-step=50      |      Stage-time=10.40 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:40:56,059    main.py 2593    INFO save_data(): id->id+1=26, fields=all 
+       nmag:2016-12-26 12:40:56,138    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:40:56,139 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 11234.3 1.12343e+06]<A/m>
+       nmag:2016-12-26 12:40:56,665 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=26,step=10075.
+============================================================================
+ID=26 |        Step=10075 |       Time=2.26 ns |  Last step size=0.26 ps  | 
+      |       Stage=28    | Stage-step=50      |      Stage-time=10.97 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:40:56,665    main.py 2593    INFO save_data(): id->id+1=27, fields=all 
+       nmag:2016-12-26 12:40:56,743    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:40:56,743 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 11744.9 1.17449e+06]<A/m>
+       nmag:2016-12-26 12:40:57,299 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=27,step=10125.
+============================================================================
+ID=27 |        Step=10125 |       Time=2.27 ns |  Last step size=0.28 ps  | 
+      |       Stage=29    | Stage-step=50      |      Stage-time=11.13 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:40:57,299    main.py 2593    INFO save_data(): id->id+1=28, fields=all 
+       nmag:2016-12-26 12:40:57,384    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:40:57,384 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 12255.6 1.22556e+06]<A/m>
+       nmag:2016-12-26 12:40:58,807 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=28,step=10180.
+============================================================================
+ID=28 |        Step=10180 |       Time=2.28 ns |  Last step size=0.45 ps  | 
+      |       Stage=30    | Stage-step=55      |      Stage-time=10.93 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:40:58,807    main.py 2593    INFO save_data(): id->id+1=29, fields=all 
+       nmag:2016-12-26 12:40:58,885    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:40:58,885 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 12766.2 1.27662e+06]<A/m>
+       nmag:2016-12-26 12:40:59,567 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=29,step=10230.
+============================================================================
+ID=29 |        Step=10230 |       Time=2.29 ns |  Last step size=0.27 ps  | 
+      |       Stage=31    | Stage-step=50      |      Stage-time=10.99 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:40:59,567    main.py 2593    INFO save_data(): id->id+1=30, fields=all 
+       nmag:2016-12-26 12:40:59,647    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:40:59,647 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 13276.9 1.32769e+06]<A/m>
+       nmag:2016-12-26 12:41:00,224 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=30,step=10280.
+============================================================================
+ID=30 |        Step=10280 |       Time=2.30 ns |  Last step size=0.29 ps  | 
+      |       Stage=32    | Stage-step=50      |      Stage-time=11.39 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:00,224    main.py 2593    INFO save_data(): id->id+1=31, fields=all 
+       nmag:2016-12-26 12:41:00,302    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:00,302 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 13787.5 1.37875e+06]<A/m>
+       nmag:2016-12-26 12:41:00,865 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=31,step=10330.
+============================================================================
+ID=31 |        Step=10330 |       Time=2.31 ns |  Last step size=0.28 ps  | 
+      |       Stage=33    | Stage-step=50      |      Stage-time=11.09 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:00,865    main.py 2593    INFO save_data(): id->id+1=32, fields=all 
+       nmag:2016-12-26 12:41:00,945    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:00,946 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 14298.2 1.42982e+06]<A/m>
+       nmag:2016-12-26 12:41:02,059 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=32,step=10385.
+============================================================================
+ID=32 |        Step=10385 |       Time=2.32 ns |  Last step size=0.45 ps  | 
+      |       Stage=34    | Stage-step=55      |      Stage-time=11.92 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:02,059    main.py 2593    INFO save_data(): id->id+1=33, fields=all 
+       nmag:2016-12-26 12:41:02,137    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:02,137 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 14808.8 1.48088e+06]<A/m>
+       nmag:2016-12-26 12:41:04,260 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=33,step=10445.
+============================================================================
+ID=33 |        Step=10445 |       Time=2.34 ns |  Last step size=0.31 ps  | 
+      |       Stage=35    | Stage-step=60      |      Stage-time=12.06 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:04,260    main.py 2593    INFO save_data(): id->id+1=34, fields=all 
+       nmag:2016-12-26 12:41:04,342    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:04,343 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 15319.5 1.53195e+06]<A/m>
+       nmag:2016-12-26 12:41:06,283 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=34,step=10505.
+============================================================================
+ID=34 |        Step=10505 |       Time=2.35 ns |  Last step size=0.36 ps  | 
+      |       Stage=36    | Stage-step=60      |      Stage-time=13.09 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:06,283    main.py 2593    INFO save_data(): id->id+1=35, fields=all 
+       nmag:2016-12-26 12:41:06,365    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:06,365 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 15830.1 1.58301e+06]<A/m>
+       nmag:2016-12-26 12:41:07,713 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=35,step=10560.
+============================================================================
+ID=35 |        Step=10560 |       Time=2.36 ns |  Last step size=0.11 ps  | 
+      |       Stage=37    | Stage-step=55      |      Stage-time=11.88 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:07,713    main.py 2593    INFO save_data(): id->id+1=36, fields=all 
+       nmag:2016-12-26 12:41:07,793    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:07,793 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 16340.8 1.63408e+06]<A/m>
+       nmag:2016-12-26 12:41:08,899 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=36,step=10610.
+============================================================================
+ID=36 |        Step=10610 |       Time=2.37 ns |  Last step size=0.24 ps  | 
+      |       Stage=38    | Stage-step=50      |      Stage-time=12.01 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:08,899    main.py 2593    INFO save_data(): id->id+1=37, fields=all 
+       nmag:2016-12-26 12:41:08,975    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:08,976 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 16851.4 1.68514e+06]<A/m>
+       nmag:2016-12-26 12:41:09,870 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=37,step=10660.
+============================================================================
+ID=37 |        Step=10660 |       Time=2.39 ns |  Last step size=0.36 ps  | 
+      |       Stage=39    | Stage-step=50      |      Stage-time=12.67 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:09,870    main.py 2593    INFO save_data(): id->id+1=38, fields=all 
+       nmag:2016-12-26 12:41:09,951    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:09,952 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 17362.1 1.73621e+06]<A/m>
+       nmag:2016-12-26 12:41:10,634 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=38,step=10715.
+============================================================================
+ID=38 |        Step=10715 |       Time=2.40 ns |  Last step size=0.30 ps  | 
+      |       Stage=40    | Stage-step=55      |      Stage-time=13.20 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:10,634    main.py 2593    INFO save_data(): id->id+1=39, fields=all 
+       nmag:2016-12-26 12:41:10,713    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:10,714 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 17872.7 1.78727e+06]<A/m>
+       nmag:2016-12-26 12:41:11,448 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=39,step=10770.
+============================================================================
+ID=39 |        Step=10770 |       Time=2.41 ns |  Last step size=0.11 ps  | 
+      |       Stage=41    | Stage-step=55      |      Stage-time=12.21 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:11,448    main.py 2593    INFO save_data(): id->id+1=40, fields=all 
+       nmag:2016-12-26 12:41:11,529    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:11,530 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 18383.4 1.83834e+06]<A/m>
+       nmag:2016-12-26 12:41:12,803 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=40,step=10820.
+============================================================================
+ID=40 |        Step=10820 |       Time=2.43 ns |  Last step size=0.35 ps  | 
+      |       Stage=42    | Stage-step=50      |      Stage-time=13.62 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:12,803    main.py 2593    INFO save_data(): id->id+1=41, fields=all 
+       nmag:2016-12-26 12:41:12,881    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:12,881 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 18894 1.8894e+06]<A/m>
+       nmag:2016-12-26 12:41:14,611 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=41,step=10885.
+============================================================================
+ID=41 |        Step=10885 |       Time=2.44 ns |  Last step size=0.08 ps  | 
+      |       Stage=43    | Stage-step=65      |      Stage-time=11.28 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:14,611    main.py 2593    INFO save_data(): id->id+1=42, fields=all 
+       nmag:2016-12-26 12:41:14,694    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:14,694 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 19404.7 1.94047e+06]<A/m>
+       nmag:2016-12-26 12:41:15,177 hysteresis.py   40    INFO it 10915, time <5.34225e-12s>; stage 44; H_ext=[0 19404.7 1.94047e+06]<A/m>
+       nmag:2016-12-26 12:41:16,280 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=42,step=10945.
+============================================================================
+ID=42 |        Step=10945 |       Time=2.45 ns |  Last step size=0.09 ps  | 
+      |       Stage=44    | Stage-step=60      |      Stage-time=13.62 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:16,280    main.py 2593    INFO save_data(): id->id+1=43, fields=all 
+       nmag:2016-12-26 12:41:16,362    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:16,363 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 19915.3 1.99153e+06]<A/m>
+       nmag:2016-12-26 12:41:18,618 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=43,step=11015.
+============================================================================
+ID=43 |        Step=11015 |       Time=2.46 ns |  Last step size=0.13 ps  | 
+      |       Stage=45    | Stage-step=70      |      Stage-time=13.48 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:18,618    main.py 2593    INFO save_data(): id->id+1=44, fields=all 
+       nmag:2016-12-26 12:41:18,699    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:18,699 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 20426 2.0426e+06]<A/m>
+       nmag:2016-12-26 12:41:20,397 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=44,step=11075.
+============================================================================
+ID=44 |        Step=11075 |       Time=2.48 ns |  Last step size=0.35 ps  | 
+      |       Stage=46    | Stage-step=60      |      Stage-time=13.74 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:20,397    main.py 2593    INFO save_data(): id->id+1=45, fields=all 
+       nmag:2016-12-26 12:41:20,480    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:20,480 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 20936.6 2.09366e+06]<A/m>
+       nmag:2016-12-26 12:41:22,200 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=45,step=11140.
+============================================================================
+ID=45 |        Step=11140 |       Time=2.49 ns |  Last step size=0.19 ps  | 
+      |       Stage=47    | Stage-step=65      |      Stage-time=14.07 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:22,200    main.py 2593    INFO save_data(): id->id+1=46, fields=all 
+       nmag:2016-12-26 12:41:22,282    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:22,282 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 21447.3 2.14473e+06]<A/m>
+       nmag:2016-12-26 12:41:25,256 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=46,step=11215.
+============================================================================
+ID=46 |        Step=11215 |       Time=2.51 ns |  Last step size=0.15 ps  | 
+      |       Stage=48    | Stage-step=75      |      Stage-time=13.98 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:25,256    main.py 2593    INFO save_data(): id->id+1=47, fields=all 
+       nmag:2016-12-26 12:41:25,335    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:25,336 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 21957.9 2.19579e+06]<A/m>
+       nmag:2016-12-26 12:41:26,329 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=47,step=11275.
+============================================================================
+ID=47 |        Step=11275 |       Time=2.52 ns |  Last step size=0.35 ps  | 
+      |       Stage=49    | Stage-step=60      |      Stage-time=15.66 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:26,329    main.py 2593    INFO save_data(): id->id+1=48, fields=all 
+       nmag:2016-12-26 12:41:26,411    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:26,411 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 22468.6 2.24686e+06]<A/m>
+       nmag:2016-12-26 12:41:27,873 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=48,step=11335.
+============================================================================
+ID=48 |        Step=11335 |       Time=2.53 ns |  Last step size=0.09 ps  | 
+      |       Stage=50    | Stage-step=60      |      Stage-time=12.81 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:27,873    main.py 2593    INFO save_data(): id->id+1=49, fields=all 
+       nmag:2016-12-26 12:41:27,953    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:27,954 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 22979.2 2.29792e+06]<A/m>
+       nmag:2016-12-26 12:41:28,971 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=49,step=11395.
+============================================================================
+ID=49 |        Step=11395 |       Time=2.55 ns |  Last step size=0.10 ps  | 
+      |       Stage=51    | Stage-step=60      |      Stage-time=14.02 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:28,971    main.py 2593    INFO save_data(): id->id+1=50, fields=all 
+       nmag:2016-12-26 12:41:29,048    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:29,048 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 23489.9 2.34899e+06]<A/m>
+       nmag:2016-12-26 12:41:31,464 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=50,step=11470.
+============================================================================
+ID=50 |        Step=11470 |       Time=2.56 ns |  Last step size=0.22 ps  | 
+      |       Stage=52    | Stage-step=75      |      Stage-time=15.10 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:31,464    main.py 2593    INFO save_data(): id->id+1=51, fields=all 
+       nmag:2016-12-26 12:41:31,546    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:31,546 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 24000.5 2.40005e+06]<A/m>
+       nmag:2016-12-26 12:41:33,727 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=51,step=11540.
+============================================================================
+ID=51 |        Step=11540 |       Time=2.58 ns |  Last step size=0.13 ps  | 
+      |       Stage=53    | Stage-step=70      |      Stage-time=15.47 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:33,727    main.py 2593    INFO save_data(): id->id+1=52, fields=all 
+       nmag:2016-12-26 12:41:33,807    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:33,807 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 24511.2 2.45112e+06]<A/m>
+       nmag:2016-12-26 12:41:35,141 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=52,step=11605.
+============================================================================
+ID=52 |        Step=11605 |       Time=2.59 ns |  Last step size=0.30 ps  | 
+      |       Stage=54    | Stage-step=65      |      Stage-time=16.65 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:35,141    main.py 2593    INFO save_data(): id->id+1=53, fields=all 
+       nmag:2016-12-26 12:41:35,223    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:35,224 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 25021.8 2.50218e+06]<A/m>
+       nmag:2016-12-26 12:41:37,802 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=53,step=11680.
+============================================================================
+ID=53 |        Step=11680 |       Time=2.61 ns |  Last step size=0.43 ps  | 
+      |       Stage=55    | Stage-step=75      |      Stage-time=16.70 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:37,802    main.py 2593    INFO save_data(): id->id+1=54, fields=all 
+       nmag:2016-12-26 12:41:37,879    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:37,879 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 25532.5 2.55325e+06]<A/m>
+       nmag:2016-12-26 12:41:40,465 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=54,step=11750.
+============================================================================
+ID=54 |        Step=11750 |       Time=2.63 ns |  Last step size=0.15 ps  | 
+      |       Stage=56    | Stage-step=70      |      Stage-time=16.50 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:40,465    main.py 2593    INFO save_data(): id->id+1=55, fields=all 
+       nmag:2016-12-26 12:41:40,545    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:40,546 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 26043.1 2.60431e+06]<A/m>
+       nmag:2016-12-26 12:41:43,208 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=55,step=11830.
+============================================================================
+ID=55 |        Step=11830 |       Time=2.64 ns |  Last step size=0.10 ps  | 
+      |       Stage=57    | Stage-step=80      |      Stage-time=16.45 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:43,209    main.py 2593    INFO save_data(): id->id+1=56, fields=all 
+       nmag:2016-12-26 12:41:43,289    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:43,289 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 26553.8 2.65538e+06]<A/m>
+       nmag:2016-12-26 12:41:46,092 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=56,step=11910.
+============================================================================
+ID=56 |        Step=11910 |       Time=2.66 ns |  Last step size=0.18 ps  | 
+      |       Stage=58    | Stage-step=80      |      Stage-time=16.63 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:46,092    main.py 2593    INFO save_data(): id->id+1=57, fields=all 
+       nmag:2016-12-26 12:41:46,169    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:46,170 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 27064.4 2.70644e+06]<A/m>
+       nmag:2016-12-26 12:41:49,141 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=57,step=12000.
+============================================================================
+ID=57 |        Step=12000 |       Time=2.68 ns |  Last step size=0.36 ps  | 
+      |       Stage=59    | Stage-step=90      |      Stage-time=18.59 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:49,142    main.py 2593    INFO save_data(): id->id+1=58, fields=all 
+       nmag:2016-12-26 12:41:49,226    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:49,226 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 27575.1 2.75751e+06]<A/m>
+       nmag:2016-12-26 12:41:51,857 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=58,step=12085.
+============================================================================
+ID=58 |        Step=12085 |       Time=2.70 ns |  Last step size=0.41 ps  | 
+      |       Stage=60    | Stage-step=85      |      Stage-time=18.62 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:51,857    main.py 2593    INFO save_data(): id->id+1=59, fields=all 
+       nmag:2016-12-26 12:41:51,939    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:51,939 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 28085.7 2.80857e+06]<A/m>
+       nmag:2016-12-26 12:41:54,710 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=59,step=12160.
+============================================================================
+ID=59 |        Step=12160 |       Time=2.72 ns |  Last step size=0.12 ps  | 
+      |       Stage=61    | Stage-step=75      |      Stage-time=17.92 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:54,710    main.py 2593    INFO save_data(): id->id+1=60, fields=all 
+       nmag:2016-12-26 12:41:54,788    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:54,788 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 28596.4 2.85964e+06]<A/m>
+       nmag:2016-12-26 12:41:58,017 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=60,step=12250.
+============================================================================
+ID=60 |        Step=12250 |       Time=2.74 ns |  Last step size=0.44 ps  | 
+      |       Stage=62    | Stage-step=90      |      Stage-time=19.47 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:41:58,017    main.py 2593    INFO save_data(): id->id+1=61, fields=all 
+       nmag:2016-12-26 12:41:58,099    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:41:58,100 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 29107 2.9107e+06]<A/m>
+       nmag:2016-12-26 12:42:00,382 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=61,step=12325.
+============================================================================
+ID=61 |        Step=12325 |       Time=2.75 ns |  Last step size=0.48 ps  | 
+      |       Stage=63    | Stage-step=75      |      Stage-time=19.14 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:42:00,382    main.py 2593    INFO save_data(): id->id+1=62, fields=all 
+       nmag:2016-12-26 12:42:00,463    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:42:00,464 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 29617.7 2.96177e+06]<A/m>
+       nmag:2016-12-26 12:42:03,881 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=62,step=12415.
+============================================================================
+ID=62 |        Step=12415 |       Time=2.77 ns |  Last step size=0.12 ps  | 
+      |       Stage=64    | Stage-step=90      |      Stage-time=18.78 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:42:03,881    main.py 2593    INFO save_data(): id->id+1=63, fields=all 
+       nmag:2016-12-26 12:42:03,961    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:42:03,961 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 30128.3 3.01283e+06]<A/m>
+       nmag:2016-12-26 12:42:07,624 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=63,step=12510.
+============================================================================
+ID=63 |        Step=12510 |       Time=2.79 ns |  Last step size=0.38 ps  | 
+      |       Stage=65    | Stage-step=95      |      Stage-time=20.16 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:42:07,625    main.py 2593    INFO save_data(): id->id+1=64, fields=all 
+       nmag:2016-12-26 12:42:07,707    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:42:07,707 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 30639 3.0639e+06]<A/m>
+       nmag:2016-12-26 12:42:11,320 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=64,step=12605.
+============================================================================
+ID=64 |        Step=12605 |       Time=2.81 ns |  Last step size=0.10 ps  | 
+      |       Stage=66    | Stage-step=95      |      Stage-time=20.48 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:42:11,320    main.py 2593    INFO save_data(): id->id+1=65, fields=all 
+       nmag:2016-12-26 12:42:11,399    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:42:11,399 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 31149.6 3.11496e+06]<A/m>
+       nmag:2016-12-26 12:42:14,403 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=65,step=12690.
+============================================================================
+ID=65 |        Step=12690 |       Time=2.84 ns |  Last step size=0.33 ps  | 
+      |       Stage=67    | Stage-step=85      |      Stage-time=21.24 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:42:14,404    main.py 2593    INFO save_data(): id->id+1=66, fields=all 
+       nmag:2016-12-26 12:42:14,481    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:42:14,481 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 31660.3 3.16603e+06]<A/m>
+       nmag:2016-12-26 12:42:15,186 hysteresis.py   40    INFO it 12700, time <6.8317e-13s>; stage 68; H_ext=[0 31660.3 3.16603e+06]<A/m>
+       nmag:2016-12-26 12:42:17,998 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=66,step=12790.
+============================================================================
+ID=66 |        Step=12790 |       Time=2.86 ns |  Last step size=0.13 ps  | 
+      |       Stage=68    | Stage-step=100     |      Stage-time=21.00 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:42:17,998    main.py 2593    INFO save_data(): id->id+1=67, fields=all 
+       nmag:2016-12-26 12:42:18,077    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:42:18,078 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 32170.9 3.21709e+06]<A/m>
+       nmag:2016-12-26 12:42:21,982 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=67,step=12895.
+============================================================================
+ID=67 |        Step=12895 |       Time=2.88 ns |  Last step size=0.13 ps  | 
+      |       Stage=69    | Stage-step=105     |      Stage-time=23.14 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:42:21,982    main.py 2593    INFO save_data(): id->id+1=68, fields=all 
+       nmag:2016-12-26 12:42:22,063    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:42:22,064 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 32681.6 3.26816e+06]<A/m>
+       nmag:2016-12-26 12:42:25,305 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=68,step=12995.
+============================================================================
+ID=68 |        Step=12995 |       Time=2.90 ns |  Last step size=0.58 ps  | 
+      |       Stage=70    | Stage-step=100     |      Stage-time=23.57 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:42:25,306    main.py 2593    INFO save_data(): id->id+1=69, fields=all 
+       nmag:2016-12-26 12:42:25,386    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:42:25,387 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 33192.2 3.31922e+06]<A/m>
+       nmag:2016-12-26 12:42:28,233 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=69,step=13095.
+============================================================================
+ID=69 |        Step=13095 |       Time=2.93 ns |  Last step size=0.14 ps  | 
+      |       Stage=71    | Stage-step=100     |      Stage-time=23.99 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:42:28,234    main.py 2593    INFO save_data(): id->id+1=70, fields=all 
+       nmag:2016-12-26 12:42:28,312    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:42:28,312 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 33702.9 3.37029e+06]<A/m>
+       nmag:2016-12-26 12:42:33,658 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=70,step=13215.
+============================================================================
+ID=70 |        Step=13215 |       Time=2.95 ns |  Last step size=0.43 ps  | 
+      |       Stage=72    | Stage-step=120     |      Stage-time=25.72 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:42:33,659    main.py 2593    INFO save_data(): id->id+1=71, fields=all 
+       nmag:2016-12-26 12:42:33,739    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:42:33,740 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 34213.5 3.42135e+06]<A/m>
+       nmag:2016-12-26 12:42:39,345 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=71,step=13330.
+============================================================================
+ID=71 |        Step=13330 |       Time=2.98 ns |  Last step size=0.16 ps  | 
+      |       Stage=73    | Stage-step=115     |      Stage-time=26.46 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:42:39,345    main.py 2593    INFO save_data(): id->id+1=72, fields=all 
+       nmag:2016-12-26 12:42:39,422    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:42:39,422 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 34724.2 3.47242e+06]<A/m>
+       nmag:2016-12-26 12:42:44,970 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=72,step=13460.
+============================================================================
+ID=72 |        Step=13460 |       Time=3.01 ns |  Last step size=0.29 ps  | 
+      |       Stage=74    | Stage-step=130     |      Stage-time=27.63 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:42:44,970    main.py 2593    INFO save_data(): id->id+1=73, fields=all 
+       nmag:2016-12-26 12:42:45,049    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:42:45,049 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 35234.8 3.52348e+06]<A/m>
+       nmag:2016-12-26 12:42:48,699 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=73,step=13565.
+============================================================================
+ID=73 |        Step=13565 |       Time=3.03 ns |  Last step size=0.15 ps  | 
+      |       Stage=75    | Stage-step=105     |      Stage-time=27.90 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:42:48,700    main.py 2593    INFO save_data(): id->id+1=74, fields=all 
+       nmag:2016-12-26 12:42:48,779    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:42:48,780 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 35745.5 3.57455e+06]<A/m>
+       nmag:2016-12-26 12:42:52,527 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=74,step=13680.
+============================================================================
+ID=74 |        Step=13680 |       Time=3.06 ns |  Last step size=0.24 ps  | 
+      |       Stage=76    | Stage-step=115     |      Stage-time=30.00 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:42:52,527    main.py 2593    INFO save_data(): id->id+1=75, fields=all 
+       nmag:2016-12-26 12:42:52,610    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:42:52,610 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 36256.1 3.62561e+06]<A/m>
+       nmag:2016-12-26 12:42:55,769 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=75,step=13800.
+============================================================================
+ID=75 |        Step=13800 |       Time=3.10 ns |  Last step size=0.15 ps  | 
+      |       Stage=77    | Stage-step=120     |      Stage-time=31.77 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:42:55,769    main.py 2593    INFO save_data(): id->id+1=76, fields=all 
+       nmag:2016-12-26 12:42:55,852    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:42:55,852 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 36766.8 3.67668e+06]<A/m>
+       nmag:2016-12-26 12:42:59,420 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=76,step=13925.
+============================================================================
+ID=76 |        Step=13925 |       Time=3.13 ns |  Last step size=0.30 ps  | 
+      |       Stage=78    | Stage-step=125     |      Stage-time=32.54 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:42:59,420    main.py 2593    INFO save_data(): id->id+1=77, fields=all 
+       nmag:2016-12-26 12:42:59,509    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:42:59,510 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 37277.4 3.72774e+06]<A/m>
+       nmag:2016-12-26 12:43:02,516 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=77,step=14055.
+============================================================================
+ID=77 |        Step=14055 |       Time=3.16 ns |  Last step size=0.34 ps  | 
+      |       Stage=79    | Stage-step=130     |      Stage-time=35.09 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:43:02,516    main.py 2593    INFO save_data(): id->id+1=78, fields=all 
+       nmag:2016-12-26 12:43:02,595    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:43:02,596 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 37788.1 3.77881e+06]<A/m>
+       nmag:2016-12-26 12:43:08,597 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=78,step=14195.
+============================================================================
+ID=78 |        Step=14195 |       Time=3.20 ns |  Last step size=0.14 ps  | 
+      |       Stage=80    | Stage-step=140     |      Stage-time=35.76 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:43:08,597    main.py 2593    INFO save_data(): id->id+1=79, fields=all 
+       nmag:2016-12-26 12:43:08,676    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:43:08,676 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 38298.7 3.82987e+06]<A/m>
+       nmag:2016-12-26 12:43:14,245 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=79,step=14345.
+============================================================================
+ID=79 |        Step=14345 |       Time=3.24 ns |  Last step size=0.16 ps  | 
+      |       Stage=81    | Stage-step=150     |      Stage-time=37.72 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:43:14,246    main.py 2593    INFO save_data(): id->id+1=80, fields=all 
+       nmag:2016-12-26 12:43:14,323    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:43:14,323 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 38809.4 3.88094e+06]<A/m>
+       nmag:2016-12-26 12:43:15,258 hysteresis.py   40    INFO it 14380, time <6.54211e-12s>; stage 82; H_ext=[0 38809.4 3.88094e+06]<A/m>
+       nmag:2016-12-26 12:43:19,541 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=80,step=14510.
+============================================================================
+ID=80 |        Step=14510 |       Time=3.28 ns |  Last step size=0.16 ps  | 
+      |       Stage=82    | Stage-step=165     |      Stage-time=40.82 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:43:19,542    main.py 2593    INFO save_data(): id->id+1=81, fields=all 
+       nmag:2016-12-26 12:43:19,624    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:43:19,624 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 39320 3.932e+06]<A/m>
+       nmag:2016-12-26 12:43:26,540 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=81,step=14685.
+============================================================================
+ID=81 |        Step=14685 |       Time=3.32 ns |  Last step size=0.17 ps  | 
+      |       Stage=83    | Stage-step=175     |      Stage-time=43.72 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:43:26,541    main.py 2593    INFO save_data(): id->id+1=82, fields=all 
+       nmag:2016-12-26 12:43:26,623    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:43:26,624 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 39830.7 3.98307e+06]<A/m>
+       nmag:2016-12-26 12:43:34,204 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=82,step=14895.
+============================================================================
+ID=82 |        Step=14895 |       Time=3.37 ns |  Last step size=0.19 ps  | 
+      |       Stage=84    | Stage-step=210     |      Stage-time=48.11 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:43:34,204    main.py 2593    INFO save_data(): id->id+1=83, fields=all 
+       nmag:2016-12-26 12:43:34,288    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:43:34,288 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 40341.3 4.03413e+06]<A/m>
+       nmag:2016-12-26 12:43:41,835 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=83,step=15090.
+============================================================================
+ID=83 |        Step=15090 |       Time=3.42 ns |  Last step size=0.19 ps  | 
+      |       Stage=85    | Stage-step=195     |      Stage-time=52.95 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:43:41,835    main.py 2593    INFO save_data(): id->id+1=84, fields=all 
+       nmag:2016-12-26 12:43:41,914    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:43:41,915 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 40852 4.0852e+06]<A/m>
+       nmag:2016-12-26 12:43:52,930 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=84,step=15370.
+============================================================================
+ID=84 |        Step=15370 |       Time=3.48 ns |  Last step size=0.19 ps  | 
+      |       Stage=86    | Stage-step=280     |      Stage-time=60.28 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:43:52,930    main.py 2593    INFO save_data(): id->id+1=85, fields=all 
+       nmag:2016-12-26 12:43:53,013    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:43:53,013 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 41362.6 4.13626e+06]<A/m>
+       nmag:2016-12-26 12:44:10,445 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=85,step=15735.
+============================================================================
+ID=85 |        Step=15735 |       Time=3.56 ns |  Last step size=0.13 ps  | 
+      |       Stage=87    | Stage-step=365     |      Stage-time=73.70 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:44:10,445    main.py 2593    INFO save_data(): id->id+1=86, fields=all 
+       nmag:2016-12-26 12:44:10,523    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:44:10,523 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 41873.3 4.18733e+06]<A/m>
+       nmag:2016-12-26 12:44:15,315 hysteresis.py   40    INFO it 15860, time <2.82835e-11s>; stage 88; H_ext=[0 41873.3 4.18733e+06]<A/m>
+       nmag:2016-12-26 12:44:33,024 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=86,step=16180.
+===========================================================================
+ID=86 |        Step=16180 |       Time=3.66 ns |  Last step size=0.36 ps | 
+      |       Stage=88    | Stage-step=445     |      Stage-time=0.11 ns | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-26 12:44:33,025    main.py 2593    INFO save_data(): id->id+1=87, fields=all 
+       nmag:2016-12-26 12:44:33,104    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:44:33,105 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 42383.9 4.23839e+06]<A/m>
+       nmag:2016-12-26 12:44:45,177 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=87,step=17050.
+============================================================================
+ID=87 |        Step=17050 |       Time=3.74 ns |  Last step size=0.21 ps  | 
+      |       Stage=89    | Stage-step=870     |      Stage-time=74.61 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 12:44:45,177    main.py 2593    INFO save_data(): id->id+1=88, fields=all 
+       nmag:2016-12-26 12:44:45,255    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:44:45,255 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 42894.6 4.28946e+06]<A/m>
+       nmag:2016-12-26 12:44:45,564 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=88,step=17075.
+===========================================================================
+ID=88 |        Step=17075 |       Time=3.74 ns |  Last step size=0.28 ps | 
+      |       Stage=90    | Stage-step=25      |      Stage-time=4.97 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-26 12:44:45,564    main.py 2593    INFO save_data(): id->id+1=89, fields=all 
+       nmag:2016-12-26 12:44:45,643    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:44:45,643 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 43405.2 4.34052e+06]<A/m>
+       nmag:2016-12-26 12:44:45,975 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=89,step=17100.
+===========================================================================
+ID=89 |        Step=17100 |       Time=3.75 ns |  Last step size=0.33 ps | 
+      |       Stage=91    | Stage-step=25      |      Stage-time=5.13 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-26 12:44:45,975    main.py 2593    INFO save_data(): id->id+1=90, fields=all 
+       nmag:2016-12-26 12:44:46,056    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:44:46,057 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 43915.9 4.39159e+06]<A/m>
+       nmag:2016-12-26 12:44:46,545 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=90,step=17130.
+===========================================================================
+ID=90 |        Step=17130 |       Time=3.76 ns |  Last step size=0.13 ps | 
+      |       Stage=92    | Stage-step=30      |      Stage-time=5.76 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-26 12:44:46,545    main.py 2593    INFO save_data(): id->id+1=91, fields=all 
+       nmag:2016-12-26 12:44:46,633    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:44:46,634 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 44426.5 4.44265e+06]<A/m>
+       nmag:2016-12-26 12:44:47,153 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=91,step=17155.
+===========================================================================
+ID=91 |        Step=17155 |       Time=3.76 ns |  Last step size=0.15 ps | 
+      |       Stage=93    | Stage-step=25      |      Stage-time=4.45 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-26 12:44:47,153    main.py 2593    INFO save_data(): id->id+1=92, fields=all 
+       nmag:2016-12-26 12:44:47,233    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:44:47,233 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 44937.2 4.49372e+06]<A/m>
+       nmag:2016-12-26 12:44:47,533 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=92,step=17180.
+===========================================================================
+ID=92 |        Step=17180 |       Time=3.76 ns |  Last step size=0.27 ps | 
+      |       Stage=94    | Stage-step=25      |      Stage-time=4.94 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-26 12:44:47,533    main.py 2593    INFO save_data(): id->id+1=93, fields=all 
+       nmag:2016-12-26 12:44:47,614    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:44:47,615 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 45447.8 4.54478e+06]<A/m>
+       nmag:2016-12-26 12:44:48,000 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=93,step=17210.
+===========================================================================
+ID=93 |        Step=17210 |       Time=3.77 ns |  Last step size=0.35 ps | 
+      |       Stage=95    | Stage-step=30      |      Stage-time=6.24 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-26 12:44:48,001    main.py 2593    INFO save_data(): id->id+1=94, fields=all 
+       nmag:2016-12-26 12:44:48,082    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:44:48,082 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 45958.5 4.59585e+06]<A/m>
+       nmag:2016-12-26 12:44:48,410 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=94,step=17235.
+===========================================================================
+ID=94 |        Step=17235 |       Time=3.78 ns |  Last step size=0.33 ps | 
+      |       Stage=96    | Stage-step=25      |      Stage-time=5.04 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-26 12:44:48,410    main.py 2593    INFO save_data(): id->id+1=95, fields=all 
+       nmag:2016-12-26 12:44:48,488    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:44:48,488 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 46469.1 4.64691e+06]<A/m>
+       nmag:2016-12-26 12:44:49,274 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=95,step=17265.
+===========================================================================
+ID=95 |        Step=17265 |       Time=3.78 ns |  Last step size=0.11 ps | 
+      |       Stage=97    | Stage-step=30      |      Stage-time=5.36 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-26 12:44:49,274    main.py 2593    INFO save_data(): id->id+1=96, fields=all 
+       nmag:2016-12-26 12:44:49,356    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:44:49,356 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 46979.8 4.69798e+06]<A/m>
+       nmag:2016-12-26 12:44:49,876 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=96,step=17290.
+===========================================================================
+ID=96 |        Step=17290 |       Time=3.79 ns |  Last step size=0.43 ps | 
+      |       Stage=98    | Stage-step=25      |      Stage-time=4.56 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-26 12:44:49,876    main.py 2593    INFO save_data(): id->id+1=97, fields=all 
+       nmag:2016-12-26 12:44:49,958    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:44:49,958 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 47490.4 4.74904e+06]<A/m>
+       nmag:2016-12-26 12:44:50,267 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=97,step=17315.
+===========================================================================
+ID=97 |        Step=17315 |       Time=3.79 ns |  Last step size=0.30 ps | 
+      |       Stage=99    | Stage-step=25      |      Stage-time=4.71 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-26 12:44:50,267    main.py 2593    INFO save_data(): id->id+1=98, fields=all 
+       nmag:2016-12-26 12:44:50,346    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:44:50,346 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 48001.1 4.80011e+06]<A/m>
+       nmag:2016-12-26 12:44:50,777 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=98,step=17340.
+===========================================================================
+ID=98 |        Step=17340 |       Time=3.80 ns |  Last step size=0.14 ps | 
+      |       Stage=100   | Stage-step=25      |      Stage-time=4.78 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-26 12:44:50,777    main.py 2593    INFO save_data(): id->id+1=99, fields=all 
+       nmag:2016-12-26 12:44:50,857    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:44:50,857 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 48511.7 4.85117e+06]<A/m>
+       nmag:2016-12-26 12:44:51,371 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=99,step=17365.
+===========================================================================
+ID=99 |        Step=17365 |       Time=3.80 ns |  Last step size=0.15 ps | 
+      |       Stage=101   | Stage-step=25      |      Stage-time=4.34 ps | 
+      | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+===========================================================================
+       nmag:2016-12-26 12:44:51,371    main.py 2593    INFO save_data(): id->id+1=100, fields=all 
+       nmag:2016-12-26 12:44:51,452    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:44:51,452 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 49022.4 4.90224e+06]<A/m>
+       nmag:2016-12-26 12:44:51,979 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=100,step=17390.
+============================================================================
+ID=100 |        Step=17390 |       Time=3.80 ns |  Last step size=0.39 ps | 
+       |       Stage=102   | Stage-step=25      |      Stage-time=4.52 ps | 
+       | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+============================================================================
+       nmag:2016-12-26 12:44:51,980    main.py 2593    INFO save_data(): id->id+1=101, fields=all 
+       nmag:2016-12-26 12:44:52,061    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:44:52,062 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 49533 4.9533e+06]<A/m>
+       nmag:2016-12-26 12:44:52,635 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=101,step=17420.
+============================================================================
+ID=101 |        Step=17420 |       Time=3.81 ns |  Last step size=0.17 ps | 
+       |       Stage=103   | Stage-step=30      |      Stage-time=5.67 ps | 
+       | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+============================================================================
+       nmag:2016-12-26 12:44:52,635    main.py 2593    INFO save_data(): id->id+1=102, fields=all 
+       nmag:2016-12-26 12:44:52,715    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:44:52,716 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 50043.7 5.00437e+06]<A/m>
+       nmag:2016-12-26 12:44:53,032 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=102,step=17445.
+============================================================================
+ID=102 |        Step=17445 |       Time=3.81 ns |  Last step size=0.29 ps | 
+       |       Stage=104   | Stage-step=25      |      Stage-time=5.06 ps | 
+       | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+============================================================================
+       nmag:2016-12-26 12:44:53,032    main.py 2593    INFO save_data(): id->id+1=103, fields=all 
+       nmag:2016-12-26 12:44:53,110    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:44:53,111 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 50554.3 5.05543e+06]<A/m>
+       nmag:2016-12-26 12:44:53,498 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=103,step=17475.
+============================================================================
+ID=103 |        Step=17475 |       Time=3.82 ns |  Last step size=0.37 ps | 
+       |       Stage=105   | Stage-step=30      |      Stage-time=6.38 ps | 
+       | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+============================================================================
+       nmag:2016-12-26 12:44:53,498    main.py 2593    INFO save_data(): id->id+1=104, fields=all 
+       nmag:2016-12-26 12:44:53,578    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+       nmag:2016-12-26 12:44:53,578 hysteresis.py  450    INFO hysteresis: starting new stage: field = [0 51065 5.1065e+06]<A/m>
+       nmag:2016-12-26 12:44:54,242 hysteresis.py  499    INFO hysteresis: saving <function <lambda> at 0x23366e0> at id=104,step=17505.
+============================================================================
+ID=104 |        Step=17505 |       Time=3.83 ns |  Last step size=0.25 ps | 
+       |       Stage=106   | Stage-step=30      |      Stage-time=5.51 ps | 
+       | Convergence=True  |  Stage-end=True    | Exit hysteresis=False   | 
+============================================================================
+       nmag:2016-12-26 12:44:54,243    main.py 2593    INFO save_data(): id->id+1=105, fields=all 
+       nmag:2016-12-26 12:44:54,324    main.py 2793    INFO Written fields ['M', 'phi', 'E_ext', 'dmdt', 'pin', 'H_anis', 'E_total', 'm', 'E_anis', 'H_total', 'E_exch', 'H_ext', 'rho', 'H_demag', 'E_demag', 'H_exch'] data to ./SOFT=4_HARD=6_dat.h5
+Elapsed time :::: 582.159965038 s

@@ -1,0 +1,592 @@
+       nsim:2016-12-26 11:42:58,162   setup.py  471    INFO Nsim 0.2.1
+       nsim:2016-12-26 11:42:58,162   setup.py  472    INFO Runid is 'cube_4'
+       nsim:2016-12-26 11:42:58,162   setup.py  473    INFO Using 1 CPUs
+ku_hard 1604333.333333
+       nmag:2016-12-26 11:42:58,241 simulation_core.py  141    INFO Simulation(name=cube_4) object created
+       nmag:2016-12-26 11:42:58,241    main.py  859    INFO Versions:
+	     nsim version = 0.2.1
+	     release date = Fri Jan 13 09:38:20 2012
+	          VC info = 467:d7c316deb156
+	distribution mode = all-source
+	distribution date = Fri Jan 13 09:38:22 GMT 2012
+       nmag:2016-12-26 11:42:58,241    main.py  860    INFO Paths:
+	nsimpath = /home/nmag/nmag-0.2.1/nsim/interface/nsim
+	nmagpath = /home/nmag/nmag-0.2.1/nsim/interface/nmag
+       nmag:2016-12-26 11:42:58,242    main.py  472    INFO Created new Material:
+ Material 'H_1'
+                      name = H_1
+                        Ms = <SI: 500000  A / m >
+         exchange_coupling = <SI: 1.2e-11  m kg / s^2 >
+                anisotropy = <function f at 0x1b2d848>
+          anisotropy_order = 2
+               llg_gamma_G = <SI: 221017  m / s A >
+               llg_damping = 1.0
+   llg_normalisationfactor = <SI: 1e+11  / s >
+             do_precession = True
+          llg_polarisation = 0.0
+                    llg_xi = 0.0
+            thermal_factor = <SI: 1.98522e-28  m s A^2 / K >
+            extended_print = False
+ 
+       nmag:2016-12-26 11:42:58,243    main.py  472    INFO Created new Material:
+ Material 'S_2'
+                      name = S_2
+                        Ms = <SI: 750000  A / m >
+         exchange_coupling = <SI: 1e-11  m kg / s^2 >
+                anisotropy = <function f at 0x1b2d938>
+          anisotropy_order = 2
+               llg_gamma_G = <SI: 221017  m / s A >
+               llg_damping = 1.0
+   llg_normalisationfactor = <SI: 1e+11  / s >
+             do_precession = True
+          llg_polarisation = 0.0
+                    llg_xi = 0.0
+            thermal_factor = <SI: 1.32348e-28  m s A^2 / K >
+            extended_print = False
+ 
+       nmag:2016-12-26 11:42:58,244    main.py  472    INFO Created new Material:
+ Material 'H_3'
+                      name = H_3
+                        Ms = <SI: 500000  A / m >
+         exchange_coupling = <SI: 1.2e-11  m kg / s^2 >
+                anisotropy = <function f at 0x1b2da28>
+          anisotropy_order = 2
+               llg_gamma_G = <SI: 221017  m / s A >
+               llg_damping = 1.0
+   llg_normalisationfactor = <SI: 1e+11  / s >
+             do_precession = True
+          llg_polarisation = 0.0
+                    llg_xi = 0.0
+            thermal_factor = <SI: 1.98522e-28  m s A^2 / K >
+            extended_print = False
+ 
+       nmag:2016-12-26 11:42:58,245    main.py  472    INFO Created new Material:
+ Material 'S_4'
+                      name = S_4
+                        Ms = <SI: 750000  A / m >
+         exchange_coupling = <SI: 1e-11  m kg / s^2 >
+                anisotropy = <function f at 0x1b2db18>
+          anisotropy_order = 2
+               llg_gamma_G = <SI: 221017  m / s A >
+               llg_damping = 1.0
+   llg_normalisationfactor = <SI: 1e+11  / s >
+             do_precession = True
+          llg_polarisation = 0.0
+                    llg_xi = 0.0
+            thermal_factor = <SI: 1.32348e-28  m s A^2 / K >
+            extended_print = False
+ 
+       nmag:2016-12-26 11:42:58,245    main.py 1164    INFO Reading mesh from cube_4.nmesh.h5, unit_length is <SI: 1e-09  m >. 
+nmesh.ocaml:2016-12-26 11:42:58,271    INFO Computing mesh connectivity data
+nmesh.ocaml:2016-12-26 11:42:58,275    INFO Mesh nodes: 226,  simplices: 652 
+       nmag:2016-12-26 11:42:58,277    main.py 1225    INFO Adding region 'H_1' to 'cube_4' simulation object
+       nmag:2016-12-26 11:42:58,277    main.py 1225    INFO Adding region 'S_2' to 'cube_4' simulation object
+       nmag:2016-12-26 11:42:58,277    main.py 1225    INFO Adding region 'H_3' to 'cube_4' simulation object
+       nmag:2016-12-26 11:42:58,277    main.py 1225    INFO Adding region 'S_4' to 'cube_4' simulation object
+       nmag:2016-12-26 11:42:58,277 nmag_lam.py   97    INFO properties_by_region: [(-1, ['outer']), (0, ['0']), (1, ['1', 'H_1', 'magnetic', 'material']), (2, ['2', 'S_2', 'magnetic', 'material']), (3, ['3', 'H_3', 'magnetic', 'material']), (4, ['4', 'S_4', 'magnetic', 'material'])]
+       nmag:2016-12-26 11:42:58,277 nmag_lam.py  189    INFO Processing material 'H_1'
+       nmag:2016-12-26 11:42:58,278 nmag_lam.py  189    INFO Processing material 'S_2'
+       nmag:2016-12-26 11:42:58,278 nmag_lam.py  189    INFO Processing material 'H_3'
+       nmag:2016-12-26 11:42:58,278 nmag_lam.py  189    INFO Processing material 'S_4'
+ nfem.ocaml:2016-12-26 11:42:58,279    INFO Associating elements to mesh ('m')
+ nfem.ocaml:2016-12-26 11:42:58,286    INFO Associating elements to mesh ('E')
+ nfem.ocaml:2016-12-26 11:42:58,289    INFO Associating elements to mesh ('H_demag')
+ nfem.ocaml:2016-12-26 11:42:58,296    INFO Associating elements to mesh ('scalar')
+ nfem.ocaml:2016-12-26 11:42:58,300    INFO Assembling site-wise offsets for fields [|"m"|]
+ nfem.ocaml:2016-12-26 11:42:58,315    INFO Compiling linalg_machine
+ nfem.ocaml:2016-12-26 11:42:58,396    INFO Starting to build dense matrices (BEM)
+ nfem.ocaml:2016-12-26 11:42:58,426    INFO Populating BEM took 0.029826 seconds
+ nfem.ocaml:2016-12-26 11:42:58,435    INFO Creating site-wise-executor 'local_M_from_m'
+ nfem.ocaml:2016-12-26 11:42:58,435    INFO Assembling site-wise offsets for fields [|"m"; "M"|]
+ nfem.ocaml:2016-12-26 11:42:58,435    INFO Creating site-wise-executor 'local_E_total'
+ nfem.ocaml:2016-12-26 11:42:58,436    INFO Assembling site-wise offsets for fields [|"m"; "E_anis"; "E_ext"; "E_demag"; "E_exch"; "E_total"; "H_ext"; "H_demag"; "H_exch"; "H_total"|]
+ nfem.ocaml:2016-12-26 11:42:58,438    INFO Creating site-wise-executor 'local_H_total'
+ nfem.ocaml:2016-12-26 11:42:58,438    INFO Assembling site-wise offsets for fields [|"H_total"; "H_exch"; "H_ext"; "H_anis"; "H_demag"|]
+ nfem.ocaml:2016-12-26 11:42:58,439    INFO Creating site-wise-executor 'local_correct_m_lengths'
+ nfem.ocaml:2016-12-26 11:42:58,439    INFO Assembling site-wise offsets for fields [|"m"|]
+ nfem.ocaml:2016-12-26 11:42:58,439    INFO Creating site-wise-executor 'local_E_anis'
+ nfem.ocaml:2016-12-26 11:42:58,440    INFO Assembling site-wise offsets for fields [|"E_anis"; "m"|]
+ nfem.ocaml:2016-12-26 11:42:58,440    INFO Creating site-wise-executor 'local_H_anis'
+ nfem.ocaml:2016-12-26 11:42:58,440    INFO Assembling site-wise offsets for fields [|"H_anis"; "m"|]
+ nfem.ocaml:2016-12-26 11:42:58,441    INFO Creating site-wise-executor 'local_dmdt'
+ nfem.ocaml:2016-12-26 11:42:58,441    INFO Assembling site-wise offsets for fields [|"m"; "dmdt"; "H_total"; "pin"|]
+ nfem.ocaml:2016-12-26 11:42:58,445    INFO Assembling site-wise offsets for fields [|"m"|]
+H_max 5106751.607342
+       nmag:2016-12-26 11:42:58,446    main.py 1101    INFO Simulation(name=cube_4).set_params(): stopping_dm_dt=<SI: 3.49066e+07  / s >
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, -5106751.607341948]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+       nmag:2016-12-26 11:42:58,477 hysteresis.py  441    INFO Hysteresis loop: starting a new simulation.
+       nmag:2016-12-26 11:42:58,477 hysteresis.py  443    INFO Hysteresis loop: check file 'cube_4_progress.txt' for progress data
+       nmag:2016-12-26 11:42:58,477 hysteresis.py  450    INFO hysteresis: starting new stage: field = None
+ nfem.ocaml:2016-12-26 11:42:58,722    INFO Making Jacobi MX: 678 x 678 ([|678|] x [|678|])
+       nmag:2016-12-26 11:42:58,747 hysteresis.py   40    INFO it 5, time <1.83733e-14s>; stage 1; H_ext=None
+       nmag:2016-12-26 11:42:59,724 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1c16cf8> at id=-1,step=885.
+============================================================================
+ID=-1 |        Step=885  |       Time=63.48 ps |  Last step size=0.97 ps  | 
+      |       Stage=1    | Stage-step=885      |      Stage-time=63.48 ps | 
+      | Convergence=True |  Stage-end=True     | Exit hysteresis=False    | 
+============================================================================
+       nmag:2016-12-26 11:42:59,724    main.py 2593    INFO save_data(): id->id+1=0, fields=['id', 'time', 'step', 'stage_time', 'stage_step', 'H_ext', 'M', 'm'] 
+       nmag:2016-12-26 11:42:59,784    main.py 2793    INFO Written fields ['id', 'time', 'step', 'stage_time', 'stage_step', 'H_ext', 'M', 'm'] data to ./cube_4_dat.h5
+------make H_ext reserve------
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 5106751.607341948]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+Return H_ext [0, 0, 0]
+       nmag:2016-12-26 11:42:59,813 hysteresis.py  441    INFO Hysteresis loop: starting a new simulation.
+       nmag:2016-12-26 11:42:59,813 hysteresis.py  443    INFO Hysteresis loop: check file 'cube_4_progress.txt' for progress data
+       nmag:2016-12-26 11:42:59,813 hysteresis.py  450    INFO hysteresis: starting new stage: field = None
+       nmag:2016-12-26 11:43:00,864 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1c16cf8> at id=0,step=1795.
+==========================================================================
+ID=0 |        Step=1795 |       Time=0.13 ns |  Last step size=1.08 ps  | 
+     |       Stage=1    | Stage-step=910     |      Stage-time=61.75 ps | 
+     | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+==========================================================================
+       nmag:2016-12-26 11:43:00,864    main.py 2593    INFO save_data(): id->id+1=1, fields=['id', 'time', 'step', 'stage_time', 'stage_step', 'H_ext', 'M', 'm'] 
+       nmag:2016-12-26 11:43:00,886    main.py 2793    INFO Written fields ['id', 'time', 'step', 'stage_time', 'stage_step', 'H_ext', 'M', 'm'] data to ./cube_4_dat.h5

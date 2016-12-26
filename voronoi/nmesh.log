@@ -1,0 +1,110 @@
+INFO:nmesh:Reading 'cube_98.msh'
+INFO:nmesh:Number of nodes      =    8011
+INFO:nmesh:Number of elements   =   23871
+INFO:nmesh:Number of tetrahedra =   23871
+INFO:nmesh:Physical Regions:
+	 reg_phys 1 -> 153 times
+	 reg_phys 2 -> 150 times
+	 reg_phys 3 -> 195 times
+	 reg_phys 4 -> 148 times
+	 reg_phys 5 -> 278 times
+	 reg_phys 6 -> 226 times
+	 reg_phys 7 -> 185 times
+	 reg_phys 8 -> 150 times
+	 reg_phys 9 -> 301 times
+	 reg_phys 10 -> 268 times
+	 reg_phys 11 -> 299 times
+	 reg_phys 12 -> 250 times
+	 reg_phys 13 -> 212 times
+	 reg_phys 14 -> 204 times
+	 reg_phys 15 -> 243 times
+	 reg_phys 16 -> 210 times
+	 reg_phys 17 -> 294 times
+	 reg_phys 18 -> 221 times
+	 reg_phys 19 -> 358 times
+	 reg_phys 20 -> 302 times
+	 reg_phys 21 -> 344 times
+	 reg_phys 22 -> 247 times
+	 reg_phys 23 -> 267 times
+	 reg_phys 24 -> 209 times
+	 reg_phys 25 -> 202 times
+	 reg_phys 26 -> 175 times
+	 reg_phys 27 -> 375 times
+	 reg_phys 28 -> 282 times
+	 reg_phys 29 -> 330 times
+	 reg_phys 30 -> 224 times
+	 reg_phys 31 -> 319 times
+	 reg_phys 32 -> 267 times
+	 reg_phys 33 -> 392 times
+	 reg_phys 34 -> 306 times
+	 reg_phys 35 -> 250 times
+	 reg_phys 36 -> 216 times
+	 reg_phys 37 -> 365 times
+	 reg_phys 38 -> 287 times
+	 reg_phys 39 -> 256 times
+	 reg_phys 40 -> 200 times
+	 reg_phys 41 -> 228 times
+	 reg_phys 42 -> 224 times
+	 reg_phys 43 -> 298 times
+	 reg_phys 44 -> 245 times
+	 reg_phys 45 -> 284 times
+	 reg_phys 46 -> 237 times
+	 reg_phys 47 -> 259 times
+	 reg_phys 48 -> 236 times
+	 reg_phys 49 -> 332 times
+	 reg_phys 50 -> 282 times
+	 reg_phys 51 -> 263 times
+	 reg_phys 52 -> 198 times
+	 reg_phys 53 -> 267 times
+	 reg_phys 54 -> 223 times
+	 reg_phys 55 -> 281 times
+	 reg_phys 56 -> 250 times
+	 reg_phys 57 -> 316 times
+	 reg_phys 58 -> 228 times
+	 reg_phys 59 -> 269 times
+	 reg_phys 60 -> 237 times
+	 reg_phys 61 -> 407 times
+	 reg_phys 62 -> 370 times
+	 reg_phys 63 -> 315 times
+	 reg_phys 64 -> 269 times
+	 reg_phys 65 -> 187 times
+	 reg_phys 66 -> 144 times
+	 reg_phys 67 -> 272 times
+	 reg_phys 68 -> 193 times
+	 reg_phys 69 -> 210 times
+	 reg_phys 70 -> 163 times
+	 reg_phys 71 -> 244 times
+	 reg_phys 72 -> 194 times
+	 reg_phys 73 -> 266 times
+	 reg_phys 74 -> 227 times
+	 reg_phys 75 -> 256 times
+	 reg_phys 76 -> 208 times
+	 reg_phys 77 -> 248 times
+	 reg_phys 78 -> 223 times
+	 reg_phys 79 -> 265 times
+	 reg_phys 80 -> 207 times
+	 reg_phys 81 -> 274 times
+	 reg_phys 82 -> 243 times
+	 reg_phys 83 -> 254 times
+	 reg_phys 84 -> 204 times
+	 reg_phys 85 -> 225 times
+	 reg_phys 86 -> 211 times
+	 reg_phys 87 -> 151 times
+	 reg_phys 88 -> 151 times
+	 reg_phys 89 -> 223 times
+	 reg_phys 90 -> 176 times
+	 reg_phys 91 -> 227 times
+	 reg_phys 92 -> 183 times
+	 reg_phys 93 -> 222 times
+	 reg_phys 94 -> 171 times
+	 reg_phys 95 -> 238 times
+	 reg_phys 96 -> 210 times
+	 reg_phys 97 -> 186 times
+	 reg_phys 98 -> 137 times
+INFO:root:Number of physical regions: 98
+INFO:root:Smallest physical region id: 1
+INFO:root:Largest physical region id: 98
+INFO:nmesh:Completed reading 'cube_98.msh'
+INFO:nmesh:Paranoia check: Found 8011 points used 
+INFO:root:Saving nmesh object to file 'cube_98.nmesh.h5'.
+INFO:nmesh:Have written mesh to 'cube_98.nmesh.h5' (hdf5 format)

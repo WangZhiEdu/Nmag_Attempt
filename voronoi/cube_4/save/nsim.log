@@ -1,0 +1,499 @@
+       nsim:2016-12-26 17:22:01,349   setup.py  471    INFO Nsim 0.2.1
+       nsim:2016-12-26 17:22:01,350   setup.py  472    INFO Runid is 'cube_4'
+       nsim:2016-12-26 17:22:01,350   setup.py  473    INFO Using 1 CPUs
+ku_hard 1604333.333333
+       nmag:2016-12-26 17:22:01,453 simulation_core.py  141    INFO Simulation(name=cube_4) object created
+       nmag:2016-12-26 17:22:01,453    main.py  859    INFO Versions:
+	     nsim version = 0.2.1
+	     release date = Fri Jan 13 09:38:20 2012
+	          VC info = 467:d7c316deb156
+	distribution mode = all-source
+	distribution date = Fri Jan 13 09:38:22 GMT 2012
+       nmag:2016-12-26 17:22:01,453    main.py  860    INFO Paths:
+	nsimpath = /home/nmag/nmag-0.2.1/nsim/interface/nsim
+	nmagpath = /home/nmag/nmag-0.2.1/nsim/interface/nmag
+       nmag:2016-12-26 17:22:01,455    main.py  472    INFO Created new Material:
+ Material 'H_1'
+                      name = H_1
+                        Ms = <SI: 500000  A / m >
+         exchange_coupling = <SI: 1.2e-11  m kg / s^2 >
+                anisotropy = <function f at 0x28e0938>
+          anisotropy_order = 2
+               llg_gamma_G = <SI: 221017  m / s A >
+               llg_damping = 1.0
+   llg_normalisationfactor = <SI: 1e+11  / s >
+             do_precession = True
+          llg_polarisation = 0.0
+                    llg_xi = 0.0
+            thermal_factor = <SI: 1.98522e-28  m s A^2 / K >
+            extended_print = False
+ 
+       nmag:2016-12-26 17:22:01,456    main.py  472    INFO Created new Material:
+ Material 'S_2'
+                      name = S_2
+                        Ms = <SI: 750000  A / m >
+         exchange_coupling = <SI: 1e-11  m kg / s^2 >
+                anisotropy = <function f at 0x28e0a28>
+          anisotropy_order = 2
+               llg_gamma_G = <SI: 221017  m / s A >
+               llg_damping = 1.0
+   llg_normalisationfactor = <SI: 1e+11  / s >
+             do_precession = True
+          llg_polarisation = 0.0
+                    llg_xi = 0.0
+            thermal_factor = <SI: 1.32348e-28  m s A^2 / K >
+            extended_print = False
+ 
+       nmag:2016-12-26 17:22:01,456    main.py  472    INFO Created new Material:
+ Material 'H_3'
+                      name = H_3
+                        Ms = <SI: 500000  A / m >
+         exchange_coupling = <SI: 1.2e-11  m kg / s^2 >
+                anisotropy = <function f at 0x28e0b18>
+          anisotropy_order = 2
+               llg_gamma_G = <SI: 221017  m / s A >
+               llg_damping = 1.0
+   llg_normalisationfactor = <SI: 1e+11  / s >
+             do_precession = True
+          llg_polarisation = 0.0
+                    llg_xi = 0.0
+            thermal_factor = <SI: 1.98522e-28  m s A^2 / K >
+            extended_print = False
+ 
+       nmag:2016-12-26 17:22:01,457    main.py  472    INFO Created new Material:
+ Material 'S_4'
+                      name = S_4
+                        Ms = <SI: 750000  A / m >
+         exchange_coupling = <SI: 1e-11  m kg / s^2 >
+                anisotropy = <function f at 0x28e0c08>
+          anisotropy_order = 2
+               llg_gamma_G = <SI: 221017  m / s A >
+               llg_damping = 1.0
+   llg_normalisationfactor = <SI: 1e+11  / s >
+             do_precession = True
+          llg_polarisation = 0.0
+                    llg_xi = 0.0
+            thermal_factor = <SI: 1.32348e-28  m s A^2 / K >
+            extended_print = False
+ 
+       nmag:2016-12-26 17:22:01,457    main.py 1164    INFO Reading mesh from cube_4.nmesh.h5, unit_length is <SI: 1e-09  m >. 
+nmesh.ocaml:2016-12-26 17:22:01,489    INFO Computing mesh connectivity data
+nmesh.ocaml:2016-12-26 17:22:01,493    INFO Mesh nodes: 226,  simplices: 652 
+       nmag:2016-12-26 17:22:01,495    main.py 1225    INFO Adding region 'H_1' to 'cube_4' simulation object
+       nmag:2016-12-26 17:22:01,495    main.py 1225    INFO Adding region 'S_2' to 'cube_4' simulation object
+       nmag:2016-12-26 17:22:01,495    main.py 1225    INFO Adding region 'H_3' to 'cube_4' simulation object
+       nmag:2016-12-26 17:22:01,495    main.py 1225    INFO Adding region 'S_4' to 'cube_4' simulation object
+       nmag:2016-12-26 17:22:01,496 nmag_lam.py   97    INFO properties_by_region: [(-1, ['outer']), (0, ['0']), (1, ['1', 'H_1', 'magnetic', 'material']), (2, ['2', 'S_2', 'magnetic', 'material']), (3, ['3', 'H_3', 'magnetic', 'material']), (4, ['4', 'S_4', 'magnetic', 'material'])]
+       nmag:2016-12-26 17:22:01,496 nmag_lam.py  189    INFO Processing material 'H_1'
+       nmag:2016-12-26 17:22:01,496 nmag_lam.py  189    INFO Processing material 'S_2'
+       nmag:2016-12-26 17:22:01,496 nmag_lam.py  189    INFO Processing material 'H_3'
+       nmag:2016-12-26 17:22:01,497 nmag_lam.py  189    INFO Processing material 'S_4'
+ nfem.ocaml:2016-12-26 17:22:01,497    INFO Associating elements to mesh ('m')
+ nfem.ocaml:2016-12-26 17:22:01,505    INFO Associating elements to mesh ('E')
+ nfem.ocaml:2016-12-26 17:22:01,508    INFO Associating elements to mesh ('H_demag')
+ nfem.ocaml:2016-12-26 17:22:01,515    INFO Associating elements to mesh ('scalar')
+ nfem.ocaml:2016-12-26 17:22:01,519    INFO Assembling site-wise offsets for fields [|"m"|]
+ nfem.ocaml:2016-12-26 17:22:01,534    INFO Compiling linalg_machine
+ nfem.ocaml:2016-12-26 17:22:01,615    INFO Starting to build dense matrices (BEM)
+ nfem.ocaml:2016-12-26 17:22:01,645    INFO Populating BEM took 0.030145 seconds
+ nfem.ocaml:2016-12-26 17:22:01,654    INFO Creating site-wise-executor 'local_M_from_m'
+ nfem.ocaml:2016-12-26 17:22:01,654    INFO Assembling site-wise offsets for fields [|"m"; "M"|]
+ nfem.ocaml:2016-12-26 17:22:01,655    INFO Creating site-wise-executor 'local_E_total'
+ nfem.ocaml:2016-12-26 17:22:01,655    INFO Assembling site-wise offsets for fields [|"m"; "E_anis"; "E_ext"; "E_demag"; "E_exch"; "E_total"; "H_ext"; "H_demag"; "H_exch"; "H_total"|]
+ nfem.ocaml:2016-12-26 17:22:01,657    INFO Creating site-wise-executor 'local_H_total'
+ nfem.ocaml:2016-12-26 17:22:01,657    INFO Assembling site-wise offsets for fields [|"H_total"; "H_exch"; "H_ext"; "H_anis"; "H_demag"|]
+ nfem.ocaml:2016-12-26 17:22:01,658    INFO Creating site-wise-executor 'local_correct_m_lengths'
+ nfem.ocaml:2016-12-26 17:22:01,658    INFO Assembling site-wise offsets for fields [|"m"|]
+ nfem.ocaml:2016-12-26 17:22:01,659    INFO Creating site-wise-executor 'local_E_anis'
+ nfem.ocaml:2016-12-26 17:22:01,659    INFO Assembling site-wise offsets for fields [|"E_anis"; "m"|]
+ nfem.ocaml:2016-12-26 17:22:01,660    INFO Creating site-wise-executor 'local_H_anis'
+ nfem.ocaml:2016-12-26 17:22:01,660    INFO Assembling site-wise offsets for fields [|"H_anis"; "m"|]
+ nfem.ocaml:2016-12-26 17:22:01,660    INFO Creating site-wise-executor 'local_dmdt'
+ nfem.ocaml:2016-12-26 17:22:01,660    INFO Assembling site-wise offsets for fields [|"m"; "dmdt"; "H_total"; "pin"|]
+ nfem.ocaml:2016-12-26 17:22:01,664    INFO Assembling site-wise offsets for fields [|"m"|]
+H_max 5106751.607342
+       nmag:2016-12-26 17:22:01,665    main.py 1101    INFO Simulation(name=cube_4).set_params(): stopping_dm_dt=<SI: 3.49066e+07  / s >
+       nmag:2016-12-26 17:22:01,666 hysteresis.py  441    INFO Hysteresis loop: starting a new simulation.
+       nmag:2016-12-26 17:22:01,666 hysteresis.py  443    INFO Hysteresis loop: check file 'cube_4_progress.txt' for progress data
+       nmag:2016-12-26 17:22:01,666 hysteresis.py  450    INFO hysteresis: starting new stage: field = None
+ nfem.ocaml:2016-12-26 17:22:01,978    INFO Making Jacobi MX: 678 x 678 ([|678|] x [|678|])
+       nmag:2016-12-26 17:22:02,032 hysteresis.py   40    INFO it 5, time <1.82454e-14s>; stage 1; H_ext=None
+       nmag:2016-12-26 17:22:02,332 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x29c5e60> at id=-1,step=215.
+============================================================================
+ID=-1 |        Step=215  |       Time=45.23 ps |  Last step size=0.74 ps  | 
+      |       Stage=1    | Stage-step=215      |      Stage-time=45.23 ps | 
+      | Convergence=True |  Stage-end=True     | Exit hysteresis=False    | 
+============================================================================
+get_subfield M_H_1
+[[  2.89141341e+01  -2.43694766e+04   4.99405775e+05]
+ [ -6.94544077e+02  -2.51725755e+04   4.99365460e+05]
+ [  1.16214086e+02  -2.52194908e+04   4.99363583e+05]
+ [  2.02377208e+02  -2.43209128e+04   4.99408105e+05]
+ [ -1.03285515e+02  -2.43631716e+04   4.99406094e+05]
+ [ -4.15383084e+02  -2.46762852e+04   4.99390538e+05]
+ [ -6.26727375e+01  -2.46979046e+04   4.99389642e+05]
+ [ -4.34943299e+01  -2.43379161e+04   4.99407355e+05]
+ [ -4.27404585e+02  -2.49041210e+04   4.99379231e+05]
+ [ -3.82666665e+02  -2.51719559e+04   4.99365834e+05]
+ [  2.06140631e+02  -2.47709876e+04   4.99386059e+05]
+ [ -2.86998625e+02  -2.45742621e+04   4.99395665e+05]
+ [ -2.70345669e+02  -2.46815679e+04   4.99390377e+05]
+ [ -3.45882846e+01  -2.45300872e+04   4.99397927e+05]
+ [ -4.96883788e+01  -2.45651044e+04   4.99396247e+05]
+ [ -1.24156820e+02  -2.45216133e+04   4.99398355e+05]
+ [ -4.29474578e+02  -2.48826716e+04   4.99380284e+05]
+ [ -3.63879338e+02  -2.46710681e+04   4.99390830e+05]
+ [ -9.12926012e+01  -2.48566170e+04   4.99381769e+05]
+ [ -1.22805625e+02  -2.46690404e+04   4.99391052e+05]
+ [ -4.82699603e+01  -2.45459454e+04   4.99397269e+05]
+ [ -1.07623728e+02  -2.45014433e+04   4.99399352e+05]
+ [ -5.84501284e+01  -2.46541612e+04   4.99391743e+05]
+ [ -9.88220899e+01  -2.50189389e+04   4.99373612e+05]
+ [  1.22003138e+02  -2.44776863e+04   4.99400434e+05]
+ [ -1.39275388e+02  -2.44868765e+04   4.99399965e+05]
+ [ -1.47828134e+02  -2.46329135e+04   4.99392735e+05]
+ [ -6.78929080e+01  -2.44159046e+04   4.99403327e+05]
+ [ -2.00670667e+02  -2.46714880e+04   4.99390912e+05]
+ [ -2.82475320e+02  -2.46270047e+04   4.99393061e+05]
+ [ -3.56632019e+02  -2.49242182e+04   4.99378269e+05]
+ [ -1.73729115e+02  -2.45229626e+04   4.99398213e+05]
+ [ -1.38648605e+02  -2.46740306e+04   4.99390785e+05]
+ [ -2.38233835e+02  -2.47223962e+04   4.99388368e+05]
+ [ -3.00015824e+02  -2.49472661e+04   4.99377164e+05]
+ [ -2.46974618e+02  -2.46476458e+04   4.99392060e+05]
+ [ -1.16466143e+02  -2.46336048e+04   4.99392843e+05]
+ [ -1.11100946e+02  -2.45524666e+04   4.99396801e+05]
+ [ -2.62384890e+01  -2.46732065e+04   4.99390921e+05]
+ [ -9.25034163e+01  -2.44310842e+04   4.99402368e+05]
+ [ -9.18526880e+01  -2.45504098e+04   4.99396391e+05]
+ [  5.66091419e+01  -2.44626813e+04   4.99401118e+05]
+ [ -1.07298700e+02  -2.44692663e+04   4.99400910e+05]
+ [ -6.66010755e+01  -2.45947805e+04   4.99394708e+05]
+ [ -1.01431700e+02  -2.45930056e+04   4.99394732e+05]
+ [ -1.58757478e+02  -2.46091820e+04   4.99394002e+05]
+ [ -8.61015605e+01  -2.49314670e+04   4.99377970e+05]
+ [  6.94181405e+01  -2.44509570e+04   4.99402226e+05]
+ [ -2.08078276e+02  -2.47711208e+04   4.99385939e+05]
+ [ -3.61040365e+02  -2.49823367e+04   4.99375298e+05]
+ [ -2.87823948e+02  -2.46401853e+04   4.99392364e+05]
+ [  1.27863648e+01  -2.45462387e+04   4.99396986e+05]
+ [ -1.99644317e+02  -2.46412111e+04   4.99392395e+05]
+ [  8.95559987e+01  -2.46139549e+04   4.99393701e+05]
+ [ -1.43714669e+02  -2.45619655e+04   4.99396272e+05]]
+get_subfield_sites M_H_1
+[[  0]
+ [  1]
+ [  2]
+ [  3]
+ [  4]
+ [  5]
+ [  6]
+ [  7]
+ [ 32]
+ [ 33]
+ [ 34]
+ [ 35]
+ [ 36]
+ [ 37]
+ [ 38]
+ [ 39]
+ [ 40]
+ [ 41]
+ [ 42]
+ [ 43]
+ [ 44]
+ [ 45]
+ [ 88]
+ [ 89]
+ [ 90]
+ [ 91]
+ [ 92]
+ [ 93]
+ [ 94]
+ [ 95]
+ [ 96]
+ [ 97]
+ [ 98]
+ [ 99]
+ [100]
+ [101]
+ [102]
+ [103]
+ [104]
+ [105]
+ [106]
+ [107]
+ [171]
+ [172]
+ [173]
+ [174]
+ [175]
+ [176]
+ [177]
+ [178]
+ [179]
+ [180]
+ [181]
+ [182]
+ [183]]
+get_subfield_average M_H_1
+[SI(-159.03361098476176,['m',-1.0,'A',1.0]), SI(-23122.141103360696,['m',-1.0,'A',1.0]), SI(467659.45610683359,['m',-1.0,'A',1.0])]
+get_subfield_average_siv M_H_1
+[-169.8239568312802, -24690.966068551028, 499389.9012532433]
+       nmag:2016-12-26 17:22:02,335    main.py 2593    INFO save_data(): id->id+1=0, fields=['id', 'time', 'step', 'stage_time', 'stage_step', 'H_ext', 'M', 'm'] 
+       nmag:2016-12-26 17:22:02,400    main.py 2793    INFO Written fields ['id', 'time', 'step', 'stage_time', 'stage_step', 'H_ext', 'M', 'm'] data to ./cube_4_dat.h5
+       nmag:2016-12-26 17:22:02,428 hysteresis.py  441    INFO Hysteresis loop: starting a new simulation.
+       nmag:2016-12-26 17:22:02,428 hysteresis.py  443    INFO Hysteresis loop: check file 'cube_4_progress.txt' for progress data
+       nmag:2016-12-26 17:22:02,428 hysteresis.py  450    INFO hysteresis: starting new stage: field = None
+       nmag:2016-12-26 17:22:03,616 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x29c5e60> at id=0,step=1305.
+==========================================================================
+ID=0 |        Step=1305 |       Time=0.11 ns |  Last step size=0.85 ps  | 
+     |       Stage=1    | Stage-step=1090    |      Stage-time=61.27 ps | 
+     | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+==========================================================================
+get_subfield M_H_1
+[[ -1.32421853e+02   1.17296563e+04  -4.99862369e+05]
+ [  4.83281028e+02   1.25552923e+04  -4.99842103e+05]
+ [ -2.24893078e+02   1.25730747e+04  -4.99841840e+05]
+ [ -3.02022537e+02   1.16789629e+04  -4.99863479e+05]
+ [ -2.39835695e+01   1.20372110e+04  -4.99855077e+05]
+ [  2.35237976e+02   1.23642987e+04  -4.99847040e+05]
+ [ -6.37751450e+01   1.23701857e+04  -4.99846947e+05]
+ [ -8.16513718e+01   1.20115791e+04  -4.99855688e+05]
+ [  2.69119767e+02   1.22770246e+04  -4.99849175e+05]
+ [  2.20628238e+02   1.25494208e+04  -4.99842433e+05]
+ [ -3.12173246e+02   1.21336958e+04  -4.99852651e+05]
+ [  1.35384493e+02   1.22504230e+04  -4.99849881e+05]
+ [  1.16876925e+02   1.23590758e+04  -4.99847211e+05]
+ [ -9.33020635e+01   1.21989107e+04  -4.99851150e+05]
+ [ -7.42563390e+01   1.20080184e+04  -4.99855775e+05]
+ [ -1.22758362e+01   1.21057392e+04  -4.99853425e+05]
+ [  2.36393962e+02   1.23756206e+04  -4.99846760e+05]
+ [  1.78392250e+02   1.23005567e+04  -4.99848638e+05]
+ [ -3.58438962e+01   1.23262473e+04  -4.99848038e+05]
+ [ -8.56730477e+00   1.22782414e+04  -4.99849221e+05]
+ [ -7.52861670e+01   1.19860665e+04  -4.99856302e+05]
+ [ -2.62198720e+01   1.20821766e+04  -4.99853995e+05]
+ [ -6.09726347e+01   1.20231530e+04  -4.99855416e+05]
+ [ -3.11047805e+01   1.23883345e+04  -4.99846506e+05]
+ [ -2.28552259e+02   1.18420905e+04  -4.99859695e+05]
+ [  4.64099793e+00   1.21557814e+04  -4.99852217e+05]
+ [  1.00412710e+01   1.23018179e+04  -4.99848646e+05]
+ [ -6.06338135e+01   1.20846531e+04  -4.99853950e+05]
+ [  5.08290841e+01   1.22083173e+04  -4.99850929e+05]
+ [  1.21490545e+02   1.22820770e+04  -4.99849111e+05]
+ [  1.88869803e+02   1.23500250e+04  -4.99847413e+05]
+ [  3.14030459e+01   1.21665054e+04  -4.99851953e+05]
+ [  6.97191072e+00   1.20764475e+04  -4.99854137e+05]
+ [  8.22815881e+01   1.22774858e+04  -4.99849228e+05]
+ [  1.41241696e+02   1.23881574e+04  -4.99846483e+05]
+ [  9.23778087e+01   1.22970507e+04  -4.99848748e+05]
+ [ -1.72524841e+01   1.21608820e+04  -4.99852089e+05]
+ [ -2.34591044e+01   1.21765948e+04  -4.99851705e+05]
+ [ -9.44884990e+01   1.20949080e+04  -4.99853681e+05]
+ [ -3.83666909e+01   1.20651253e+04  -4.99854414e+05]
+ [ -3.86286992e+01   1.20628951e+04  -4.99854461e+05]
+ [ -1.67817436e+02   1.18585899e+04  -4.99859319e+05]
+ [ -2.52564581e+01   1.21174349e+04  -4.99853140e+05]
+ [ -5.39214291e+01   1.19788284e+04  -4.99856480e+05]
+ [ -2.99963132e+01   1.20924698e+04  -4.99853748e+05]
+ [  1.90309795e+01   1.22653331e+04  -4.99849534e+05]
+ [ -4.20428105e+01   1.23296922e+04  -4.99847950e+05]
+ [ -1.78120726e+02   1.18247719e+04  -4.99860129e+05]
+ [  5.92094939e+01   1.22659058e+04  -4.99849519e+05]
+ [  1.98171025e+02   1.23914614e+04  -4.99846388e+05]
+ [  1.28487742e+02   1.23077681e+04  -4.99848481e+05]
+ [ -1.29236953e+02   1.19520826e+04  -4.99857114e+05]
+ [  5.17127956e+01   1.22487325e+04  -4.99849941e+05]
+ [ -2.01197639e+02   1.19931558e+04  -4.99856106e+05]
+ [  4.17923319e+00   1.21555553e+04  -4.99852219e+05]]
+get_subfield_sites M_H_1
+[[  0]
+ [  1]
+ [  2]
+ [  3]
+ [  4]
+ [  5]
+ [  6]
+ [  7]
+ [ 32]
+ [ 33]
+ [ 34]
+ [ 35]
+ [ 36]
+ [ 37]
+ [ 38]
+ [ 39]
+ [ 40]
+ [ 41]
+ [ 42]
+ [ 43]
+ [ 44]
+ [ 45]
+ [ 88]
+ [ 89]
+ [ 90]
+ [ 91]
+ [ 92]
+ [ 93]
+ [ 94]
+ [ 95]
+ [ 96]
+ [ 97]
+ [ 98]
+ [ 99]
+ [100]
+ [101]
+ [102]
+ [103]
+ [104]
+ [105]
+ [106]
+ [107]
+ [171]
+ [172]
+ [173]
+ [174]
+ [175]
+ [176]
+ [177]
+ [178]
+ [179]
+ [180]
+ [181]
+ [182]
+ [183]]
+get_subfield_average M_H_1
+[SI(27.7611041665945,['m',-1.0,'A',1.0]), SI(12221.484487203266,['m',-1.0,'A',1.0]), SI(-499850.5751728912,['m',-1.0,'A',1.0])]
+get_subfield_average_siv M_H_1
+[27.7611041665945, 12221.484487203266, -499850.5751728912]
+       nmag:2016-12-26 17:22:03,619    main.py 2593    INFO save_data(): id->id+1=1, fields=['id', 'time', 'step', 'stage_time', 'stage_step', 'H_ext', 'M', 'm'] 
+       nmag:2016-12-26 17:22:03,641    main.py 2793    INFO Written fields ['id', 'time', 'step', 'stage_time', 'stage_step', 'H_ext', 'M', 'm'] data to ./cube_4_dat.h5
+------make H_ext reserve------
+       nmag:2016-12-26 17:22:03,667 hysteresis.py  441    INFO Hysteresis loop: starting a new simulation.
+       nmag:2016-12-26 17:22:03,667 hysteresis.py  443    INFO Hysteresis loop: check file 'cube_4_progress.txt' for progress data
+       nmag:2016-12-26 17:22:03,667 hysteresis.py  450    INFO hysteresis: starting new stage: field = None
+       nmag:2016-12-26 17:22:04,627 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x29c5e60> at id=1,step=2170.
+==========================================================================
+ID=1 |        Step=2170 |       Time=0.17 ns |  Last step size=0.82 ps  | 
+     |       Stage=1    | Stage-step=865     |      Stage-time=58.77 ps | 
+     | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
+==========================================================================
+get_subfield M_H_1
+[[  1.45745851e+02  -1.21243387e+04   4.99852952e+05]
+ [ -4.86532208e+02  -1.28873478e+04   4.99833647e+05]
+ [  2.32328927e+02  -1.29174519e+04   4.99833053e+05]
+ [  3.18066134e+02  -1.20816351e+04   4.99853906e+05]
+ [  3.22475924e+01  -1.22269507e+04   4.99850473e+05]
+ [ -2.33531153e+02  -1.25341518e+04   4.99842811e+05]
+ [  6.36191533e+01  -1.25430971e+04   4.99842637e+05]
+ [  9.37727955e+01  -1.22047242e+04   4.99851009e+05]
+ [ -2.66049411e+02  -1.26296840e+04   4.99840390e+05]
+ [ -2.18699499e+02  -1.28853704e+04   4.99833887e+05]
+ [  3.23209606e+02  -1.25023789e+04   4.99843557e+05]
+ [ -1.32643309e+02  -1.24291039e+04   4.99845471e+05]
+ [ -1.15618849e+02  -1.25343077e+04   4.99842848e+05]
+ [  9.75010152e+01  -1.23824065e+04   4.99846638e+05]
+ [  8.52244227e+01  -1.23588011e+04   4.99847225e+05]
+ [  1.99359428e+01  -1.23640689e+04   4.99847101e+05]
+ [ -2.38045995e+02  -1.26701641e+04   4.99839380e+05]
+ [ -1.77907359e+02  -1.25253007e+04   4.99843056e+05]
+ [  4.07238567e+01  -1.26322644e+04   4.99840394e+05]
+ [  1.13176773e+01  -1.25078653e+04   4.99843524e+05]
+ [  8.84377305e+01  -1.23408405e+04   4.99847668e+05]
+ [  3.71361699e+01  -1.23447373e+04   4.99847578e+05]
+ [  7.08463474e+01  -1.23937142e+04   4.99846363e+05]
+ [  3.74812243e+01  -1.27368743e+04   4.99837740e+05]
+ [  2.41411088e+02  -1.22271900e+04   4.99850409e+05]
+ [  5.34468098e-01  -1.23428252e+04   4.99847627e+05]
+ [ -7.75964863e+00  -1.24832967e+04   4.99844138e+05]
+ [  6.82003796e+01  -1.22753900e+04   4.99849284e+05]
+ [ -4.68839296e+01  -1.24902237e+04   4.99843963e+05]
+ [ -1.19511049e+02  -1.24818460e+04   4.99844160e+05]
+ [ -1.88440521e+02  -1.26777915e+04   4.99839208e+05]
+ [ -2.68883251e+01  -1.23759327e+04   4.99846807e+05]
+ [  3.55897113e-01  -1.24348307e+04   4.99845346e+05]
+ [ -7.99705225e+01  -1.25450315e+04   4.99842586e+05]
+ [ -1.39345675e+02  -1.27076031e+04   4.99838467e+05]
+ [ -9.02468146e+01  -1.25019616e+04   4.99843664e+05]
+ [  2.35667315e+01  -1.24491626e+04   4.99844989e+05]
+ [  2.87429593e+01  -1.23983008e+04   4.99846253e+05]
+ [  1.04129235e+02  -1.24440104e+04   4.99845107e+05]
+ [  4.78385785e+01  -1.22867148e+04   4.99849007e+05]
+ [  4.92623491e+01  -1.23696220e+04   4.99846963e+05]
+ [  1.81327862e+02  -1.22371548e+04   4.99850190e+05]
+ [  3.21753452e+01  -1.23238881e+04   4.99848093e+05]
+ [  6.35497034e+01  -1.23492590e+04   4.99847463e+05]
+ [  3.91688062e+01  -1.24045953e+04   4.99846096e+05]
+ [ -1.63584573e+01  -1.24599116e+04   4.99844721e+05]
+ [  4.86099275e+01  -1.26711047e+04   4.99839410e+05]
+ [  1.91216914e+02  -1.22096938e+04   4.99850867e+05]
+ [ -5.58877353e+01  -1.25659210e+04   4.99842065e+05]
+ [ -1.96749419e+02  -1.27238427e+04   4.99838034e+05]
+ [ -1.26690047e+02  -1.24962832e+04   4.99843798e+05]
+ [  1.41729666e+02  -1.23210087e+04   4.99848146e+05]
+ [ -4.87219801e+01  -1.24827102e+04   4.99844151e+05]
+ [  2.12477746e+02  -1.23641711e+04   4.99847054e+05]
+ [  1.40158269e+00  -1.24022072e+04   4.99846157e+05]]
+get_subfield_sites M_H_1
+[[  0]
+ [  1]
+ [  2]
+ [  3]
+ [  4]
+ [  5]
+ [  6]
+ [  7]
+ [ 32]
+ [ 33]
+ [ 34]
+ [ 35]
+ [ 36]
+ [ 37]
+ [ 38]
+ [ 39]
+ [ 40]
+ [ 41]
+ [ 42]
+ [ 43]
+ [ 44]
+ [ 45]
+ [ 88]
+ [ 89]
+ [ 90]
+ [ 91]
+ [ 92]
+ [ 93]
+ [ 94]
+ [ 95]
+ [ 96]
+ [ 97]
+ [ 98]
+ [ 99]
+ [100]
+ [101]
+ [102]
+ [103]
+ [104]
+ [105]
+ [106]
+ [107]
+ [171]
+ [172]
+ [173]
+ [174]
+ [175]
+ [176]
+ [177]
+ [178]
+ [179]
+ [180]
+ [181]
+ [182]
+ [183]]
+get_subfield_average M_H_1
+[SI(-22.830778894351823,['m',-1.0,'A',1.0]), SI(-12497.577624843858,['m',-1.0,'A',1.0]), SI(499843.74624736141,['m',-1.0,'A',1.0])]
+get_subfield_average_siv M_H_1
+[-22.830778894351823, -12497.577624843858, 499843.7462473614]
+       nmag:2016-12-26 17:22:04,630    main.py 2593    INFO save_data(): id->id+1=2, fields=['id', 'time', 'step', 'stage_time', 'stage_step', 'H_ext', 'M', 'm'] 
+       nmag:2016-12-26 17:22:04,653    main.py 2793    INFO Written fields ['id', 'time', 'step', 'stage_time', 'stage_step', 'H_ext', 'M', 'm'] data to ./cube_4_dat.h5
