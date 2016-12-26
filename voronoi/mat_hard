@@ -1,0 +1,5 @@
+MAT_NAME = nmag.MagMaterial(name='MAT_NAME',
+    Ms=M_hard,
+    exchange_coupling=A_hard,
+    anisotropy=nmag.uniaxial_anisotropy(axis=KA_hard, K1=K_hard),
+    llg_damping=LLG_damping)
