@@ -123,10 +123,10 @@ with open('Result.txt', 'w') as f:
         line_hard = [mat_hard_name]
         line_soft = [mat_soft_name]
         for j in range(stage_num):
-            m_hard = M_result[i*2, j, :].tolist()
-            m_soft = M_result[i*2+1, j, :].tolist()
-            line_hard.append(str(m_hard))
-            line_soft.append(str(m_soft))
+            m_hard_2 = M_result[i*2, j, 2]
+            m_soft_2 = M_result[i*2+1, j, 2]
+            line_hard.append(str(m_hard_2))
+            line_soft.append(str(m_soft_2))
         f.write('\t'.join(line_hard))
         f.write('\n')
         f.write('\t'.join(line_soft))

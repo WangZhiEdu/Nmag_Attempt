@@ -1,23 +1,23 @@
-       nsim:2016-12-26 19:31:22,244   setup.py  471    INFO Nsim 0.2.1
-       nsim:2016-12-26 19:31:22,245   setup.py  472    INFO Runid is 'cube_4'
-       nsim:2016-12-26 19:31:22,245   setup.py  473    INFO Using 1 CPUs
+       nsim:2016-12-26 19:43:57,695   setup.py  471    INFO Nsim 0.2.1
+       nsim:2016-12-26 19:43:57,695   setup.py  472    INFO Runid is 'cube_4'
+       nsim:2016-12-26 19:43:57,696   setup.py  473    INFO Using 1 CPUs
 ku_hard 1604333.333333
-       nmag:2016-12-26 19:31:22,331 simulation_core.py  141    INFO Simulation(name=cube_4) object created
-       nmag:2016-12-26 19:31:22,332    main.py  859    INFO Versions:
+       nmag:2016-12-26 19:43:57,799 simulation_core.py  141    INFO Simulation(name=cube_4) object created
+       nmag:2016-12-26 19:43:57,799    main.py  859    INFO Versions:
 	     nsim version = 0.2.1
 	     release date = Fri Jan 13 09:38:20 2012
 	          VC info = 467:d7c316deb156
 	distribution mode = all-source
 	distribution date = Fri Jan 13 09:38:22 GMT 2012
-       nmag:2016-12-26 19:31:22,332    main.py  860    INFO Paths:
+       nmag:2016-12-26 19:43:57,799    main.py  860    INFO Paths:
 	nsimpath = /home/nmag/nmag-0.2.1/nsim/interface/nsim
 	nmagpath = /home/nmag/nmag-0.2.1/nsim/interface/nmag
-       nmag:2016-12-26 19:31:22,333    main.py  472    INFO Created new Material:
+       nmag:2016-12-26 19:43:57,801    main.py  472    INFO Created new Material:
  Material 'H_1'
                       name = H_1
                         Ms = <SI: 500000  A / m >
          exchange_coupling = <SI: 1.2e-11  m kg / s^2 >
-                anisotropy = <function f at 0x22de938>
+                anisotropy = <function f at 0x1a9e938>
           anisotropy_order = 2
                llg_gamma_G = <SI: 221017  m / s A >
                llg_damping = 1.0
@@ -28,12 +28,12 @@ ku_hard 1604333.333333
             thermal_factor = <SI: 1.98522e-28  m s A^2 / K >
             extended_print = False
  
-       nmag:2016-12-26 19:31:22,334    main.py  472    INFO Created new Material:
+       nmag:2016-12-26 19:43:57,802    main.py  472    INFO Created new Material:
  Material 'S_2'
                       name = S_2
                         Ms = <SI: 750000  A / m >
          exchange_coupling = <SI: 1e-11  m kg / s^2 >
-                anisotropy = <function f at 0x22dea28>
+                anisotropy = <function f at 0x1a9ea28>
           anisotropy_order = 2
                llg_gamma_G = <SI: 221017  m / s A >
                llg_damping = 1.0
@@ -44,12 +44,12 @@ ku_hard 1604333.333333
             thermal_factor = <SI: 1.32348e-28  m s A^2 / K >
             extended_print = False
  
-       nmag:2016-12-26 19:31:22,335    main.py  472    INFO Created new Material:
+       nmag:2016-12-26 19:43:57,803    main.py  472    INFO Created new Material:
  Material 'H_3'
                       name = H_3
                         Ms = <SI: 500000  A / m >
          exchange_coupling = <SI: 1.2e-11  m kg / s^2 >
-                anisotropy = <function f at 0x22deb18>
+                anisotropy = <function f at 0x1a9eb18>
           anisotropy_order = 2
                llg_gamma_G = <SI: 221017  m / s A >
                llg_damping = 1.0
@@ -60,12 +60,12 @@ ku_hard 1604333.333333
             thermal_factor = <SI: 1.98522e-28  m s A^2 / K >
             extended_print = False
  
-       nmag:2016-12-26 19:31:22,335    main.py  472    INFO Created new Material:
+       nmag:2016-12-26 19:43:57,803    main.py  472    INFO Created new Material:
  Material 'S_4'
                       name = S_4
                         Ms = <SI: 750000  A / m >
          exchange_coupling = <SI: 1e-11  m kg / s^2 >
-                anisotropy = <function f at 0x22dec08>
+                anisotropy = <function f at 0x1a9ec08>
           anisotropy_order = 2
                llg_gamma_G = <SI: 221017  m / s A >
                llg_damping = 1.0
@@ -76,77 +76,77 @@ ku_hard 1604333.333333
             thermal_factor = <SI: 1.32348e-28  m s A^2 / K >
             extended_print = False
  
-       nmag:2016-12-26 19:31:22,336    main.py 1164    INFO Reading mesh from cube_4.nmesh.h5, unit_length is <SI: 1e-09  m >. 
-nmesh.ocaml:2016-12-26 19:31:22,363    INFO Computing mesh connectivity data
-nmesh.ocaml:2016-12-26 19:31:22,366    INFO Mesh nodes: 226,  simplices: 652 
-       nmag:2016-12-26 19:31:22,368    main.py 1225    INFO Adding region 'H_1' to 'cube_4' simulation object
-       nmag:2016-12-26 19:31:22,368    main.py 1225    INFO Adding region 'S_2' to 'cube_4' simulation object
-       nmag:2016-12-26 19:31:22,369    main.py 1225    INFO Adding region 'H_3' to 'cube_4' simulation object
-       nmag:2016-12-26 19:31:22,369    main.py 1225    INFO Adding region 'S_4' to 'cube_4' simulation object
-       nmag:2016-12-26 19:31:22,369 nmag_lam.py   97    INFO properties_by_region: [(-1, ['outer']), (0, ['0']), (1, ['1', 'H_1', 'magnetic', 'material']), (2, ['2', 'S_2', 'magnetic', 'material']), (3, ['3', 'H_3', 'magnetic', 'material']), (4, ['4', 'S_4', 'magnetic', 'material'])]
-       nmag:2016-12-26 19:31:22,369 nmag_lam.py  189    INFO Processing material 'H_1'
-       nmag:2016-12-26 19:31:22,369 nmag_lam.py  189    INFO Processing material 'S_2'
-       nmag:2016-12-26 19:31:22,370 nmag_lam.py  189    INFO Processing material 'H_3'
-       nmag:2016-12-26 19:31:22,370 nmag_lam.py  189    INFO Processing material 'S_4'
- nfem.ocaml:2016-12-26 19:31:22,370    INFO Associating elements to mesh ('m')
- nfem.ocaml:2016-12-26 19:31:22,377    INFO Associating elements to mesh ('E')
- nfem.ocaml:2016-12-26 19:31:22,381    INFO Associating elements to mesh ('H_demag')
- nfem.ocaml:2016-12-26 19:31:22,387    INFO Associating elements to mesh ('scalar')
- nfem.ocaml:2016-12-26 19:31:22,391    INFO Assembling site-wise offsets for fields [|"m"|]
- nfem.ocaml:2016-12-26 19:31:22,406    INFO Compiling linalg_machine
- nfem.ocaml:2016-12-26 19:31:22,487    INFO Starting to build dense matrices (BEM)
- nfem.ocaml:2016-12-26 19:31:22,517    INFO Populating BEM took 0.029895 seconds
- nfem.ocaml:2016-12-26 19:31:22,526    INFO Creating site-wise-executor 'local_M_from_m'
- nfem.ocaml:2016-12-26 19:31:22,526    INFO Assembling site-wise offsets for fields [|"m"; "M"|]
- nfem.ocaml:2016-12-26 19:31:22,527    INFO Creating site-wise-executor 'local_E_total'
- nfem.ocaml:2016-12-26 19:31:22,527    INFO Assembling site-wise offsets for fields [|"m"; "E_anis"; "E_ext"; "E_demag"; "E_exch"; "E_total"; "H_ext"; "H_demag"; "H_exch"; "H_total"|]
- nfem.ocaml:2016-12-26 19:31:22,529    INFO Creating site-wise-executor 'local_H_total'
- nfem.ocaml:2016-12-26 19:31:22,529    INFO Assembling site-wise offsets for fields [|"H_total"; "H_exch"; "H_ext"; "H_anis"; "H_demag"|]
- nfem.ocaml:2016-12-26 19:31:22,530    INFO Creating site-wise-executor 'local_correct_m_lengths'
- nfem.ocaml:2016-12-26 19:31:22,530    INFO Assembling site-wise offsets for fields [|"m"|]
- nfem.ocaml:2016-12-26 19:31:22,531    INFO Creating site-wise-executor 'local_E_anis'
- nfem.ocaml:2016-12-26 19:31:22,531    INFO Assembling site-wise offsets for fields [|"E_anis"; "m"|]
- nfem.ocaml:2016-12-26 19:31:22,531    INFO Creating site-wise-executor 'local_H_anis'
- nfem.ocaml:2016-12-26 19:31:22,531    INFO Assembling site-wise offsets for fields [|"H_anis"; "m"|]
- nfem.ocaml:2016-12-26 19:31:22,532    INFO Creating site-wise-executor 'local_dmdt'
- nfem.ocaml:2016-12-26 19:31:22,532    INFO Assembling site-wise offsets for fields [|"m"; "dmdt"; "H_total"; "pin"|]
- nfem.ocaml:2016-12-26 19:31:22,536    INFO Assembling site-wise offsets for fields [|"m"|]
+       nmag:2016-12-26 19:43:57,804    main.py 1164    INFO Reading mesh from cube_4.nmesh.h5, unit_length is <SI: 1e-09  m >. 
+nmesh.ocaml:2016-12-26 19:43:57,834    INFO Computing mesh connectivity data
+nmesh.ocaml:2016-12-26 19:43:57,838    INFO Mesh nodes: 226,  simplices: 652 
+       nmag:2016-12-26 19:43:57,840    main.py 1225    INFO Adding region 'H_1' to 'cube_4' simulation object
+       nmag:2016-12-26 19:43:57,840    main.py 1225    INFO Adding region 'S_2' to 'cube_4' simulation object
+       nmag:2016-12-26 19:43:57,840    main.py 1225    INFO Adding region 'H_3' to 'cube_4' simulation object
+       nmag:2016-12-26 19:43:57,840    main.py 1225    INFO Adding region 'S_4' to 'cube_4' simulation object
+       nmag:2016-12-26 19:43:57,840 nmag_lam.py   97    INFO properties_by_region: [(-1, ['outer']), (0, ['0']), (1, ['1', 'H_1', 'magnetic', 'material']), (2, ['2', 'S_2', 'magnetic', 'material']), (3, ['3', 'H_3', 'magnetic', 'material']), (4, ['4', 'S_4', 'magnetic', 'material'])]
+       nmag:2016-12-26 19:43:57,841 nmag_lam.py  189    INFO Processing material 'H_1'
+       nmag:2016-12-26 19:43:57,841 nmag_lam.py  189    INFO Processing material 'S_2'
+       nmag:2016-12-26 19:43:57,841 nmag_lam.py  189    INFO Processing material 'H_3'
+       nmag:2016-12-26 19:43:57,842 nmag_lam.py  189    INFO Processing material 'S_4'
+ nfem.ocaml:2016-12-26 19:43:57,842    INFO Associating elements to mesh ('m')
+ nfem.ocaml:2016-12-26 19:43:57,849    INFO Associating elements to mesh ('E')
+ nfem.ocaml:2016-12-26 19:43:57,853    INFO Associating elements to mesh ('H_demag')
+ nfem.ocaml:2016-12-26 19:43:57,860    INFO Associating elements to mesh ('scalar')
+ nfem.ocaml:2016-12-26 19:43:57,864    INFO Assembling site-wise offsets for fields [|"m"|]
+ nfem.ocaml:2016-12-26 19:43:57,879    INFO Compiling linalg_machine
+ nfem.ocaml:2016-12-26 19:43:57,959    INFO Starting to build dense matrices (BEM)
+ nfem.ocaml:2016-12-26 19:43:57,989    INFO Populating BEM took 0.029718 seconds
+ nfem.ocaml:2016-12-26 19:43:57,998    INFO Creating site-wise-executor 'local_M_from_m'
+ nfem.ocaml:2016-12-26 19:43:57,998    INFO Assembling site-wise offsets for fields [|"m"; "M"|]
+ nfem.ocaml:2016-12-26 19:43:57,999    INFO Creating site-wise-executor 'local_E_total'
+ nfem.ocaml:2016-12-26 19:43:57,999    INFO Assembling site-wise offsets for fields [|"m"; "E_anis"; "E_ext"; "E_demag"; "E_exch"; "E_total"; "H_ext"; "H_demag"; "H_exch"; "H_total"|]
+ nfem.ocaml:2016-12-26 19:43:58,001    INFO Creating site-wise-executor 'local_H_total'
+ nfem.ocaml:2016-12-26 19:43:58,001    INFO Assembling site-wise offsets for fields [|"H_total"; "H_exch"; "H_ext"; "H_anis"; "H_demag"|]
+ nfem.ocaml:2016-12-26 19:43:58,002    INFO Creating site-wise-executor 'local_correct_m_lengths'
+ nfem.ocaml:2016-12-26 19:43:58,002    INFO Assembling site-wise offsets for fields [|"m"|]
+ nfem.ocaml:2016-12-26 19:43:58,003    INFO Creating site-wise-executor 'local_E_anis'
+ nfem.ocaml:2016-12-26 19:43:58,003    INFO Assembling site-wise offsets for fields [|"E_anis"; "m"|]
+ nfem.ocaml:2016-12-26 19:43:58,004    INFO Creating site-wise-executor 'local_H_anis'
+ nfem.ocaml:2016-12-26 19:43:58,004    INFO Assembling site-wise offsets for fields [|"H_anis"; "m"|]
+ nfem.ocaml:2016-12-26 19:43:58,004    INFO Creating site-wise-executor 'local_dmdt'
+ nfem.ocaml:2016-12-26 19:43:58,004    INFO Assembling site-wise offsets for fields [|"m"; "dmdt"; "H_total"; "pin"|]
+ nfem.ocaml:2016-12-26 19:43:58,008    INFO Assembling site-wise offsets for fields [|"m"|]
 H_max 5106751.607342
-       nmag:2016-12-26 19:31:22,537    main.py 1101    INFO Simulation(name=cube_4).set_params(): stopping_dm_dt=<SI: 3.49066e+07  / s >
-       nmag:2016-12-26 19:31:22,538 hysteresis.py  441    INFO Hysteresis loop: starting a new simulation.
-       nmag:2016-12-26 19:31:22,538 hysteresis.py  443    INFO Hysteresis loop: check file 'cube_4_progress.txt' for progress data
-       nmag:2016-12-26 19:31:22,538 hysteresis.py  450    INFO hysteresis: starting new stage: field = None
- nfem.ocaml:2016-12-26 19:31:22,772    INFO Making Jacobi MX: 678 x 678 ([|678|] x [|678|])
-       nmag:2016-12-26 19:31:22,797 hysteresis.py   40    INFO it 5, time <1.82454e-14s>; stage 1; H_ext=None
-       nmag:2016-12-26 19:31:23,039 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x23c2de8> at id=-1,step=215.
+       nmag:2016-12-26 19:43:58,009    main.py 1101    INFO Simulation(name=cube_4).set_params(): stopping_dm_dt=<SI: 3.49066e+07  / s >
+       nmag:2016-12-26 19:43:58,010 hysteresis.py  441    INFO Hysteresis loop: starting a new simulation.
+       nmag:2016-12-26 19:43:58,010 hysteresis.py  443    INFO Hysteresis loop: check file 'cube_4_progress.txt' for progress data
+       nmag:2016-12-26 19:43:58,010 hysteresis.py  450    INFO hysteresis: starting new stage: field = None
+ nfem.ocaml:2016-12-26 19:43:58,264    INFO Making Jacobi MX: 678 x 678 ([|678|] x [|678|])
+       nmag:2016-12-26 19:43:58,289 hysteresis.py   40    INFO it 5, time <1.82454e-14s>; stage 1; H_ext=None
+       nmag:2016-12-26 19:43:58,535 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1b83de8> at id=-1,step=215.
 ============================================================================
 ID=-1 |        Step=215  |       Time=45.23 ps |  Last step size=0.74 ps  | 
       |       Stage=1    | Stage-step=215      |      Stage-time=45.23 ps | 
       | Convergence=True |  Stage-end=True     | Exit hysteresis=False    | 
 ============================================================================
-       nmag:2016-12-26 19:31:23,039    main.py 2593    INFO save_data(): id->id+1=0, fields=['id', 'time', 'step', 'stage_time', 'stage_step', 'H_ext', 'M', 'm'] 
-       nmag:2016-12-26 19:31:23,099    main.py 2793    INFO Written fields ['id', 'time', 'step', 'stage_time', 'stage_step', 'H_ext', 'M', 'm'] data to ./cube_4_dat.h5
-       nmag:2016-12-26 19:31:23,127 hysteresis.py  441    INFO Hysteresis loop: starting a new simulation.
-       nmag:2016-12-26 19:31:23,127 hysteresis.py  443    INFO Hysteresis loop: check file 'cube_4_progress.txt' for progress data
-       nmag:2016-12-26 19:31:23,127 hysteresis.py  450    INFO hysteresis: starting new stage: field = None
-       nmag:2016-12-26 19:31:24,266 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x23c2de8> at id=0,step=1305.
+       nmag:2016-12-26 19:43:58,536    main.py 2593    INFO save_data(): id->id+1=0, fields=['id', 'time', 'step', 'stage_time', 'stage_step', 'H_ext', 'M', 'm'] 
+       nmag:2016-12-26 19:43:58,596    main.py 2793    INFO Written fields ['id', 'time', 'step', 'stage_time', 'stage_step', 'H_ext', 'M', 'm'] data to ./cube_4_dat.h5
+       nmag:2016-12-26 19:43:58,622 hysteresis.py  441    INFO Hysteresis loop: starting a new simulation.
+       nmag:2016-12-26 19:43:58,622 hysteresis.py  443    INFO Hysteresis loop: check file 'cube_4_progress.txt' for progress data
+       nmag:2016-12-26 19:43:58,622 hysteresis.py  450    INFO hysteresis: starting new stage: field = None
+       nmag:2016-12-26 19:43:59,781 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1b83de8> at id=0,step=1305.
 ==========================================================================
 ID=0 |        Step=1305 |       Time=0.11 ns |  Last step size=0.85 ps  | 
      |       Stage=1    | Stage-step=1090    |      Stage-time=61.27 ps | 
      | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
 ==========================================================================
-       nmag:2016-12-26 19:31:24,266    main.py 2593    INFO save_data(): id->id+1=1, fields=['id', 'time', 'step', 'stage_time', 'stage_step', 'H_ext', 'M', 'm'] 
-       nmag:2016-12-26 19:31:24,289    main.py 2793    INFO Written fields ['id', 'time', 'step', 'stage_time', 'stage_step', 'H_ext', 'M', 'm'] data to ./cube_4_dat.h5
+       nmag:2016-12-26 19:43:59,782    main.py 2593    INFO save_data(): id->id+1=1, fields=['id', 'time', 'step', 'stage_time', 'stage_step', 'H_ext', 'M', 'm'] 
+       nmag:2016-12-26 19:43:59,804    main.py 2793    INFO Written fields ['id', 'time', 'step', 'stage_time', 'stage_step', 'H_ext', 'M', 'm'] data to ./cube_4_dat.h5
 ------make H_ext reserve------
-       nmag:2016-12-26 19:31:24,316 hysteresis.py  441    INFO Hysteresis loop: starting a new simulation.
-       nmag:2016-12-26 19:31:24,316 hysteresis.py  443    INFO Hysteresis loop: check file 'cube_4_progress.txt' for progress data
-       nmag:2016-12-26 19:31:24,316 hysteresis.py  450    INFO hysteresis: starting new stage: field = None
-       nmag:2016-12-26 19:31:25,281 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x23c2de8> at id=1,step=2170.
+       nmag:2016-12-26 19:43:59,830 hysteresis.py  441    INFO Hysteresis loop: starting a new simulation.
+       nmag:2016-12-26 19:43:59,831 hysteresis.py  443    INFO Hysteresis loop: check file 'cube_4_progress.txt' for progress data
+       nmag:2016-12-26 19:43:59,831 hysteresis.py  450    INFO hysteresis: starting new stage: field = None
+       nmag:2016-12-26 19:44:00,792 hysteresis.py  499    INFO hysteresis: saving <function my_save at 0x1b83de8> at id=1,step=2170.
 ==========================================================================
 ID=1 |        Step=2170 |       Time=0.17 ns |  Last step size=0.82 ps  | 
      |       Stage=1    | Stage-step=865     |      Stage-time=58.77 ps | 
      | Convergence=True |  Stage-end=True    | Exit hysteresis=False    | 
 ==========================================================================
-       nmag:2016-12-26 19:31:25,281    main.py 2593    INFO save_data(): id->id+1=2, fields=['id', 'time', 'step', 'stage_time', 'stage_step', 'H_ext', 'M', 'm'] 
-       nmag:2016-12-26 19:31:25,304    main.py 2793    INFO Written fields ['id', 'time', 'step', 'stage_time', 'stage_step', 'H_ext', 'M', 'm'] data to ./cube_4_dat.h5
-Use Time 0.046106 min
+       nmag:2016-12-26 19:44:00,792    main.py 2593    INFO save_data(): id->id+1=2, fields=['id', 'time', 'step', 'stage_time', 'stage_step', 'H_ext', 'M', 'm'] 
+       nmag:2016-12-26 19:44:00,815    main.py 2793    INFO Written fields ['id', 'time', 'step', 'stage_time', 'stage_step', 'H_ext', 'M', 'm'] data to ./cube_4_dat.h5
+Use Time 0.046766 min
